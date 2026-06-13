@@ -1,0 +1,4 @@
+interface:
+  display_name: "ReqMd"
+  short_description: "Create and validate ReqMd requirement documents"
+  default_prompt: "Use $reqmd to update ReqMd requirements and refresh indexes."
