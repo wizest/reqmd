@@ -5,7 +5,7 @@ marp: true
 paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
-footer: 'SW팀 세미나, 김상훈 책임 2024-6-14'
+footer: 'SW팀 세미나, 김상훈 책임 2026-6-14'
 ---
 
 # Markdown, ReqIF 표준을 활용한 요구사항 개발환경
@@ -32,7 +32,7 @@ footer: 'SW팀 세미나, 김상훈 책임 2024-6-14'
  
 기술 문서의 본질은 *서식*이 아니라 *내용*이다
  
-- 글를 쓰고 읽기 위해 꼭 특별한 도구가 필요해야 하나?
+- 글을 쓰고 읽기 위해 꼭 특별한 도구가 필요해야 하나?
 - 글 쓰는 것과 코딩 하는 것이 본질적으로 다른가?
 - 글을 잘 쓰고, 잘 열람하고, 잘 편집 하는 것이 기본에 충실해야 한다
 - 문서관리(RM)와 코드관리(CM) 가 다를 필요가 있을까?
@@ -69,23 +69,25 @@ Markdown 문법을 요구사항 문서에 맞도록 사용법을 제안 → **Re
  
 - **식별자**: **관계(Relation)** 의 추적을 위한 Link 문법의 활용
 - **도움자**: 추상적 표현과 구체적 표현의 **연결(Mapping)** 위한 Link 문법의 활용
-- **속성자**: 요구사항의 **속성(Attribute)** 표현을 위한 Autolink 분법의 활용
-- **색인**: 관계, 연결, 속성를 기술하는 특별한 파일
-  - **식별자색인**: 관계와 속성을 기술하는 특별한 파일 **@.md**
-  - **도움자색인**: 추상과 구상을 연결하는 특별한 파일 **=.md**
+- **속성자**: 요구사항의 **속성(Attribute)** 표현을 위한 YAML 코드블록의 활용
+- **색인**: 관계와 연결을 기술하는 특별한 파일
+  - **식별자색인**: 요구사항 간 관계 링크를 기술하는 특별한 파일 **@.md**
+  - **도움자색인**: 추상과 구상을 연결하는 링크를 기술하는 특별한 파일 **=.md**
  
 > 새로운 문법을 추가하지 않아, 범용 도구를 그대로 사용할 수 있게 하자
  
 ---
  
 - 하나의 요구사항은 하나의 section을 구성한다.
-- 요구사항은 여러개의 여러개의 **식별자** , **도움자** , **속성자** 를 포함할 수 있다.
+- 요구사항은 여러개의 **식별자** , **도움자** , **속성자** 를 포함할 수 있다.
 - 요구사항의 section 제목은 반드시 **식별자** 로 시작한다.
 - 요구사항은 subsection 으로 자식 요구사항 들을 포함할 수 있다.
-- 요구사항의 **관계**와 **속성** 정보는 **식별자색인** 의 해당 **식별자** section에 기술한다.
+- 요구사항의 **관계** 정보는 **식별자색인** 의 해당 **식별자** section에 기술한다.
 - **도움자** 간 **연결** 정보는 **도움자색인** 의 해당 **도움자** section에 기술한다.
+- **속성** 정보는 요구사항 본문 안의 YAML 코드블록에만 기술한다.
  
-> 요구사항의 관계, 연결, 속성은 본문과 분리하여, 색인에 작성한다
+> 요구사항의 관계와 연결은 본문과 분리하여 색인에 작성한다.
+> 색인은 링크 목록만 포함하며 YAML 속성자를 작성하지 않는다.
 > **색인** 은 **도구**에 의해 가공될 수 있다. (통계, 색인, 검색, 요약, 번역 등)
  
 ---
@@ -94,26 +96,27 @@ Markdown 문법을 요구사항 문서에 맞도록 사용법을 제안 → **Re
  
 ```console
 sw/@.md                           ⇐ 식별자색인
-  /=.md                           ⇐ 도움자색인
-  /SwReq1.md                      ⇐ 이 파일을 편집하고 있다고 가정
-  /SwReq2.md
-  /...
+sw/=.md                           ⇐ 도움자색인
+sw/SwReq.md                       ⇐ 이 파일을 편집하고 있다고 가정
+swdd/@.md                         ⇐ SW 상세설계 식별자색인
+swdd/=.md                         ⇐ SW 상세설계 도움자색인
+swqt/@.md                         ⇐ SW 테스트 식별자색인
 ```
  
-```markdown
-# [GLD_INIT](@) Initialization
- 
-- GLD shall initialize [position_lever_delayed](=) with [macro_lever_position_0](=)
-- GLD shall initialize [count_time](=) as deactivated at the beginning of each time step.
-...
- 
-## Acceptance criteria
- 
-- [position_lever_delayed](=) is equal to [macro_lever_position_0](=) at the first time step.
-- [count_time](=) is deactivated at the beginning of each time step as the component is running
-...
+````markdown
+## [SW_BLC_PEDAL_ON](@) 브레이크 페달 눌림 처리
 
+```yaml
+Type: Functional
+Status: Draft
+Priority: Must
+Verification: Test
 ```
+
+- 소프트웨어는 [ignition_status](=)가 켜짐 상태이고 [brake_pedal_status](=)가 눌림 상태이면
+  [brake_lamp_request](=)를 활성화해야 한다.
+
+````
  
 ---
  
@@ -122,34 +125,48 @@ sw/@.md                           ⇐ 식별자색인
 `[identifier](path/@#fragment "description")`
 : Markdown Link 문법으로 요구사항 **관계**의 출발점(source)과 도착점(target) 을 표현함
  
-- `path/` 는 요구사항이 저장된 file path 이며, 여러 요구사항 문서를 구조화 한다.
+- `path/` 는 요구사항 경로이며, 여러 요구사항 문서를 구조화 한다.
 - `identifier` 는 path 범위에서 요구사항을 가리키는 유일한 문자열이다.
+- 식별자는 `SCREAMING_SNAKE_CASE` 를 사용한다.
 - `#fragment` 는 색인의 특정 위치를 가리킨다.
 - `"description"` 은 identifier를 설명하는 문자열이다.
-- `path/`, `#fragment`, `"description"`은 생략할 수 있다.
+- 본문에서는 `path/`, `#fragment`, `"description"`을 생략할 수 있다.
   - `[id](@)`, `[id](path/@)`, `[id](@#fragment)`, `[id](@ "desc")`
+- 색인 파일 안에서는 section 이동을 위해 fragment를 반드시 작성한다.
+  - `[SW_BLC_PEDAL_ON](@#SW_BLC_PEDAL_ON)`
+  - `[SYS_BLC_PEDAL_ON](../sys/@#SYS_BLC_PEDAL_ON)`
  
 ---
  
-## 속성자 `<attribute:Value>`
+## 속성자 `yaml` 코드블록
 
-`<attribute:value>`
-: Markdown 의 Autolink 문법으로 요구사항 **속성** 을 표현함
+```yaml
+Type: Functional
+Status: Draft
+Priority: Must
+Verification: Test
+Variant: Common
+```
+
+: Markdown 코드블록 문법으로 요구사항 **속성** 을 표현함
  
-- `attribute` 와 `value` 는 띄워쓰기 하지 않으며 특수 문자를 포함하지 않는다.
 - 요구사항의 속성은 정형화된 field 또는 parameter 를 가리킨다.
-- 여러개의 value 입력은 `,` 으로 기술한다
+- 속성자는 요구사항 본문에만 작성한다.
+- `@.md`, `=.md` 색인 파일에는 YAML 속성자를 작성하지 않는다.
+- 여러개의 value 입력은 YAML 배열로 기술한다.
  
 > #### 기본 속성
 > 
-> - Type : Container, Informational, Functionl 중 하나의 값 → `<Type:Functional>`
-> - Keyword : 키워드 자유기술 → `<Keyword:Keyword1,Keyword2>`
+> - Type : Container, Informational, Functional 중 하나의 값
+> - Status : Draft, Review, Approved 등 프로젝트 상태 값
+> - Priority : Must, Should, Could 등 우선순위
+> - Verification : Test, Review, Analysis 등 검증 방법
  
 
 
 ---
  
-## `@.md` 파일에서 관계와 속성 표현하기
+## `@.md` 파일에서 관계 표현하기
  
 ```console
 sys/@.md
@@ -162,17 +179,17 @@ swqt/@.md
 ```
  
 ```markdown
-# SourceIdent                     ⇐ 식별자를 section 제목으로 함
- 
-Relation                          ⇐ sw/SwReq1.md 에 [SourceIdent](@) 요구사항에 대한 관계를 표현
-  - [TargetIdent1](../sys/@)      ⇐ (SourceIdent → TargetIdent1 of sys/) 관계를 표현
-  - [TargetIdent2](../swqt/@)     ⇐ (SourceIdent → TargetIdent2 of swqt/) 관계를 표현
-  - [TargetIdent3](@)             ⇐ (SourceIdent → TargetIdent3 of sw/) 관계를 표현
- 
-Attribute
-  - <Type:Functional>             ⇐ GLD_INIT 요구사항은 Type 가 Functional 임
-  - <Keyword:aaaa,bbbb>           ⇐ GLD_INIT 요구사항은 keyword 가 aaaa,bbbb 임
+## [SW_BLC_PEDAL_ON](@#SW_BLC_PEDAL_ON)
+
+- [SW_BLC_PEDAL_ON](SwReq.md#SW_BLC_PEDAL_ON)
+- [SYS_BLC_PEDAL_ON](../sys/@#SYS_BLC_PEDAL_ON)
+- [SWDD_BLC_OUTPUT_CONTROL](../swdd/@#SWDD_BLC_OUTPUT_CONTROL)
+- [SWQT_BLC_PEDAL_ON_001](../swqt/@#SWQT_BLC_PEDAL_ON_001)
 ```
+
+- 원문 링크는 `[원문]` 이 아니라 실제 식별자 문자열을 사용한다.
+- 색인 안의 식별자 링크는 단순 `@`, `../sys/@` 가 아니라 `@#...`, `../sys/@#...` 형식으로 작성한다.
+- 관계의 의미는 경로와 주변 맥락으로 해석한다.
  
 ---
  
@@ -181,16 +198,23 @@ Attribute
 `[helper](path/=#fragment "description")`
 : Markdown Link 문법으로 **연결** 하고자 하는 추상적 또는 구체적 대상을 표현함
  
-- `path/` 는 요구사항이 저장된 file path 이며, 여러 요구사항 문서를 구조화 한다.
+- `path/` 는 요구사항 경로이며, 여러 요구사항 문서를 구조화 한다.
 - `helper` 는 path 범위에서 추상적 또는 구체적 대상을 가리키는 유일한 문자열이다.
+- 일반 도움자는 `snake_case` 를 사용한다.
+- SW 구현 변수, 포트, 모델 신호를 직접 특정하는 구현 도움자는 표시 텍스트가 `=` 로 시작한다.
+  - `[brake_lamp_request](=)` : 요구사항/설계/테스트 사이의 개념적 도움자
+  - `[=BrakeLampReq](=)` : 실제 구현 변수 또는 모델 신호
 - `#fragment` 는 색인의 특정 위치를 가리킨다.
 - `"description"` 은 helper를 설명하는 문자열이다.
-- `path/`, `#fragment`, `"description"`은 생략할 수 있다.
+- 본문에서는 `path/`, `#fragment`, `"description"`을 생략할 수 있다.
   - `[help](=)`, `[help](path/=)`, `[help](=#fragment)`, `[help](= "desc")`
+- 색인 파일 안에서는 section 이동을 위해 fragment를 반드시 작성한다.
+  - `[brake_lamp_request](=#brake_lamp_request)`
+  - `[=BrakeLampReq](../swdd/=#=BrakeLampReq)`
  
 ---
  
-## `=.md` 파일에서 추상과 구상의 연결하기
+## `=.md` 파일에서 추상과 구상 연결하기
  
 ```console
 sys/=.md
@@ -202,17 +226,18 @@ sw/=.md                             ⇐ 이 파일을 편집하고 있다고 가
 sw/=.md 파일에서
  
 ```markdown
-# SourceHelper                      ⇐ 도움자를 section 제목으로 함
- 
-Mapping                             ⇐ 도움자 [SourceHelper](=) 에 대한 연결을 표현
-  - [TargetHelper1](../sys/=)       ⇐ (SourceHelper → TargetHelper1 of sys/) 연결을 표현
-  - [TargetHelper2](=)              ⇐ (SourceHelper → TargetHelper2 of sw/) 연결을 표현
- 
-Relation                            ⇐ 도움자와 관계한 식별자, 도구에 의해 자동 작성 가능
-  - [ReqIdent1](@)                  ⇐ (ReqIdent1 in sw/) 요구사항에 SourceHelper가 언급됨
-  - [ReqIdent2](../sys/@)           ⇐ (ReqIdent2 in sys/) 요구사항에 SourceHelper가 언급됨
+## [brake_lamp_request](=#brake_lamp_request)
+
+- [brake_lamp_request](SwReq.md#SW_BLC_PEDAL_ON)
+- [brake_lamp_state](../sys/=#brake_lamp_state)
+- [=BrakeLampReq](../swdd/=#=BrakeLampReq)
+- [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
 
 ```
+
+- 원문 링크는 `[원문]` 이 아니라 실제 도움자 문자열을 사용한다.
+- 색인 안의 도움자 링크는 단순 `=`, `../swdd/=` 가 아니라 `=#...`, `../swdd/=#...` 형식으로 작성한다.
+- 구현 도움자는 `snake_case` 검증에서 제외하지만, 실제 구현 이름을 보존해야 한다.
  
 ---
 
@@ -246,14 +271,22 @@ MATLAB Requirement editor
 색인 파일 자동 갱신 도구
  
 - 식별자, 도움자를 제목으로 하는 section 생성
-- 관계, 연결 정보의
-  - 유효성 검사
-  - fragment 갱신: `[Ident](@)` → `[Ident](path/@#fragment "desc")` 로 변경
+- 색인 링크의 유효성 검사
+  - 단순 `@`, `=`, `path/@`, `path/=` 링크 금지
+  - `@#fragment`, `=#fragment`, `path/@#fragment`, `path/=#fragment` 필수
+  - fragment가 실제 색인 section을 가리키는지 확인
+- 색인에는 YAML 속성자를 만들지 않음
  
 검색 도구
  
 - 관계, 연결 정보로 관련 요구사항을 출력 → 영향성 분석도구
 - 속성에 따른 요구사항 필터링 도구
+
+Agentic coding skill
+
+- 요구사항 본문, `@.md`, `=.md`를 함께 읽고 구현 범위를 계산
+- 개념 도움자와 구현 도움자(`=ActualVariable`)를 연결하여 코드/모델 심볼 추적
+- 요구사항 변경 시 설계, 테스트, 코드 영향 범위를 제안
 
 ---
 
@@ -466,3 +499,9 @@ Simulink 또는 Testcase 와 Requirement 를 연결
  
 
 ## 결론
+
+- ReqMd는 Markdown 문법을 확장하지 않고 요구사항 추적성을 표현한다.
+- 본문은 요구사항과 YAML 속성자의 원천이다.
+- `@.md`, `=.md`는 링크 전용 색인이다.
+- 색인 링크는 fragment를 포함하여 IDE에서 정의 위치로 바로 이동할 수 있어야 한다.
+- 이 구조는 ReqIF 변환, 자동 검증, agentic coding skill의 기초 자료로 사용할 수 있다.
