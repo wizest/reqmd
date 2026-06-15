@@ -20,6 +20,14 @@ def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8-sig")
 
 
+def slug(text: str) -> str:
+    text = text.strip().lower()
+    text = re.sub(r"[^\w\s-]", "", text, flags=re.UNICODE)
+    text = re.sub(r"\s+", "-", text.strip())
+    text = re.sub(r"-+", "-", text)
+    return text
+
+
 def markdown_files(root: Path) -> list[Path]:
     return sorted(p for p in root.rglob("*.md") if p.is_file())
 
@@ -76,12 +84,11 @@ def collect_index_sections(root: Path) -> dict[Path, set[str]]:
     for path in markdown_files(root):
         if not is_index(path):
             continue
-        kind = index_kind(path)
         found: set[str] = set()
         for line in read_text(path).splitlines():
-            m = re.match(rf"^##\s+\[([^\]]+)\]\({re.escape(kind)}#([^)]+)\)", line)
+            m = re.match(r"^##\s+\[([^\]]+)\]\([^)]+\)", line)
             if m:
-                found.add(m.group(2))
+                found.add(slug(m.group(1)))
         sections[path.resolve()] = found
     return sections
 
@@ -144,13 +151,16 @@ def validate_index_file(
     seen: set[str] = set()
     for lineno, line in enumerate(text.splitlines(), start=1):
         if line.startswith("## "):
-            m = re.match(rf"^##\s+\[([^\]]+)\]\({re.escape(kind)}#([^)]+)\)\s*$", line)
+            m = re.match(r"^##\s+\[([^\]]+)\]\(([^)]+)\)\s*$", line)
             if not m:
-                errors.append(f"{relative}:{lineno}: index heading must use {kind}#fragment")
+                errors.append(f"{relative}:{lineno}: malformed index heading link")
                 continue
-            label, fragment = m.group(1), m.group(2)
-            if label != fragment:
-                errors.append(f"{relative}:{lineno}: heading label and fragment differ")
+            label, target = m.group(1), m.group(2)
+            if "#" not in target:
+                errors.append(f"{relative}:{lineno}: index heading link must include source document fragment")
+            if target.startswith(f"{kind}#"):
+                errors.append(f"{relative}:{lineno}: index heading must link to source document section")
+            fragment = slug(label)
             if fragment in seen:
                 errors.append(f"{relative}:{lineno}: duplicate index section '{fragment}'")
             seen.add(fragment)

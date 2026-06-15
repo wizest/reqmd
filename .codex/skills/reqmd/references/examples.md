@@ -24,19 +24,17 @@ Verification: Test
 Identifier index:
 
 ```markdown
-## [SW_BLC_PEDAL_ON](@#SW_BLC_PEDAL_ON)
+## [SW_BLC_PEDAL_ON](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
-- [SW_BLC_PEDAL_ON](SwReq.md#SW_BLC_PEDAL_ON)
-- [SYS_BLC_PEDAL_ON](../sys/@#SYS_BLC_PEDAL_ON)
+- [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
 ```
 
 Helper index:
 
 ```markdown
-## [brake_lamp_request](=#brake_lamp_request)
+## [brake_lamp_request](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
-- [brake_lamp_request](SwReq.md#SW_BLC_PEDAL_ON)
-- [=BrakeLampReq](../swdd/=#=BrakeLampReq)
+- [=BrakeLampReq](../swdd/=#brakelampreq)
 ```
 
 ## Repair Missing Fragment
@@ -51,7 +49,7 @@ Before:
 After:
 
 ```markdown
-- [SYS_BLC_PEDAL_ON](../sys/@#SYS_BLC_PEDAL_ON)
+- [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
 - [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
 ```
 
@@ -60,9 +58,7 @@ After:
 Before:
 
 ````markdown
-## [SW_BLC_PEDAL_ON](@#SW_BLC_PEDAL_ON)
-
-- [SW_BLC_PEDAL_ON](SwReq.md#SW_BLC_PEDAL_ON)
+## [SW_BLC_PEDAL_ON](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
 ```yaml
 Status: Draft
@@ -72,7 +68,6 @@ Status: Draft
 After:
 
 ```markdown
-## [SW_BLC_PEDAL_ON](@#SW_BLC_PEDAL_ON)
+## [SW_BLC_PEDAL_ON](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
-- [SW_BLC_PEDAL_ON](SwReq.md#SW_BLC_PEDAL_ON)
 ```

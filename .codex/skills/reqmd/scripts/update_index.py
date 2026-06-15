@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add missing ReqMd index sections and source links."""
+"""Add missing ReqMd index sections."""
 
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ from pathlib import Path
 
 ID_HEADING_RE = re.compile(r"^(#{1,6})\s+\[([A-Z][A-Z0-9_]*)\]\((?:@|[^)]*/@)(?:#[^)]+)?\)")
 HELPER_LINK_RE = re.compile(r"\[([^\]]+)\]\((?:=|[^)]*/=)(?:#[^)]+)?\)")
+LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 FENCE_RE = re.compile(r"^\s*```")
 
 
@@ -21,8 +22,16 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
-def anchor(name: str) -> str:
-    return name
+def heading_text(line: str) -> str:
+    body = re.sub(r"^#{1,6}\s+", "", line).strip()
+    return LINK_RE.sub(lambda m: m.group(1), body)
+
+
+def anchor(text: str) -> str:
+    text = text.strip().lower()
+    text = re.sub(r"[^\w\s-]", "", text, flags=re.UNICODE)
+    text = re.sub(r"\s+", "-", text.strip())
+    return re.sub(r"-+", "-", text)
 
 
 def collect_requirements(doc: Path) -> list[tuple[str, str]]:
@@ -31,13 +40,14 @@ def collect_requirements(doc: Path) -> list[tuple[str, str]]:
         m = ID_HEADING_RE.match(line)
         if m:
             req_id = m.group(2)
-            found.append((req_id, f"{doc.name}#{req_id}"))
+            found.append((req_id, f"{doc.name}#{anchor(heading_text(line))}"))
     return found
 
 
 def collect_helpers(doc: Path) -> list[tuple[str, str]]:
-    helpers: list[tuple[str, str]] = []
+    helpers: dict[str, str] = {}
     current_req: str | None = None
+    current_anchor: str | None = None
     in_fence = False
     for line in read_text(doc).splitlines():
         if FENCE_RE.match(line):
@@ -48,12 +58,13 @@ def collect_helpers(doc: Path) -> list[tuple[str, str]]:
         m = ID_HEADING_RE.match(line)
         if m:
             current_req = m.group(2)
+            current_anchor = anchor(heading_text(line))
             continue
-        if not current_req:
+        if not current_req or not current_anchor:
             continue
         for link in HELPER_LINK_RE.finditer(line):
-            helpers.append((link.group(1), f"{doc.name}#{current_req}"))
-    return helpers
+            helpers.setdefault(link.group(1), f"{doc.name}#{current_anchor}")
+    return list(helpers.items())
 
 
 def ensure_section(index: Path, kind: str, name: str, source: str) -> bool:
@@ -63,21 +74,19 @@ def ensure_section(index: Path, kind: str, name: str, source: str) -> bool:
         title = "Identifier Index" if kind == "@" else "Helper Index"
         text = f"# {title}\n"
 
-    heading = f"## [{name}]({kind}#{anchor(name)})"
-    source_line = f"- [{name}]({source})"
+    heading_re = re.compile(rf"^##\s+\[{re.escape(name)}\]\([^)]+\)\s*$", re.MULTILINE)
+    heading = f"## [{name}]({source})"
     changed = False
 
-    if heading not in text:
-        block = f"\n\n{heading}\n\n{source_line}\n"
+    match = heading_re.search(text)
+    if not match:
+        block = f"\n\n{heading}\n\n"
         text = text.rstrip() + block
         changed = True
     else:
-        start = text.index(heading)
-        next_heading = text.find("\n## ", start + 1)
-        section = text[start:] if next_heading == -1 else text[start:next_heading]
-        if source_line not in section:
-            insert_at = next_heading if next_heading != -1 else len(text)
-            text = text[:insert_at].rstrip() + f"\n{source_line}\n" + text[insert_at:]
+        old_heading = match.group(0)
+        if old_heading != heading:
+            text = text[: match.start()] + heading + text[match.end() :]
             changed = True
 
     if changed:
@@ -104,7 +113,7 @@ def update(root: Path) -> list[str]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Add missing ReqMd index sections and source links")
+    parser = argparse.ArgumentParser(description="Add missing ReqMd index sections")
     parser.add_argument("root", nargs="?", default=".", help="Requirement root to update")
     args = parser.parse_args()
     root = Path(args.root).resolve()

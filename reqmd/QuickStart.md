@@ -54,14 +54,13 @@ Priority: Must
 ````markdown
 # Identifier Index
 
-## [SW_BRAKE_LAMP_REQUEST](@#SW_BRAKE_LAMP_REQUEST)
+## [SW_BLC_CONTROL](SwReq.md#sw_blc_control-브레이크-램프-제어-소프트웨어)
 
-- [SW_BRAKE_LAMP_REQUEST](SwReq.md#SW_BRAKE_LAMP_REQUEST)
-- [SYS_BRAKE_LAMP_CONTROL](../sys/@#SYS_BRAKE_LAMP_CONTROL)
-- [SWQT_BRAKE_LAMP_REQUEST_001](../swqt/@#SWQT_BRAKE_LAMP_REQUEST_001)
+- [SYS_BLC_CONTROL](../sys/@#sys_blc_control)
+- [SWQT_BLC_PEDAL_ON_001](../swqt/@#swqt_blc_pedal_on_001)
 ````
 
-처음에는 현재 식별자 문자열로 원문 문서를 가리키는 링크만 있어도 됩니다. 상위 요구사항, 하위 요구사항, 테스트 케이스가 생기면 관련 식별자 링크를 목록에 추가합니다. 색인 안의 식별자 링크는 `@#SW_BRAKE_LAMP_REQUEST`, `../sys/@#SYS_BRAKE_LAMP_CONTROL`처럼 반드시 섹션 fragment를 포함합니다. 관계의 의미는 경로와 주변 맥락으로 이해합니다.
+색인 섹션 제목은 원문 요구사항 섹션을 가리키고, 섹션 본문 목록은 관계있는 식별자의 색인 섹션을 가리킵니다. 색인 본문 목록의 식별자 링크는 `@#sw_blc_pedal_on`, `../sys/@#sys_blc_control`처럼 반드시 대상 색인 heading 기준의 fragment를 포함합니다. 관계의 의미는 경로와 주변 맥락으로 이해합니다.
 
 관계는 한 방향만 기록해도 됩니다. 반대 방향 관계는 도구가 색인 전체를 분석하여 계산할 수 있어야 합니다.
 
@@ -72,27 +71,24 @@ Priority: Must
 ````markdown
 # Helper Index
 
-## [brake_pedal_status](=#brake_pedal_status)
+## [brake_pedal_status](SwReq.md#sw_blc_pedal_on-브레이크-페달-눌림-처리)
 
-- [brake_pedal_status](SwReq.md#SW_BRAKE_LAMP_REQUEST)
 - [brake_pedal_input](../swdd/=#brake_pedal_input)
 - [observed_brake_pedal_status](../swqt/=#observed_brake_pedal_status)
 
-## [brake_lamp_request](=#brake_lamp_request)
+## [brake_lamp_request](SwReq.md#sw_blc_control-브레이크-램프-제어-소프트웨어)
 
-- [brake_lamp_request](SwReq.md#SW_BRAKE_LAMP_REQUEST)
-- [=BrakeLampReq](../swdd/=#=BrakeLampReq)
+- [=BrakeLampReq](../swdd/=#brakelampreq)
 - [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
 ````
 
-처음에는 현재 도움자 문자열로 원문 문서를 가리키는 링크만 작성해도 됩니다. 설계 모델, 코드, 테스트 관찰값과 연결할 대상이 생기면 관련 도움자 링크를 목록에 추가합니다. 색인 안의 도움자 링크는 `=#brake_lamp_request`, `../swdd/=#=BrakeLampReq`처럼 반드시 섹션 fragment를 포함합니다. 연결의 의미는 경로와 주변 맥락으로 이해합니다.
+도움자 색인 섹션 제목은 원문 도움자 섹션을 가리키고, 섹션 본문 목록은 연결되는 도움자의 색인 섹션을 가리킵니다. 색인 본문 목록의 도움자 링크는 `=#brake_lamp_request`, `../swdd/=#brakelampreq`처럼 반드시 대상 색인 heading 기준의 fragment를 포함합니다. 연결의 의미는 경로와 주변 맥락으로 이해합니다.
 
 표시 텍스트가 `=`로 시작하는 도움자는 구현 변수를 직접 특정할 때 사용합니다.
 
 ```markdown
-## [=BrakeLampReq](=#=BrakeLampReq)
+## [=BrakeLampReq](SwDesign.md#swdd_blc_output_control-브레이크-램프-출력-제어)
 
-- [=BrakeLampReq](SwDesign.md#SWDD_BLC_OUTPUT_CONTROL)
 - [brake_lamp_request](../sw/=#brake_lamp_request)
 ```
 
@@ -132,17 +128,17 @@ Variant: Common
 `@.md`:
 
 ```markdown
-## [REQ_ID](@#REQ_ID)
+## [REQ_ID](Document.md#req_id-requirement-title)
 
-- [REQ_ID](Document.md#REQ_ID)
+- [RELATED_REQ_ID](../related/@#related_req_id)
 ```
 
 `=.md`:
 
 ```markdown
-## [target](=#target)
+## [target](Document.md#req_id-requirement-title)
 
-- [target](Document.md#REQ_ID)
+- [mapped_target](../design/=#mapped_target)
 ```
 
 ## 7. 다음 단계

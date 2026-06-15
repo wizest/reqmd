@@ -25,7 +25,7 @@ Verification: Test
 - Use `SCREAMING_SNAKE_CASE`.
 - Regex: `[A-Z][A-Z0-9_]*`.
 - Use stable names; do not rename just because a title changes.
-- In index files, always include a fragment: `@#IDENTIFIER` or `path/@#IDENTIFIER`.
+- In index files, always include a fragment. Index heading links point to source document sections. Index body links point to other index sections, for example `@#sw_blc_pedal_on` or `path/@#sys_blc_pedal_on`.
 
 ## Helper
 
@@ -34,7 +34,7 @@ Verification: Test
 - Regex: `[a-z][a-z0-9_]*`.
 - Implementation helpers start with `=`, for example `[=BrakeLampReq](=)`.
 - Do not force implementation helpers into `snake_case`; preserve actual code/model names.
-- In index files, always include a fragment: `=#helper` or `path/=#helper`.
+- In index files, always include a fragment. Index heading links point to source document sections. Index body links point to other index sections, for example `=#brake_lamp_request` or `path/=#brakelampreq`.
 
 ## Attribute
 
@@ -47,11 +47,10 @@ Verification: Test
 File name: `@.md`.
 
 ```markdown
-## [SW_BLC_PEDAL_ON](@#SW_BLC_PEDAL_ON)
+## [SW_BLC_PEDAL_ON](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
-- [SW_BLC_PEDAL_ON](SwReq.md#SW_BLC_PEDAL_ON)
-- [SYS_BLC_PEDAL_ON](../sys/@#SYS_BLC_PEDAL_ON)
-- [SWQT_BLC_PEDAL_ON_001](../swqt/@#SWQT_BLC_PEDAL_ON_001)
+- [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
+- [SWQT_BLC_PEDAL_ON_001](../swqt/@#swqt_blc_pedal_on_001)
 ```
 
 ## Helper Index
@@ -59,9 +58,8 @@ File name: `@.md`.
 File name: `=.md`.
 
 ```markdown
-## [brake_lamp_request](=#brake_lamp_request)
+## [brake_lamp_request](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
-- [brake_lamp_request](SwReq.md#SW_BLC_PEDAL_ON)
-- [=BrakeLampReq](../swdd/=#=BrakeLampReq)
+- [=BrakeLampReq](../swdd/=#brakelampreq)
 - [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
 ```

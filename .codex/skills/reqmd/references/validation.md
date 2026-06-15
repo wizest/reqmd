@@ -13,10 +13,10 @@ Run `scripts/validate_reqmd.py` when possible. Use this checklist for manual rev
 
 ## Indexes
 
-- `@.md` section headings use `## [IDENTIFIER](@#IDENTIFIER)`.
-- `=.md` section headings use `## [helper](=#helper)` or `## [=ActualName](=#=ActualName)`.
-- Index-to-index links contain fragments.
-- Source document links use the actual identifier/helper text, not `[원문]`.
+- `@.md` section headings link to source requirement sections, for example `## [IDENTIFIER](SwReq.md#identifier-title)`.
+- `=.md` section headings link to source helper sections, for example `## [helper](SwReq.md#identifier-title)`.
+- Index body links point to other index sections and contain fragments, for example `../sys/@#sys_blc_control` or `../swdd/=#brakelampreq`.
+- Source document links use the actual identifier/helper text in the section heading.
 - Duplicate index sections are not allowed.
 - Link fragments resolve to real sections when the target index file exists.
 

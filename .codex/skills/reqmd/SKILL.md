@@ -29,8 +29,9 @@ Use this skill to work on ReqMd requirement sets. ReqMd uses plain Markdown link
 - Implementation helpers start with `=`, for example `[=BrakeLampReq](=)`, and preserve actual code/model names.
 - Requirement attributes are YAML code blocks in requirement bodies only.
 - `@.md` and `=.md` contain link lists only; never add YAML attributes to index files.
-- Index links to other index entries must include fragments: `@#ID`, `=#helper`, `path/@#ID`, or `path/=#helper`.
-- Source document links in indexes use the original identifier/helper text, not a fixed `[원문]` label.
+- Index section headings link to source document sections, for example `## [SW_BLC_PEDAL_ON](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)`.
+- Index body links to other index entries must include index-section fragments, for example `@#sw_blc_pedal_on`, `=#brake_lamp_request`, `path/@#sys_blc_pedal_on`, or `path/=#brakelampreq`.
+- Source document links in indexes use the original identifier/helper text in the section heading, not a fixed source label.
 - Treat indexes as derived data. When body and index conflict, preserve the body and update or flag the index.
 
 ## Scripts
