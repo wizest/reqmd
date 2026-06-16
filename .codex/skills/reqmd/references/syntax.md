@@ -19,8 +19,6 @@ RequirementBody content is written with EARS (Easy Approach to Requirements Synt
 ```yaml
 Type: Functional
 Status: Draft
-Priority: Must
-Verification: Test
 ```
 
 - When [brake_pedal_status](=) is pressed, the controller shall set [brake_lamp_request](=) active.

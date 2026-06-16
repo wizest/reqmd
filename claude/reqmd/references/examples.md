@@ -14,8 +14,6 @@ Requirement document:
 ```yaml
 Type: Functional
 Status: Draft
-Priority: Must
-Verification: Test
 ```
 
 - When [ignition_status](=) is on and [brake_pedal_status](=) is pressed, the software shall activate [brake_lamp_request](=).
