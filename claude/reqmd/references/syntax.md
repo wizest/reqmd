@@ -11,6 +11,8 @@ Requirement documents may contain two section kinds:
 
 Requirement attributes are YAML blocks inside RequirementSection content. Do not add YAML attributes to `@.md` or `=.md`.
 
+RequirementBody content is written with EARS (Easy Approach to Requirements Syntax) style requirement statements. Use a clear subject and response, and put triggers, states, options, or exception conditions at the front of the sentence when they apply.
+
 ````markdown
 ## [SW_BLC_PEDAL_ON](@) Brake pedal pressed handling
 
@@ -21,7 +23,7 @@ Priority: Must
 Verification: Test
 ```
 
-- The controller shall set [brake_lamp_request](=) active when [brake_pedal_status](=) is pressed.
+- When [brake_pedal_status](=) is pressed, the controller shall set [brake_lamp_request](=) active.
 
 ## Notes
 

@@ -12,6 +12,8 @@ example/
 
 각 경로는 요구사항 문서, `@.md` 식별자 색인, `=.md` 도움자 색인을 포함합니다. 식별자는 `SCREAMING_SNAKE_CASE`, 도움자는 `snake_case`를 사용합니다.
 
+요구사항 본문은 EARS(Easy Approach to Requirements Syntax) 규칙을 적용하여 작성합니다. 조건, 사건, 상태, 옵션, 예외가 있는 요구사항은 해당 조건을 문장 앞에 두고 기대 응답을 뒤에 명확히 적습니다.
+
 요구사항 문서에는 두 종류의 섹션이 있습니다.
 
 - 요구사항 섹션(RequirementSection): `[IDENTIFIER](@)`로 시작하며 `@.md`, `=.md` 색인의 대상입니다.

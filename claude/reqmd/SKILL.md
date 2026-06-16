@@ -10,6 +10,7 @@ Use this skill when editing, validating, creating, or analyzing ReqMd requiremen
 ReqMd is normal Markdown with project conventions:
 
 - Requirement sections start with identifier links such as `## [SW_BLC_PEDAL_ON](@)`.
+- RequirementSection bodies use EARS-style requirement statements.
 - General sections do not start with identifiers and are not indexed.
 - Requirement attributes are YAML blocks inside requirement sections.
 - Identifier indexes are named `@.md`; helper indexes are named `=.md`.
@@ -34,6 +35,7 @@ ReqMd is normal Markdown with project conventions:
 - Identifiers use `SCREAMING_SNAKE_CASE`.
 - General helpers use `snake_case`.
 - Implementation helpers start with `=`, for example `[=BrakeLampReq](=)`, and preserve actual code/model names.
+- Write RequirementBody content with EARS-style conditions and responses, such as "When ...", "While ...", "Where ...", or "If ..., then ...".
 - Treat requirement sections as source of truth and indexes as derived traceability data.
 - Do not collect identifiers or helpers from GeneralSection content for indexes.
 - Do not rename identifiers or implementation helpers unless the user explicitly asks.

@@ -329,7 +329,7 @@ GeneralBody
 
 요구사항 제목(RequirementHeader)은 Markdown 제목 깊이(RequirementDepth), 식별자(Identifier), 선택적 부제목(SubTitle)으로 구성됩니다. 요구사항 본문(RequirementBody)은 EARS 규칙을 적용하여 요구사항의 의도, 조건, 기대 결과를 담는 Markdown 설명이며, 도움자(Helper)를 포함할 수 있습니다. 요구사항 속성(RequirementAttributes)은 YAML 코드블록으로 작성하는 속성자(Attribute) 목록입니다.
 
-EARS 규칙은 요구사항 본문(RequirementBody)의 자연어 문장을 검증 가능한 형태로 제한하기 위한 작성 규칙입니다. ReqMd는 EARS 자체를 별도 Markdown 문법으로 만들지 않고, 요구사항 문장을 다음 의도에 맞게 작성하도록 권장합니다.
+EARS(Easy Approach to Requirements Syntax) 규칙은 요구사항 본문(RequirementBody)의 자연어 문장을 검증 가능한 형태로 제한하기 위한 작성 규칙입니다. ReqMd는 EARS 자체를 별도 Markdown 문법으로 만들지 않고, 요구사항 문장을 다음 의도에 맞게 작성해야 합니다.
 
 - 보편 요구사항: 항상 적용되는 동작이나 제약을 작성합니다.
 - 이벤트 기반 요구사항: 특정 사건이 발생할 때의 응답을 작성합니다.

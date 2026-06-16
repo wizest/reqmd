@@ -81,6 +81,7 @@ Markdown 문법을 요구사항 문서에 맞도록 사용법을 제안 → **Re
 - 하나의 요구사항은 하나의 section을 구성한다.
 - 요구사항은 여러개의 **식별자** , **도움자** , **속성자** 를 포함할 수 있다.
 - 요구사항의 section 제목은 반드시 **식별자** 로 시작한다.
+- 요구사항 본문은 EARS(Easy Approach to Requirements Syntax) 규칙을 적용하여 조건과 기대 응답이 드러나도록 작성한다.
 - 요구사항은 subsection 으로 자식 요구사항 들을 포함할 수 있다.
 - 요구사항의 **관계** 정보는 **식별자색인** 의 해당 **식별자** section에 기술한다.
 - **도움자** 간 **연결** 정보는 **도움자색인** 의 해당 **도움자** section에 기술한다.
@@ -113,8 +114,8 @@ Priority: Must
 Verification: Test
 ```
 
-- 소프트웨어는 [ignition_status](=)가 켜짐 상태이고 [brake_pedal_status](=)가 눌림 상태이면
-  [brake_lamp_request](=)를 활성화해야 한다.
+- [ignition_status](=)가 켜짐 상태이고 [brake_pedal_status](=)가 눌림 상태인 경우,
+  소프트웨어는 [brake_lamp_request](=)를 활성화해야 한다.
 
 ````
  
@@ -501,7 +502,7 @@ Simulink 또는 Testcase 와 Requirement 를 연결
 ## 결론
 
 - ReqMd는 Markdown 문법을 확장하지 않고 요구사항 추적성을 표현한다.
-- 본문은 요구사항과 YAML 속성자의 원천이다.
+- 본문은 EARS 규칙을 적용한 요구사항과 YAML 속성자의 원천이다.
 - `@.md`, `=.md`는 링크 전용 색인이다.
 - 색인 링크는 fragment를 포함하여 IDE에서 정의 위치로 바로 이동할 수 있어야 한다.
 - 이 구조는 ReqIF 변환, 자동 검증, agentic coding skill의 기초 자료로 사용할 수 있다.

@@ -18,7 +18,7 @@ Priority: Must
 Verification: Test
 ```
 
-- The software shall activate [brake_lamp_request](=) when [ignition_status](=) is on and [brake_pedal_status](=) is pressed.
+- When [ignition_status](=) is on and [brake_pedal_status](=) is pressed, the software shall activate [brake_lamp_request](=).
 
 ## Notes
 
@@ -64,7 +64,7 @@ Before:
 ````markdown
 ## [SW_BLC_PEDAL_ON](@) Brake pedal pressed handling
 
-- The software shall set [brake_lamp_request](=) active.
+- When [brake_pedal_status](=) is pressed, the software shall set [brake_lamp_request](=) active.
 
 ## Notes
 

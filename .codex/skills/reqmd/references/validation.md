@@ -33,6 +33,7 @@ Run `scripts/validate_reqmd.py` when possible. Use this checklist for manual rev
 ## Quality
 
 - One requirement should express one verifiable behavior or constraint.
+- RequirementBody statements should follow EARS-style structure with a clear condition, trigger, state, option, or exception when applicable, plus the expected response.
 - Avoid vague words such as "appropriate", "quickly", "sufficiently", and "as needed".
 - Include numeric limits, state conditions, timing, and exception behavior when required for verification.
 - Avoid over-constraining implementation in software requirements unless the constraint is intentional.

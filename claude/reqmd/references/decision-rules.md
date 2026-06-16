@@ -3,6 +3,7 @@
 Apply these rules when the request or documents are ambiguous.
 
 - Treat RequirementSection content as source of truth; treat `@.md` and `=.md` as derived indexes.
+- Write RequirementBody content in EARS style before updating derived indexes.
 - Treat GeneralSection content as explanatory text, not index input.
 - If a body and an index disagree, update the index or report the conflict.
 - Do not add YAML attributes to index files.

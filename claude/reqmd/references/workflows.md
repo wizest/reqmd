@@ -7,7 +7,7 @@ Use these procedures when editing ReqMd documents.
 1. Choose the requirement path and document.
 2. Create a stable `SCREAMING_SNAKE_CASE` identifier.
 3. Add one RequirementSection whose heading starts with `[IDENTIFIER](@)`.
-4. Write one verifiable behavior or constraint in the RequirementBody.
+4. Write one verifiable EARS-style behavior or constraint in the RequirementBody.
 5. Add helper links for concepts, signals, states, variables, tests, or model items.
 6. Add YAML attributes as RequirementAttributes inside the RequirementSection.
 7. Add or update the identifier section in `@.md`.

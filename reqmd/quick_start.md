@@ -35,8 +35,8 @@ Priority: Must
 Verification: Test
 ```
 
-- 제동 제어기는 [brake_pedal_status](=)가 눌림 상태이면 [brake_lamp_request](=)를 활성화해야 합니다.
-- 제동 제어기는 [brake_pedal_status](=)가 해제 상태이면 [brake_lamp_request](=)를 비활성화해야 합니다.
+- [brake_pedal_status](=)가 눌림 상태인 경우, 제동 제어기는 [brake_lamp_request](=)를 활성화해야 합니다.
+- [brake_pedal_status](=)가 해제 상태인 경우, 제동 제어기는 [brake_lamp_request](=)를 비활성화해야 합니다.
 
 ## 배경 설명
 
@@ -49,6 +49,7 @@ Verification: Test
 - 일반 도움자는 `snake_case`를 사용합니다.
 - 구현 도움자는 `[=ActualName](=)`처럼 표시 텍스트를 `=`로 시작하고 실제 코드, 모델, 포트 이름을 보존합니다.
 - 일반 섹션은 색인 생성, 색인 검증, 추적성 계산의 대상이 아닙니다.
+- 요구사항 본문은 EARS(Easy Approach to Requirements Syntax) 규칙을 적용하여 조건과 기대 응답이 드러나도록 작성합니다.
 - 검증 가능한 동작이 여러 개면 요구사항 섹션을 나눕니다.
 
 ## 3. 식별자 색인 작성하기
@@ -99,6 +100,7 @@ Verification: Test
 - `@.md`, `=.md`의 제목 링크가 원문 섹션 fragment를 정확히 가리키는가?
 - `@.md`, `=.md`의 목록 링크가 대상 색인 섹션 fragment를 정확히 가리키는가?
 - 색인 파일에 YAML 코드블록이 없는가?
+- 요구사항 본문이 EARS 규칙에 따라 조건과 기대 응답을 구분해 표현하는가?
 - 요구사항 하나가 하나의 검증 가능한 동작 또는 제약을 표현하는가?
 
 ## 6. 최소 템플릿
@@ -116,7 +118,7 @@ Verification: Test
 Variant: Common
 ```
 
-- 시스템은 [target](=)을 조건에 따라 기대 상태로 만들어야 합니다.
+- 조건이 성립하는 경우, 시스템은 [target](=)을 기대 상태로 만들어야 합니다.
 ````
 
 `@.md`:
