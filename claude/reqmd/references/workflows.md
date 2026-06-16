@@ -6,33 +6,36 @@ Use these procedures when editing ReqMd documents.
 
 1. Choose the requirement path and document.
 2. Create a stable `SCREAMING_SNAKE_CASE` identifier.
-3. Write one verifiable behavior or constraint per requirement section.
-4. Add helper links for concepts, signals, states, variables, tests, or model items.
-5. Add YAML attributes in the requirement body.
-6. Add or update the identifier section in `@.md`.
-7. Add or update helper sections in `=.md`.
-8. Use fragment links for index-to-index links.
-9. Run validation.
+3. Add one RequirementSection whose heading starts with `[IDENTIFIER](@)`.
+4. Write one verifiable behavior or constraint in the RequirementBody.
+5. Add helper links for concepts, signals, states, variables, tests, or model items.
+6. Add YAML attributes as RequirementAttributes inside the RequirementSection.
+7. Add or update the identifier section in `@.md`.
+8. Add or update helper sections in `=.md`.
+9. Use fragment links for index-to-index links.
+10. Run validation.
 
 ## Edit Requirement
 
-1. Locate the requirement section by identifier.
+1. Locate the RequirementSection by identifier.
 2. Preserve the identifier unless the user explicitly requests a rename.
 3. Update body text and YAML attributes.
-4. Re-scan helper links in the section.
-5. Add missing helper index sections and source links.
-6. Review related identifier index links for design/test impact.
-7. Report links that are uncertain instead of deleting them silently.
+4. Re-scan helper links in the RequirementSection only.
+5. Do not collect helper links from GeneralSection content.
+6. Add missing helper index sections and source links.
+7. Review related identifier index links for design/test impact.
+8. Report uncertain links instead of deleting them silently.
 
 ## Update Indexes
 
-1. Collect requirement identifiers from headings.
-2. Collect helper links from requirement bodies.
-3. Ensure `@.md` and `=.md` exist in each requirement path.
-4. Add missing sections with source document links.
-5. Preserve existing semantic links unless clearly obsolete.
-6. Rewrite index links to include fragments when missing.
-7. Keep indexes free of YAML blocks.
+1. Collect requirement identifiers from RequirementSection headings.
+2. Collect helper links from RequirementSection bodies.
+3. Skip GeneralSection content.
+4. Ensure `@.md` and `=.md` exist in each requirement path.
+5. Add missing sections with source document links.
+6. Preserve existing semantic links unless clearly obsolete.
+7. Rewrite index links to include fragments when missing.
+8. Keep indexes free of YAML blocks.
 
 ## Analyze Impact
 
@@ -47,7 +50,7 @@ Use these procedures when editing ReqMd documents.
 Run:
 
 ```powershell
-python claude\reqmd\scripts\validate_reqmd.py reqmd
+python .codex\skills\reqmd\scripts\validate_reqmd.py reqmd
 ```
 
 Use the project root or a specific requirement root as the argument.

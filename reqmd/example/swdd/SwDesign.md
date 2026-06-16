@@ -1,5 +1,10 @@
 ﻿# Software Detailed Design
 
+## 문서 개요
+
+이 일반 섹션은 설계 문서의 구성 방식을 설명합니다. 식별자로 시작하지 않으므로 색인 대상이 아닙니다.
+
+
 ## [SWDD_BLC_INPUT_PROCESSING](@) 브레이크 입력 처리
 
 ```yaml

@@ -6,7 +6,7 @@ Use these as compact before/after patterns.
 
 User request: "Add a software requirement for brake lamp activation when the pedal is pressed."
 
-Requirement body:
+Requirement document:
 
 ````markdown
 ## [SW_BLC_PEDAL_ON](@) Brake pedal pressed handling
@@ -19,6 +19,10 @@ Verification: Test
 ```
 
 - The software shall activate [brake_lamp_request](=) when [ignition_status](=) is on and [brake_pedal_status](=) is pressed.
+
+## Notes
+
+This GeneralSection is not indexed.
 ````
 
 Identifier index:
@@ -52,6 +56,29 @@ After:
 - [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
 - [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
 ```
+
+## Ignore GeneralSection Helpers
+
+Before:
+
+````markdown
+## [SW_BLC_PEDAL_ON](@) Brake pedal pressed handling
+
+- The software shall set [brake_lamp_request](=) active.
+
+## Notes
+
+- [draft_signal_name](=) is only a note and is not indexed.
+````
+
+After:
+
+```markdown
+## [brake_lamp_request](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
+
+```
+
+Do not create a `=.md` section for `draft_signal_name` unless it appears in a RequirementSection or the user explicitly promotes it to a requirement/design/test helper.
 
 ## Remove Index YAML
 

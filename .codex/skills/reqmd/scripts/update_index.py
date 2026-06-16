@@ -9,6 +9,7 @@ from pathlib import Path
 
 
 ID_HEADING_RE = re.compile(r"^(#{1,6})\s+\[([A-Z][A-Z0-9_]*)\]\((?:@|[^)]*/@)(?:#[^)]+)?\)")
+HEADING_RE = re.compile(r"^#{1,6}\s+")
 HELPER_LINK_RE = re.compile(r"\[([^\]]+)\]\((?:=|[^)]*/=)(?:#[^)]+)?\)")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 FENCE_RE = re.compile(r"^\s*```")
@@ -59,6 +60,10 @@ def collect_helpers(doc: Path) -> list[tuple[str, str]]:
         if m:
             current_req = m.group(2)
             current_anchor = anchor(heading_text(line))
+            continue
+        if HEADING_RE.match(line):
+            current_req = None
+            current_anchor = None
             continue
         if not current_req or not current_anchor:
             continue

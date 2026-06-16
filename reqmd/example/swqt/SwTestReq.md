@@ -1,5 +1,10 @@
 ﻿# Software Qualification Test Requirements
 
+## 문서 개요
+
+이 일반 섹션은 테스트 요구사항 문서의 검증 범위를 설명합니다. 식별자로 시작하지 않으므로 색인 대상이 아닙니다.
+
+
 ## [SWQT_BLC_PEDAL_ON_001](@) 브레이크 페달 눌림 테스트
 
 ```yaml
