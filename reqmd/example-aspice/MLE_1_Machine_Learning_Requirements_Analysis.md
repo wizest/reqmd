@@ -1,4 +1,4 @@
-# [MLE_1_PROCESS](@) Machine Learning Requirements Analysis
+# [MLE_1_PROCESS](@.md#mle_1_process) Machine Learning Requirements Analysis
 
 
 Source: Automotive SPICE PAM v4.0, section MLE.1 Machine Learning Requirements Analysis.
@@ -18,7 +18,7 @@ The purpose is to refine the machine learning-related software requirements into
 
 ## Base practices
 
-### [MLE_1_BP_1](@) Specify ML requirements
+### [MLE_1_BP_1](@.md#mle_1_bp_1) Specify ML requirements
 
 ```yaml
 Type: BasePractice
@@ -26,9 +26,9 @@ Process: MLE.1
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify ML requirements. The practice shall produce or update [wp_17_00_requirement](=), [wp_17_54_requirement_attribute](=), [wp_13_52_communication_evidence](=), [wp_13_51_consistency_evidence](=), [wp_15_51_analysis_results](=).
+When implementing this base practice, the organization shall specify ML requirements. The practice shall produce or update [wp_17_00_requirement](=.md#wp_17_00_requirement), [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
 
-### [MLE_1_BP_2](@) Structure ML requirements
+### [MLE_1_BP_2](@.md#mle_1_bp_2) Structure ML requirements
 
 ```yaml
 Type: BasePractice
@@ -36,9 +36,9 @@ Process: MLE.1
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall structure ML requirements. The practice shall produce or update [wp_17_00_requirement](=), [wp_17_54_requirement_attribute](=), [wp_13_52_communication_evidence](=), [wp_13_51_consistency_evidence](=), [wp_15_51_analysis_results](=).
+When implementing this base practice, the organization shall structure ML requirements. The practice shall produce or update [wp_17_00_requirement](=.md#wp_17_00_requirement), [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
 
-### [MLE_1_BP_3](@) Analyze ML requirements
+### [MLE_1_BP_3](@.md#mle_1_bp_3) Analyze ML requirements
 
 ```yaml
 Type: BasePractice
@@ -46,9 +46,9 @@ Process: MLE.1
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall analyze ML requirements. The practice shall produce or update [wp_17_00_requirement](=), [wp_17_54_requirement_attribute](=), [wp_13_52_communication_evidence](=), [wp_13_51_consistency_evidence](=), [wp_15_51_analysis_results](=).
+When implementing this base practice, the organization shall analyze ML requirements. The practice shall produce or update [wp_17_00_requirement](=.md#wp_17_00_requirement), [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
 
-### [MLE_1_BP_4](@) Analyze the impact on the ML operating environment
+### [MLE_1_BP_4](@.md#mle_1_bp_4) Analyze the impact on the ML operating environment
 
 ```yaml
 Type: BasePractice
@@ -56,9 +56,9 @@ Process: MLE.1
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall analyze the impact on the ML operating environment. The practice shall produce or update [wp_17_00_requirement](=), [wp_17_54_requirement_attribute](=), [wp_13_52_communication_evidence](=), [wp_13_51_consistency_evidence](=), [wp_15_51_analysis_results](=).
+When implementing this base practice, the organization shall analyze the impact on the ML operating environment. The practice shall produce or update [wp_17_00_requirement](=.md#wp_17_00_requirement), [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
 
-### [MLE_1_BP_5](@) Ensure consistency and establish bidirectional traceability
+### [MLE_1_BP_5](@.md#mle_1_bp_5) Ensure consistency and establish bidirectional traceability
 
 ```yaml
 Type: BasePractice
@@ -66,9 +66,9 @@ Process: MLE.1
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update [wp_17_00_requirement](=), [wp_17_54_requirement_attribute](=), [wp_13_52_communication_evidence](=), [wp_13_51_consistency_evidence](=), [wp_15_51_analysis_results](=).
+When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update [wp_17_00_requirement](=.md#wp_17_00_requirement), [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
 
-### [MLE_1_BP_6](@) Communicate agreed ML requirements and impact on the operating environment
+### [MLE_1_BP_6](@.md#mle_1_bp_6) Communicate agreed ML requirements and impact on the operating environment
 
 ```yaml
 Type: BasePractice
@@ -76,7 +76,7 @@ Process: MLE.1
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall communicate agreed ML requirements and impact on the operating environment. The practice shall produce or update [wp_17_00_requirement](=), [wp_17_54_requirement_attribute](=), [wp_13_52_communication_evidence](=), [wp_13_51_consistency_evidence](=), [wp_15_51_analysis_results](=).
+When implementing this base practice, the organization shall communicate agreed ML requirements and impact on the operating environment. The practice shall produce or update [wp_17_00_requirement](=.md#wp_17_00_requirement), [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
 
 
 

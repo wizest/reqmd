@@ -1,4 +1,4 @@
-# [SUP_8_PROCESS](@) Configuration Management
+# [SUP_8_PROCESS](@.md#sup_8_process) Configuration Management
 
 
 Source: Automotive SPICE PAM v4.0, section SUP.8 Configuration Management.
@@ -20,7 +20,7 @@ The purpose of the Configuration Management Process is to establish and maintain
 
 ## Base practices
 
-### [SUP_8_BP_1](@) Identify configuration items
+### [SUP_8_BP_1](@.md#sup_8_bp_1) Identify configuration items
 
 ```yaml
 Type: BasePractice
@@ -28,9 +28,9 @@ Process: SUP.8
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify configuration items. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall identify configuration items. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_2](@) Define configuration item properties
+### [SUP_8_BP_2](@.md#sup_8_bp_2) Define configuration item properties
 
 ```yaml
 Type: BasePractice
@@ -38,9 +38,9 @@ Process: SUP.8
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall define configuration item properties. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall define configuration item properties. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_3](@) Establish configuration management
+### [SUP_8_BP_3](@.md#sup_8_bp_3) Establish configuration management
 
 ```yaml
 Type: BasePractice
@@ -48,9 +48,9 @@ Process: SUP.8
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall establish configuration management. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall establish configuration management. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_4](@) Control modifications
+### [SUP_8_BP_4](@.md#sup_8_bp_4) Control modifications
 
 ```yaml
 Type: BasePractice
@@ -58,9 +58,9 @@ Process: SUP.8
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall control modifications. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall control modifications. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_5](@) Establish baselines
+### [SUP_8_BP_5](@.md#sup_8_bp_5) Establish baselines
 
 ```yaml
 Type: BasePractice
@@ -68,9 +68,9 @@ Process: SUP.8
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall establish baselines. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall establish baselines. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_6](@) Summarize and communicate configuration status
+### [SUP_8_BP_6](@.md#sup_8_bp_6) Summarize and communicate configuration status
 
 ```yaml
 Type: BasePractice
@@ -78,9 +78,9 @@ Process: SUP.8
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall summarize and communicate configuration status. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall summarize and communicate configuration status. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_7](@) Ensure completeness and consistency
+### [SUP_8_BP_7](@.md#sup_8_bp_7) Ensure completeness and consistency
 
 ```yaml
 Type: BasePractice
@@ -88,9 +88,9 @@ Process: SUP.8
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall ensure completeness and consistency. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall ensure completeness and consistency. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
-### [SUP_8_BP_8](@) Verify backup and recovery mechanisms availability
+### [SUP_8_BP_8](@.md#sup_8_bp_8) Verify backup and recovery mechanisms availability
 
 ```yaml
 Type: BasePractice
@@ -98,7 +98,7 @@ Process: SUP.8
 BasePractice: BP8
 ```
 
-When implementing this base practice, the organization shall verify backup and recovery mechanisms availability. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=), [wp_01_52_configuration_item_list](=), [wp_16_03_configuration_management_system](=), [wp_13_08_baseline](=), [wp_15_56_configuration_status](=), [wp_13_51_consistency_evidence](=), [wp_06_52_backup_and_recovery_mechanism_information](=).
+When implementing this base practice, the organization shall verify backup and recovery mechanisms availability. The practice shall produce or update [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria), [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list), [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system), [wp_13_08_baseline](=.md#wp_13_08_baseline), [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information).
 
 
 

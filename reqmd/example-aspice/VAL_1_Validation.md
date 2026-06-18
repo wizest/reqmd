@@ -1,4 +1,4 @@
-# [VAL_1_PROCESS](@) Validation
+# [VAL_1_PROCESS](@.md#val_1_process) Validation
 
 
 Source: Automotive SPICE PAM v4.0, section VAL.1 Validation.
@@ -16,7 +16,7 @@ The purpose is to provide evidence that the end product, allowing direct end use
 
 ## Base practices
 
-### [VAL_1_BP_1](@) Specify validation measures for product validation
+### [VAL_1_BP_1](@.md#val_1_bp_1) Specify validation measures for product validation
 
 ```yaml
 Type: BasePractice
@@ -24,9 +24,9 @@ Process: VAL.1
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify validation measures for product validation. The practice shall produce or update [wp_08_59_validation_measure](=), [wp_08_57_validation_measure_selection_set](=), [wp_13_24_validation_results](=), [wp_13_51_consistency_evidence](=), [wp_13_52_communication_evidence](=).
+When implementing this base practice, the organization shall specify validation measures for product validation. The practice shall produce or update [wp_08_59_validation_measure](=.md#wp_08_59_validation_measure), [wp_08_57_validation_measure_selection_set](=.md#wp_08_57_validation_measure_selection_set), [wp_13_24_validation_results](=.md#wp_13_24_validation_results), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
 
-### [VAL_1_BP_2](@) Select validation measures
+### [VAL_1_BP_2](@.md#val_1_bp_2) Select validation measures
 
 ```yaml
 Type: BasePractice
@@ -34,9 +34,9 @@ Process: VAL.1
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall select validation measures. The practice shall produce or update [wp_08_59_validation_measure](=), [wp_08_57_validation_measure_selection_set](=), [wp_13_24_validation_results](=), [wp_13_51_consistency_evidence](=), [wp_13_52_communication_evidence](=).
+When implementing this base practice, the organization shall select validation measures. The practice shall produce or update [wp_08_59_validation_measure](=.md#wp_08_59_validation_measure), [wp_08_57_validation_measure_selection_set](=.md#wp_08_57_validation_measure_selection_set), [wp_13_24_validation_results](=.md#wp_13_24_validation_results), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
 
-### [VAL_1_BP_3](@) Perform validation and evaluate results
+### [VAL_1_BP_3](@.md#val_1_bp_3) Perform validation and evaluate results
 
 ```yaml
 Type: BasePractice
@@ -44,9 +44,9 @@ Process: VAL.1
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall perform validation and evaluate results. The practice shall produce or update [wp_08_59_validation_measure](=), [wp_08_57_validation_measure_selection_set](=), [wp_13_24_validation_results](=), [wp_13_51_consistency_evidence](=), [wp_13_52_communication_evidence](=).
+When implementing this base practice, the organization shall perform validation and evaluate results. The practice shall produce or update [wp_08_59_validation_measure](=.md#wp_08_59_validation_measure), [wp_08_57_validation_measure_selection_set](=.md#wp_08_57_validation_measure_selection_set), [wp_13_24_validation_results](=.md#wp_13_24_validation_results), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
 
-### [VAL_1_BP_4](@) Ensure consistency and establish bidirectional traceability
+### [VAL_1_BP_4](@.md#val_1_bp_4) Ensure consistency and establish bidirectional traceability
 
 ```yaml
 Type: BasePractice
@@ -54,9 +54,9 @@ Process: VAL.1
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update [wp_08_59_validation_measure](=), [wp_08_57_validation_measure_selection_set](=), [wp_13_24_validation_results](=), [wp_13_51_consistency_evidence](=), [wp_13_52_communication_evidence](=).
+When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update [wp_08_59_validation_measure](=.md#wp_08_59_validation_measure), [wp_08_57_validation_measure_selection_set](=.md#wp_08_57_validation_measure_selection_set), [wp_13_24_validation_results](=.md#wp_13_24_validation_results), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
 
-### [VAL_1_BP_5](@) Summarize and communicate results
+### [VAL_1_BP_5](@.md#val_1_bp_5) Summarize and communicate results
 
 ```yaml
 Type: BasePractice
@@ -64,7 +64,7 @@ Process: VAL.1
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update [wp_08_59_validation_measure](=), [wp_08_57_validation_measure_selection_set](=), [wp_13_24_validation_results](=), [wp_13_51_consistency_evidence](=), [wp_13_52_communication_evidence](=).
+When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update [wp_08_59_validation_measure](=.md#wp_08_59_validation_measure), [wp_08_57_validation_measure_selection_set](=.md#wp_08_57_validation_measure_selection_set), [wp_13_24_validation_results](=.md#wp_13_24_validation_results), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
 
 
 

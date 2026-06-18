@@ -19,6 +19,8 @@ Process-area files such as `SYS_2_System_Requirements_Analysis.md`, `SWE_1_Softw
 
 `WP_Information_Items.md` contains work product information item sections.
 
+[`Stakeholder_Requirement_Workflow.md`](Stakeholder_Requirement_Workflow.md) describes the customer stakeholder requirement workflow from elicitation to final product delivery.
+
 When editing these files, update the derived indexes with:
 
 ```powershell
