@@ -15,6 +15,7 @@ ReqMd is normal Markdown with project conventions:
 - Requirement attributes are YAML blocks inside requirement sections.
 - Identifier indexes are named `@.md`; helper indexes are named `=.md`.
 - Index files contain headings and link lists only; do not add YAML attributes to index files.
+- Identifier index headings link to source requirement sections; helper index headings are plain helper names without links.
 
 ## Workflow
 
@@ -43,11 +44,14 @@ ReqMd is normal Markdown with project conventions:
 
 ## Index Fragment Rules
 
-Index files use two different fragment targets. Keep them separate.
+Index files use different fragment targets. Keep them separate.
 
-- Index section headings link to source document sections.
+- `@.md` index section headings link to source requirement sections.
   - Example: `## [SW_BLC_CONTROL](SwReq.md#sw_blc_control-brake-lamp-control-software)`
   - The fragment is based on the source requirement/design/test Markdown heading.
+- `=.md` index section headings are plain helper names and do not link to source sections.
+  - Example: `## brake_lamp_request`
+  - The fragment for links to this section is based on the helper heading text.
 - Index section body list items link to other index sections.
   - Example: `- [SYS_BLC_CONTROL](../sys/@#sys_blc_control)`
   - Example: `- [=BrakeLampReq](../swdd/=#brakelampreq)`
@@ -58,6 +62,6 @@ Index files use two different fragment targets. Keep them separate.
 ## Scripts
 
 - `scripts/validate_reqmd.py <root>` checks naming, index YAML bans, index fragments, duplicate index sections, and reachable index-section fragments.
-- `scripts/update_index.py <root>` adds missing index sections and source-section links inferred from requirement sections. It skips GeneralSection content.
+- `scripts/update_index.py <root>` adds missing index sections and usage links inferred from requirement sections. It skips GeneralSection content.
 
 Review script output before relying on it for traceability semantics.

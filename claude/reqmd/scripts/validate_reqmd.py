@@ -85,10 +85,17 @@ def collect_index_sections(root: Path) -> dict[Path, set[str]]:
         if not is_index(path):
             continue
         found: set[str] = set()
+        kind = index_kind(path)
         for line in read_text(path).splitlines():
-            m = re.match(r"^##\s+\[([^\]]+)\]\([^)]+\)", line)
-            if m:
-                found.add(slug(m.group(1)))
+            if kind == "@":
+                m = re.match(r"^##\s+\[([^\]]+)\]\([^)]+\)", line)
+                if m:
+                    found.add(slug(m.group(1)))
+            elif kind == "=":
+                m = re.match(r"^##\s+(.+?)\s*$", line)
+                if m:
+                    label = LINK_RE.sub(lambda link: link.group(1), m.group(1)).strip()
+                    found.add(slug(label))
         sections[path.resolve()] = found
     return sections
 
@@ -151,15 +158,25 @@ def validate_index_file(
     seen: set[str] = set()
     for lineno, line in enumerate(text.splitlines(), start=1):
         if line.startswith("## "):
-            m = re.match(r"^##\s+\[([^\]]+)\]\(([^)]+)\)\s*$", line)
-            if not m:
-                errors.append(f"{relative}:{lineno}: malformed index heading link")
-                continue
-            label, target = m.group(1), m.group(2)
-            if "#" not in target:
-                errors.append(f"{relative}:{lineno}: index heading link must include source document fragment")
-            if target.startswith(f"{kind}#"):
-                errors.append(f"{relative}:{lineno}: index heading must link to source document section")
+            if kind == "@":
+                m = re.match(r"^##\s+\[([^\]]+)\]\(([^)]+)\)\s*$", line)
+                if not m:
+                    errors.append(f"{relative}:{lineno}: malformed identifier index heading link")
+                    continue
+                label, target = m.group(1), m.group(2)
+                if "#" not in target:
+                    errors.append(f"{relative}:{lineno}: index heading link must include source document fragment")
+                if target.startswith("@#"):
+                    errors.append(f"{relative}:{lineno}: index heading must link to source document section")
+            else:
+                if re.match(r"^##\s+\[[^\]]+\]\([^)]+\)\s*$", line):
+                    errors.append(f"{relative}:{lineno}: helper index heading must not be a link")
+                    continue
+                m = re.match(r"^##\s+(.+?)\s*$", line)
+                if not m:
+                    errors.append(f"{relative}:{lineno}: malformed helper index heading")
+                    continue
+                label = m.group(1).strip()
             fragment = slug(label)
             if fragment in seen:
                 errors.append(f"{relative}:{lineno}: duplicate index section '{fragment}'")

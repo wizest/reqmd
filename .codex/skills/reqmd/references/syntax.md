@@ -46,7 +46,7 @@ This GeneralSection is not indexed.
 - Implementation helpers start with `=`, for example `[=BrakeLampReq](=)`.
 - Do not force implementation helpers into `snake_case`; preserve actual code/model names.
 - In index files, always include a fragment.
-- Index heading links point to source document sections.
+- Helper index headings are plain helper names without links.
 - Index body links point to other index sections, for example `=#brake_lamp_request` or `path/=#brakelampreq`.
 
 ## Attribute
@@ -64,6 +64,8 @@ File name: `@.md`.
 
 - [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
 - [SWQT_BLC_PEDAL_ON_001](../swqt/@#swqt_blc_pedal_on_001)
+- [brake_pedal_status](=#brake_pedal_status)
+- [brake_lamp_request](=#brake_lamp_request)
 ```
 
 ## Helper Index
@@ -71,8 +73,9 @@ File name: `@.md`.
 File name: `=.md`.
 
 ```markdown
-## [brake_lamp_request](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
+## brake_lamp_request
 
 - [=BrakeLampReq](../swdd/=#brakelampreq)
 - [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
+- [SW_BLC_PEDAL_ON](@#sw_blc_pedal_on)
 ```

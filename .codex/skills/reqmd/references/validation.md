@@ -15,9 +15,11 @@ Run `scripts/validate_reqmd.py` when possible. Use this checklist for manual rev
 ## Indexes
 
 - `@.md` section headings link to source requirement sections, for example `## [IDENTIFIER](SwReq.md#identifier-title)`.
-- `=.md` section headings link to source helper sections, for example `## [helper](SwReq.md#identifier-title)`.
+- `=.md` section headings are plain helper names without links, for example `## helper`.
 - Index body links point to other index sections and contain fragments, for example `../sys/@#sys_blc_control` or `../swdd/=#brakelampreq`.
-- Source document links use the actual identifier/helper text in the section heading.
+- `@.md` source document links use the actual identifier text in the section heading.
+- `@.md` sections include helper links used by that requirement when helpers appear in the RequirementSection body.
+- `=.md` sections include identifier links for RequirementSections that use that helper.
 - Duplicate index sections are not allowed.
 - Link fragments resolve to real index sections when the target index file exists.
 - Bare index links such as `@`, `=`, `path/@`, and `path/=` are not allowed inside index files.

@@ -72,22 +72,28 @@ ReqMd 자체의 문서 구조, 링크 문법, 색인 규칙, 검증 규칙, skil
 
 - [identifier_index](=)를 작성할 때, ReqMd는 파일 이름을 `@.md`로 지정해야 합니다.
 - [identifier_index](=)를 작성할 때, ReqMd는 요구사항 간 관계를 링크 목록으로 기록해야 합니다.
+- [identifier_index](=)를 작성할 때, ReqMd는 각 요구사항에서 사용한 [helper](=)를 링크 목록에 함께 기록해야 합니다.
 - [identifier_index](=) 섹션 제목을 작성할 때, ReqMd는 원문 [requirement_section](=)으로 이동하는 링크를 사용해야 합니다.
 - [identifier_index](=) 섹션 본문 목록을 작성할 때, ReqMd는 관계있는 다른 [identifier](=)의 색인 섹션으로 이동하는 링크를 사용해야 합니다.
+- [identifier_index](=) 섹션 본문 목록을 작성할 때, ReqMd는 해당 요구사항에서 사용한 [helper](=)의 색인 섹션으로 이동하는 링크를 사용할 수 있어야 합니다.
 - [identifier_index](=)를 해석할 때, ReqMd는 관계 타입을 강제하지 않아야 하며 관계 의미를 경로와 주변 맥락으로 해석할 수 있어야 합니다.
 
 ### [REQMD_HELPER_INDEX](@) 도움자 색인
 
 - [helper_index](=)를 작성할 때, ReqMd는 파일 이름을 `=.md`로 지정해야 합니다.
 - [helper_index](=)를 작성할 때, ReqMd는 도움자 간 연결을 링크 목록으로 기록해야 합니다.
-- [helper_index](=) 섹션 제목을 작성할 때, ReqMd는 원문 도움자 위치로 이동하는 링크를 사용해야 합니다.
+- [helper_index](=)를 작성할 때, ReqMd는 각 [helper](=)를 사용한 [identifier](=)를 링크 목록에 함께 기록해야 합니다.
+- [helper_index](=) 섹션 제목을 작성할 때, ReqMd는 링크 없이 [helper](=) 이름만 사용해야 합니다.
+- [helper_index](=) 섹션 제목을 작성할 때, ReqMd는 하나의 원문 도움자 위치로 이동하는 링크를 사용하지 않아야 합니다.
 - [helper_index](=) 섹션 본문 목록을 작성할 때, ReqMd는 연결되는 다른 [helper](=)의 색인 섹션으로 이동하는 링크를 사용해야 합니다.
+- [helper_index](=) 섹션 본문 목록을 작성할 때, ReqMd는 해당 [helper](=)를 사용한 [identifier](=)의 색인 섹션으로 이동하는 링크를 사용할 수 있어야 합니다.
 - [helper_index](=)를 해석할 때, ReqMd는 연결 타입을 강제하지 않아야 하며 연결 의미를 경로와 주변 맥락으로 해석할 수 있어야 합니다.
 
 ### [REQMD_INDEX_FRAGMENT_RULES](@) 색인 fragment 규칙
 
 - 색인 파일 안에 링크를 작성할 때, ReqMd는 bare link `@`, `=`, `path/@`, `path/=`를 사용하지 않아야 합니다.
-- 색인 섹션 제목의 fragment를 작성할 때, ReqMd는 원문 Markdown heading의 최종 표시 텍스트를 기준으로 작성해야 합니다.
+- [identifier_index](=) 섹션 제목의 원문 fragment를 작성할 때, ReqMd는 원문 Markdown heading의 최종 표시 텍스트를 기준으로 작성해야 합니다.
+- [helper_index](=) 섹션 제목의 fragment를 계산할 때, ReqMd는 링크 없는 도움자 이름을 기준으로 작성해야 합니다.
 - 색인 섹션 본문 목록의 fragment를 작성할 때, ReqMd는 대상 색인 섹션 heading의 표시 텍스트를 기준으로 작성해야 합니다.
 - fragment를 작성할 때, ReqMd는 VS Code가 이해하는 Markdown heading anchor 형식과 호환되도록 작성해야 합니다.
 

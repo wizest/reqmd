@@ -11,9 +11,11 @@ Use these procedures when editing ReqMd documents.
 5. Add helper links for concepts, signals, states, variables, tests, or model items.
 6. Add YAML attributes as RequirementAttributes inside the RequirementSection.
 7. Add or update the identifier section in `@.md`.
-8. Add or update helper sections in `=.md`.
-9. Use fragment links for index-to-index links.
-10. Run validation.
+8. Add helper links used by the requirement to the `@.md` identifier section.
+9. Add or update helper sections in `=.md` using plain helper headings.
+10. Add the requirement identifier link to each used helper section in `=.md`.
+11. Use fragment links for index-to-index links.
+12. Run validation.
 
 ## Edit Requirement
 
@@ -22,7 +24,7 @@ Use these procedures when editing ReqMd documents.
 3. Update body text and YAML attributes.
 4. Re-scan helper links in the RequirementSection only.
 5. Do not collect helper links from GeneralSection content.
-6. Add missing helper index sections and source links.
+6. Add missing helper index sections, helper usage links in `@.md`, and identifier usage links in `=.md`.
 7. Review related identifier index links for design/test impact.
 8. Report uncertain links instead of deleting them silently.
 
@@ -32,10 +34,12 @@ Use these procedures when editing ReqMd documents.
 2. Collect helper links from RequirementSection bodies.
 3. Skip GeneralSection content.
 4. Ensure `@.md` and `=.md` exist in each requirement path.
-5. Add missing sections with source document links.
-6. Preserve existing semantic links unless clearly obsolete.
-7. Rewrite index links to include fragments when missing.
-8. Keep indexes free of YAML blocks.
+5. Add missing `@.md` sections with source requirement links.
+6. Add missing `=.md` sections with plain helper headings.
+7. Add helper usage links to `@.md` and identifier usage links to `=.md`.
+8. Preserve existing semantic links unless clearly obsolete.
+9. Rewrite index links to include fragments when missing.
+10. Keep indexes free of YAML blocks.
 
 ## Analyze Impact
 

@@ -258,7 +258,7 @@ Verification: Test
 ```
 
 - When a file name is `@.md` or `=.md`, the server shall classify it as an [index_file](=) and parse index sections instead of requirement sections.
-- An [index_file](=) is either `@.md` for identifier relationships or `=.md` for helper relationships, and it contains index headings and relationship list links without YAML attributes.
+- An [index_file](=) is either `@.md` for identifier relationships and used helper links or `=.md` for helper relationships and using identifier links, and it contains index headings and list links without YAML attributes.
 
 ## [REQMD_LSP_INDEX_SECTION_PARSE](@) Index section parsing
 
@@ -270,8 +270,11 @@ Source: markdown_for_requirements.md
 Verification: Test
 ```
 
-- When parsing an [index_file](=), the server shall parse each level-two heading link as an [index_section](=) and each list item link under it as an index relationship.
-- An [index_section](=) is a level-two heading in an index file whose heading link points to a source document section and whose body links point to related index sections.
+- When parsing an `@.md` [index_file](=), the server shall parse each level-two heading link as an [index_section](=) and each list item link under it as an index relationship or used helper link.
+- When parsing an `=.md` [index_file](=), the server shall parse each level-two heading text as an [index_section](=) and each list item link under it as a helper relationship or using identifier link.
+- An `@.md` [index_section](=) is a level-two heading whose heading link points to a source requirement section.
+- An `=.md` [index_section](=) is a level-two heading whose heading text is the helper name and whose heading does not contain a link.
+- An [index_section](=) body contains list links that point to related index sections.
 
 ## [REQMD_LSP_VSCODE_ANCHOR_RULE](@) VS Code anchor rule
 
@@ -296,7 +299,7 @@ Source: markdown_for_requirements.md
 Verification: Test
 ```
 
-- When a document is parsed, the server shall update [workspace_index](=) records for identifiers, helpers, requirement sections, index sections, source links, and relationship links.
+- When a document is parsed, the server shall update [workspace_index](=) records for identifiers, helpers, requirement sections, index sections, identifier source links, relationship links, helper usage links, and identifier usage links.
 
 ## [REQMD_LSP_DUPLICATE_IDENTIFIER_MODEL](@) Duplicate identifier model
 
@@ -526,7 +529,8 @@ Source: markdown_for_requirements.md
 Verification: Test
 ```
 
-- When definition is requested on an [index_section](=) heading, the server shall return the source document section referenced by that heading link.
+- When definition is requested on an `@.md` [index_section](=) heading, the server shall return the source requirement section referenced by that heading link.
+- When definition is requested on an `=.md` [index_section](=) heading, the server shall not return a source document definition from the heading because helper index headings do not link to a unique source location.
 
 ## [REQMD_LSP_DEFINITION_INDEX_RELATIONSHIP](@) Index relationship definition
 
@@ -551,7 +555,7 @@ Verification: Test
 ```
 
 - When references are requested for an identifier, the server shall return locations for matching [identifier_link](=) occurrences in requirement documents and [identifier_index](=) files.
-- The [identifier_index](=) is the `@.md` index for a requirement path that maps requirement identifiers to source sections and related identifier index sections.
+- The [identifier_index](=) is the `@.md` index for a requirement path that maps requirement identifiers to source requirement sections, related identifier index sections, and helper index sections used by each requirement.
 
 ## [REQMD_LSP_REFERENCES_HELPER](@) Helper references
 
@@ -564,7 +568,7 @@ Verification: Test
 ```
 
 - When references are requested for a helper, the server shall return locations for matching [helper_link](=) occurrences in requirement documents and [helper_index](=) files.
-- The [helper_index](=) is the `=.md` index for a requirement path that maps helpers to source sections and related helper index sections.
+- The [helper_index](=) is the `=.md` index for a requirement path that maps helpers to related helper index sections and identifier index sections that use each helper.
 
 ## [REQMD_LSP_COMPLETION_IDENTIFIER_TEXT](@) Identifier text completion
 
@@ -636,8 +640,8 @@ Source: markdown_for_requirements.md
 Verification: Test
 ```
 
-- When the client requests [document_links](=), the server shall return document links for ReqMd identifier links, helper links, index source links, and index relationship links that resolve to a file location.
-- The [document_links](=) response makes ReqMd source links and relationship links clickable when their targets can be resolved to document locations.
+- When the client requests [document_links](=), the server shall return document links for ReqMd identifier links, helper links, `@.md` index source links, and index list links that resolve to a file location.
+- The [document_links](=) response makes ReqMd source links and index list links clickable when their targets can be resolved to document locations.
 
 ## [REQMD_LSP_CODE_ACTION_ADD_INDEX_SECTION](@) Add index section code action
 
@@ -722,8 +726,8 @@ Source: markdown_for_requirements.md
 Verification: Test
 ```
 
-- When the client executes [update_index_command](=), the server shall add missing identifier and helper [index_section](=) headings inferred from [requirement_section](=) content and shall preserve existing relationship list items.
-- The [update_index_command](=) is the server command for adding missing index sections inferred from requirement sections while preserving existing relationship links.
+- When the client executes [update_index_command](=), the server shall add missing identifier and helper [index_section](=) headings inferred from [requirement_section](=) content, add helper usage links to `@.md`, add identifier usage links to `=.md`, and preserve existing relationship list items.
+- The [update_index_command](=) is the server command for adding missing index sections and usage links inferred from requirement sections while preserving existing relationship links.
 
 ## [REQMD_LSP_EXECUTE_VALIDATE_WORKSPACE](@) Validate workspace command
 

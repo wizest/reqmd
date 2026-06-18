@@ -14,8 +14,8 @@ sw/
 ```
 
 - `SwReq.md`: 요구사항 섹션(RequirementSection)과 일반 섹션(GeneralSection)을 담는 문서입니다.
-- `@.md`: 식별자 관계를 기록하는 색인입니다.
-- `=.md`: 도움자 연결을 기록하는 색인입니다.
+- `@.md`: 식별자 관계와 식별자가 사용한 도움자를 기록하는 색인입니다.
+- `=.md`: 도움자 연결과 도움자를 사용한 식별자를 기록하는 색인입니다.
 
 색인 파일은 링크 목록만 포함합니다. YAML 속성자는 요구사항 섹션 안의 요구사항 속성(RequirementAttributes)에만 작성합니다.
 
@@ -63,28 +63,31 @@ Verification: Test
 
 - [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
 - [SWQT_BLC_PEDAL_ON_001](../swqt/@#swqt_blc_pedal_on_001)
+- [brake_pedal_status](=#brake_pedal_status)
+- [brake_lamp_request](=#brake_lamp_request)
 ````
 
 색인 섹션 제목의 링크는 원문 요구사항 섹션으로 이동해야 합니다. 이때 fragment는 원문 heading 전체를 기준으로 작성합니다.
 
-색인 섹션 본문의 목록 링크는 관계있는 식별자의 색인 섹션으로 이동해야 합니다. 목록 링크도 `@#sw_brake_lamp_request`, `../sys/@#sys_blc_pedal_on`처럼 대상 색인 heading 기준의 fragment를 포함합니다.
+색인 섹션 본문의 목록 링크는 관계있는 식별자의 색인 섹션이나 현재 요구사항에서 사용한 도움자의 색인 섹션으로 이동해야 합니다. 목록 링크도 `@#sw_brake_lamp_request`, `../sys/@#sys_blc_pedal_on`, `=#brake_lamp_request`처럼 대상 색인 heading 기준의 fragment를 포함합니다.
 
 관계는 한 방향만 기록해도 됩니다. 반대 방향 관계는 도구가 색인 전체를 분석하여 계산할 수 있어야 합니다.
 
 ## 4. 도움자 색인 작성하기
 
-`=.md`에는 요구사항 본문에 나온 도움자별 연결 정보를 적습니다.
+`=.md`에는 요구사항 본문에 나온 도움자별 연결 정보와 그 도움자를 사용한 식별자를 적습니다.
 
 ````markdown
 # Helper Index
 
-## [brake_lamp_request](SwReq.md#sw_brake_lamp_request-브레이크-램프-요청)
+## brake_lamp_request
 
 - [=BrakeLampReq](../swdd/=#brakelampreq)
 - [observed_brake_lamp_request](../swqt/=#observed_brake_lamp_request)
+- [SW_BRAKE_LAMP_REQUEST](@#sw_brake_lamp_request)
 ````
 
-도움자 색인 섹션 제목의 링크는 원문 도움자 위치로 이동해야 합니다. 색인 섹션 본문의 목록 링크는 연결되는 도움자의 색인 섹션으로 이동해야 하며, `=#brake_lamp_request`, `../swdd/=#brakelampreq`처럼 fragment를 포함합니다.
+도움자 색인 섹션 제목은 링크 없이 도움자 이름만 적습니다. 도움자는 여러 요구사항에서 사용될 수 있으므로 섹션 제목에서 하나의 원문 위치로 링크하지 않습니다. 색인 섹션 본문의 목록 링크는 연결되는 도움자나 이 도움자를 사용한 식별자의 색인 섹션으로 이동해야 하며, `=#brake_lamp_request`, `../swdd/=#brakelampreq`, `@#sw_brake_lamp_request`처럼 fragment를 포함합니다.
 
 ## 5. 작성 후 확인하기
 
@@ -97,7 +100,8 @@ Verification: Test
 - 구현 도움자가 실제 구현 이름을 보존하는가?
 - 같은 요구사항 경로 안에서 식별자가 중복되지 않는가?
 - 요구사항 본문에 나온 주요 도움자가 `=.md`에 있는가?
-- `@.md`, `=.md`의 제목 링크가 원문 섹션 fragment를 정확히 가리키는가?
+- `@.md`의 제목 링크가 원문 요구사항 섹션 fragment를 정확히 가리키는가?
+- `=.md`의 도움자 색인 섹션 제목에 링크가 없는가?
 - `@.md`, `=.md`의 목록 링크가 대상 색인 섹션 fragment를 정확히 가리키는가?
 - 색인 파일에 YAML 코드블록이 없는가?
 - 요구사항 본문이 EARS 규칙에 따라 조건과 기대 응답을 구분해 표현하는가?
@@ -127,14 +131,16 @@ Variant: Common
 ## [REQ_ID](Document.md#req_id-짧은-제목)
 
 - [RELATED_REQ_ID](../related/@#related_req_id)
+- [target](=#target)
 ```
 
 `=.md`:
 
 ```markdown
-## [target](Document.md#req_id-짧은-제목)
+## target
 
 - [mapped_target](../swdd/=#mapped_target)
+- [REQ_ID](@#req_id)
 ```
 
 ## 7. 다음 단계

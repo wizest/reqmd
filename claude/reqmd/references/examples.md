@@ -29,14 +29,18 @@ Identifier index:
 ## [SW_BLC_PEDAL_ON](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
 
 - [SYS_BLC_PEDAL_ON](../sys/@#sys_blc_pedal_on)
+- [ignition_status](=#ignition_status)
+- [brake_pedal_status](=#brake_pedal_status)
+- [brake_lamp_request](=#brake_lamp_request)
 ```
 
 Helper index:
 
 ```markdown
-## [brake_lamp_request](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
+## brake_lamp_request
 
 - [=BrakeLampReq](../swdd/=#brakelampreq)
+- [SW_BLC_PEDAL_ON](@#sw_blc_pedal_on)
 ```
 
 ## Repair Missing Fragment
@@ -72,7 +76,9 @@ Before:
 After:
 
 ```markdown
-## [brake_lamp_request](SwReq.md#sw_blc_pedal_on-brake-pedal-pressed-handling)
+## brake_lamp_request
+
+- [SW_BLC_PEDAL_ON](@#sw_blc_pedal_on)
 
 ```
 

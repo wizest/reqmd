@@ -35,18 +35,35 @@ def anchor(text: str) -> str:
     return re.sub(r"-+", "-", text)
 
 
-def collect_requirements(doc: Path) -> list[tuple[str, str]]:
-    found: list[tuple[str, str]] = []
+def collect_requirements(doc: Path) -> list[tuple[str, str, list[str]]]:
+    found: list[tuple[str, str, list[str]]] = []
+    current: tuple[str, str, list[str]] | None = None
+    in_fence = False
     for line in read_text(doc).splitlines():
+        if FENCE_RE.match(line):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
         m = ID_HEADING_RE.match(line)
         if m:
             req_id = m.group(2)
-            found.append((req_id, f"{doc.name}#{anchor(heading_text(line))}"))
+            current = (req_id, f"{doc.name}#{anchor(heading_text(line))}", [])
+            found.append(current)
+            continue
+        if HEADING_RE.match(line):
+            current = None
+            continue
+        if current:
+            for link in HELPER_LINK_RE.finditer(line):
+                helper = link.group(1)
+                if helper not in current[2]:
+                    current[2].append(helper)
     return found
 
 
-def collect_helpers(doc: Path) -> list[tuple[str, str]]:
-    helpers: dict[str, str] = {}
+def collect_helpers(doc: Path) -> list[str]:
+    helpers: dict[str, None] = {}
     current_req: str | None = None
     current_anchor: str | None = None
     in_fence = False
@@ -68,8 +85,8 @@ def collect_helpers(doc: Path) -> list[tuple[str, str]]:
         if not current_req or not current_anchor:
             continue
         for link in HELPER_LINK_RE.finditer(line):
-            helpers.setdefault(link.group(1), f"{doc.name}#{current_anchor}")
-    return list(helpers.items())
+            helpers.setdefault(link.group(1), None)
+    return list(helpers)
 
 
 def ensure_section(index: Path, kind: str, name: str, source: str) -> bool:
@@ -79,8 +96,15 @@ def ensure_section(index: Path, kind: str, name: str, source: str) -> bool:
         title = "Identifier Index" if kind == "@" else "Helper Index"
         text = f"# {title}\n"
 
-    heading_re = re.compile(rf"^##\s+\[{re.escape(name)}\]\([^)]+\)\s*$", re.MULTILINE)
-    heading = f"## [{name}]({source})"
+    if kind == "@":
+        heading_re = re.compile(rf"^##\s+\[{re.escape(name)}\]\([^)]+\)\s*$", re.MULTILINE)
+        heading = f"## [{name}]({source})"
+    else:
+        heading_re = re.compile(
+            rf"^##\s+(?:\[{re.escape(name)}\]\([^)]+\)|{re.escape(name)})\s*$",
+            re.MULTILINE,
+        )
+        heading = f"## {name}"
     changed = False
 
     match = heading_re.search(text)
@@ -99,6 +123,36 @@ def ensure_section(index: Path, kind: str, name: str, source: str) -> bool:
     return changed
 
 
+def ensure_section_link(index: Path, section_name: str, label: str, target: str) -> bool:
+    if not index.exists():
+        return False
+
+    text = read_text(index)
+    heading_re = re.compile(
+        rf"^##\s+(?:\[{re.escape(section_name)}\]\([^)]+\)|{re.escape(section_name)})\s*$",
+        re.MULTILINE,
+    )
+    match = heading_re.search(text)
+    if not match:
+        return False
+
+    link_line = f"- [{label}]({target})"
+    next_heading = re.search(r"^##\s+", text[match.end() :], re.MULTILINE)
+    section_end = match.end() + next_heading.start() if next_heading else len(text)
+    section = text[match.end() : section_end]
+    if re.search(rf"^-\s+\[{re.escape(label)}\]\({re.escape(target)}\)\s*$", section, re.MULTILINE):
+        return False
+
+    insert_at = section_end
+    while insert_at > match.end() and text[insert_at - 1] in "\r\n":
+        insert_at -= 1
+    suffix = text[section_end:].lstrip("\r\n")
+    separator = "\n\n" if suffix else "\n"
+    new_text = text[:insert_at].rstrip() + "\n" + link_line + separator + suffix
+    write_text(index, new_text.rstrip() + "\n")
+    return True
+
+
 def update(root: Path) -> list[str]:
     changes: list[str] = []
     for directory in sorted({p.parent for p in root.rglob("*.md") if p.name not in {"@.md", "=.md"}}):
@@ -108,11 +162,18 @@ def update(root: Path) -> list[str]:
         id_index = directory / "@.md"
         helper_index = directory / "=.md"
         for doc in docs:
-            for req_id, source in collect_requirements(doc):
+            for req_id, source, helpers in collect_requirements(doc):
                 if ensure_section(id_index, "@", req_id, source):
                     changes.append(f"updated {id_index}")
-            for helper, source in collect_helpers(doc):
-                if ensure_section(helper_index, "=", helper, source):
+                for helper in helpers:
+                    if ensure_section_link(id_index, req_id, helper, f"=#{anchor(helper)}"):
+                        changes.append(f"updated {id_index}")
+                    if ensure_section(helper_index, "=", helper, ""):
+                        changes.append(f"updated {helper_index}")
+                    if ensure_section_link(helper_index, helper, req_id, f"@#{anchor(req_id)}"):
+                        changes.append(f"updated {helper_index}")
+            for helper in collect_helpers(doc):
+                if ensure_section(helper_index, "=", helper, ""):
                     changes.append(f"updated {helper_index}")
     return changes
 
