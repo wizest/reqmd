@@ -26,10 +26,7 @@ BasePractice: BP1
 
 When implementing this base practice, the organization shall obtain stakeholder expectations and requests. The practice shall produce or update:
 
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 
 ### [SYS_1_BP_2](@.md#sys_1_bp_2) Agree on requirements
 
@@ -41,7 +38,6 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall agree on requirements. The practice shall produce or update:
 
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
@@ -57,8 +53,6 @@ BasePractice: BP3
 When implementing this base practice, the organization shall analyze stakeholder requirements changes. The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 
 ### [SYS_1_BP_4](@.md#sys_1_bp_4) Communicate requirements status
@@ -71,9 +65,7 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall communicate requirements status. The practice shall produce or update:
 
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 
 

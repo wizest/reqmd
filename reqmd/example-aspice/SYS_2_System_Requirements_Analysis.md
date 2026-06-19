@@ -29,10 +29,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall specify system requirements. The practice shall produce or update:
 
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SYS_2_BP_2](@.md#sys_2_bp_2) Structure system requirements
 
@@ -46,9 +42,6 @@ When implementing this base practice, the organization shall structure system re
 
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SYS_2_BP_3](@.md#sys_2_bp_3) Analyze system requirements
 
@@ -60,11 +53,8 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall analyze system requirements. The practice shall produce or update:
 
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SYS_2_BP_4](@.md#sys_2_bp_4) Analyze the impact on the system context
 
@@ -76,11 +66,7 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall analyze the impact on the system context. The practice shall produce or update:
 
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SYS_2_BP_5](@.md#sys_2_bp_5) Ensure consistency and establish bidirectional traceability
 
@@ -92,11 +78,7 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SYS_2_BP_6](@.md#sys_2_bp_6) Communicate agreed system requirements and impact on the system context
 
@@ -108,10 +90,6 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall communicate agreed system requirements and impact on the system context. The practice shall produce or update:
 
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 

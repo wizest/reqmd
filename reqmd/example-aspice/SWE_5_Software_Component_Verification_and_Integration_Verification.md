@@ -31,14 +31,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall specify software integration verification measures. The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_01_03_software_component](=.md#wp_01_03_software_component)
-- [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
 ### [SWE_5_BP_2](@.md#swe_5_bp_2) Specify verification measures for verifying software component behavior
 
@@ -51,14 +43,6 @@ BasePractice: BP2
 When implementing this base practice, the organization shall specify verification measures for verifying software component behavior. The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_01_03_software_component](=.md#wp_01_03_software_component)
-- [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
 ### [SWE_5_BP_3](@.md#swe_5_bp_3) Select verification measures
 
@@ -70,15 +54,7 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall select verification measures. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_01_03_software_component](=.md#wp_01_03_software_component)
-- [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
 ### [SWE_5_BP_4](@.md#swe_5_bp_4) Integrate software elements and perform integration verification
 
@@ -90,13 +66,8 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall integrate software elements and perform integration verification. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 - [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_01_03_software_component](=.md#wp_01_03_software_component)
 - [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
@@ -110,15 +81,8 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall perform software component verification. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_01_03_software_component](=.md#wp_01_03_software_component)
-- [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
 ### [SWE_5_BP_6](@.md#swe_5_bp_6) Ensure consistency and establish bidirectional traceability
 
@@ -130,15 +94,7 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_01_03_software_component](=.md#wp_01_03_software_component)
-- [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
 ### [SWE_5_BP_7](@.md#swe_5_bp_7) Summarize and communicate results
 
@@ -150,14 +106,6 @@ BasePractice: BP7
 
 When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_01_03_software_component](=.md#wp_01_03_software_component)
-- [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software)
 
 

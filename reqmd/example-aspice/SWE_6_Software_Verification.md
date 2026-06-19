@@ -28,11 +28,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall specify verification measures for software verification. The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_6_BP_2](@.md#swe_6_bp_2) Select verification measures
 
@@ -44,12 +39,7 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall select verification measures. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_6_BP_3](@.md#swe_6_bp_3) Verify the integrated software
 
@@ -61,12 +51,8 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall verify the integrated software. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_6_BP_4](@.md#swe_6_bp_4) Ensure consistency and establish bidirectional traceability
 
@@ -78,12 +64,7 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_6_BP_5](@.md#swe_6_bp_5) Summarize and communicate results
 
@@ -95,11 +76,6 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 

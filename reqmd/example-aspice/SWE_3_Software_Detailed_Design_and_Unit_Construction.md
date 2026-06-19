@@ -28,8 +28,6 @@ When implementing this base practice, the organization shall specify the static 
 
 - [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
 - [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_3_BP_2](@.md#swe_3_bp_2) Specify dynamic aspects of the detailed design
 
@@ -43,8 +41,6 @@ When implementing this base practice, the organization shall specify dynamic asp
 
 - [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
 - [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_3_BP_3](@.md#swe_3_bp_3) Develop software units
 
@@ -56,10 +52,7 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall develop software units. The practice shall produce or update:
 
-- [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
 - [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_3_BP_4](@.md#swe_3_bp_4) Ensure consistency and establish bidirectional traceability
 
@@ -71,10 +64,7 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
-- [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SWE_3_BP_5](@.md#swe_3_bp_5) Communicate agreed software detailed design and developed software units
 
@@ -86,9 +76,6 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall communicate agreed software detailed design and developed software units. The practice shall produce or update:
 
-- [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
-- [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 

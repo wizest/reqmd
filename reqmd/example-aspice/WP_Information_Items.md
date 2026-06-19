@@ -1103,7 +1103,7 @@ When [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package) i
   - installation instructions
   - release letter
 
-## [WP_11_05](@.md#wp_11_05) Software Unit Can be
+## [WP_11_05](@.md#wp_11_05) Software Unit
 
 ```yaml
 Type: WorkProduct
@@ -1111,7 +1111,7 @@ Source: Automotive SPICE PAM v4.0 Annex B
 InformationItem: 11-05
 ```
 
-When [wp_11_05_software_unit_can_be](=.md#wp_11_05_software_unit_can_be) is produced, the information item shall provide the characteristics defined for 11-05 Software Unit Can be.
+When [wp_11_05_software_unit](=.md#wp_11_05_software_unit) is produced, the information item shall provide the characteristics defined for 11-05 Software Unit.
 
 ### Characteristics
 
@@ -2221,4 +2221,3 @@ When [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
 - Defines Quality criteria (see 18-07) e.g., the relevant data sources, reliability and consistency of labelling, completeness against ML data requirementsv
 - Describes analysis activities of the data
 - Describes activities to ensure the quality of the data to avoid issues e.g., data bias, bad labeling
-

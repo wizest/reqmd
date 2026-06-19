@@ -27,10 +27,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall specify static aspects of the system architecture. The practice shall produce or update:
 
 - [wp_04_06_system_architecture](=.md#wp_04_06_system_architecture)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
 
 ### [SYS_3_BP_2](@.md#sys_3_bp_2) Specify dynamic aspects of the system architecture
 
@@ -43,10 +39,6 @@ BasePractice: BP2
 When implementing this base practice, the organization shall specify dynamic aspects of the system architecture. The practice shall produce or update:
 
 - [wp_04_06_system_architecture](=.md#wp_04_06_system_architecture)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
 
 ### [SYS_3_BP_3](@.md#sys_3_bp_3) Analyze system architecture
 
@@ -58,9 +50,6 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall analyze system architecture. The practice shall produce or update:
 
-- [wp_04_06_system_architecture](=.md#wp_04_06_system_architecture)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
 
@@ -74,11 +63,7 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_04_06_system_architecture](=.md#wp_04_06_system_architecture)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
 
 ### [SYS_3_BP_5](@.md#sys_3_bp_5) Communicate agreed system architecture
 
@@ -90,10 +75,6 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall communicate agreed system architecture. The practice shall produce or update:
 
-- [wp_04_06_system_architecture](=.md#wp_04_06_system_architecture)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
 
 

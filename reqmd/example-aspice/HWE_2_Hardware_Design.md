@@ -30,10 +30,6 @@ When implementing this base practice, the organization shall specify the hardwar
 
 - [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
 - [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
 - [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
 - [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
@@ -52,10 +48,6 @@ When implementing this base practice, the organization shall specify the hardwar
 
 - [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
 - [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
 - [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
 - [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
@@ -74,10 +66,6 @@ When implementing this base practice, the organization shall specify dynamic asp
 
 - [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
 - [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
 - [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
 - [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
@@ -94,17 +82,8 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall analyze the hardware architecture and the hardware detailed design. The practice shall produce or update:
 
-- [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
-- [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
-- [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
-- [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
-- [wp_03_54_hardware_production_data](=.md#wp_03_54_hardware_production_data)
-- [wp_04_56_hardware_element_interface](=.md#wp_04_56_hardware_element_interface)
 
 ### [HWE_2_BP_5](@.md#hwe_2_bp_5) Ensure consistency and establish bidirectional traceability
 
@@ -116,17 +95,7 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
-- [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
-- [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
-- [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
-- [wp_03_54_hardware_production_data](=.md#wp_03_54_hardware_production_data)
-- [wp_04_56_hardware_element_interface](=.md#wp_04_56_hardware_element_interface)
 
 ### [HWE_2_BP_6](@.md#hwe_2_bp_6) Communicate agreed hardware architecture and hardware detailed design
 
@@ -138,16 +107,10 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall communicate agreed hardware architecture and hardware detailed design. The practice shall produce or update:
 
-- [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
-- [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
 - [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
 - [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
 - [wp_03_54_hardware_production_data](=.md#wp_03_54_hardware_production_data)
-- [wp_04_56_hardware_element_interface](=.md#wp_04_56_hardware_element_interface)
 
 

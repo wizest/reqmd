@@ -27,10 +27,6 @@ BasePractice: BP1
 
 When implementing this base practice, the organization shall identify information needs. The practice shall produce or update:
 
-- [wp_03_03_benchmarking_data](=.md#wp_03_03_benchmarking_data)
-- [wp_03_04_customer_satisfaction_data](=.md#wp_03_04_customer_satisfaction_data)
-- [wp_03_06_process_performance_information](=.md#wp_03_06_process_performance_information)
-- [wp_07_51_measurement_result](=.md#wp_07_51_measurement_result)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MAN_6_BP_2](@.md#man_6_bp_2) Specify metrics
@@ -43,11 +39,7 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall specify metrics. The practice shall produce or update:
 
-- [wp_03_03_benchmarking_data](=.md#wp_03_03_benchmarking_data)
-- [wp_03_04_customer_satisfaction_data](=.md#wp_03_04_customer_satisfaction_data)
-- [wp_03_06_process_performance_information](=.md#wp_03_06_process_performance_information)
 - [wp_07_51_measurement_result](=.md#wp_07_51_measurement_result)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MAN_6_BP_3](@.md#man_6_bp_3) Collect and store metrics
 

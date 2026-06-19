@@ -29,7 +29,6 @@ When implementing this base practice, the organization shall identify sources of
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
-- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_2](@.md#man_5_bp_2) Identify potential undesirable events
 
@@ -42,8 +41,6 @@ BasePractice: BP2
 When implementing this base practice, the organization shall identify potential undesirable events. The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
-- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_3](@.md#man_5_bp_3) Determine risks
 
@@ -57,7 +54,6 @@ When implementing this base practice, the organization shall determine risks. Th
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
-- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_4](@.md#man_5_bp_4) Define risk treatment options
 
@@ -72,6 +68,7 @@ When implementing this base practice, the organization shall define risk treatme
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
 - [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
 
 ### [MAN_5_BP_5](@.md#man_5_bp_5) Define and perform risk treatment activities
 
@@ -86,6 +83,7 @@ When implementing this base practice, the organization shall define and perform 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
 - [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
 
 ### [MAN_5_BP_6](@.md#man_5_bp_6) Monitor risks
 
@@ -97,9 +95,9 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall monitor risks. The practice shall produce or update:
 
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
 - [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
 
 ### [MAN_5_BP_7](@.md#man_5_bp_7) Take corrective action
 
@@ -114,5 +112,6 @@ When implementing this base practice, the organization shall take corrective act
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
 - [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
 
 

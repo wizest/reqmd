@@ -28,9 +28,7 @@ BasePractice: BP1
 
 When implementing this base practice, the organization shall identify and record the change requests. The practice shall produce or update:
 
-- [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
 ### [SUP_10_BP_2](@.md#sup_10_bp_2) Analyze and assess change requests
 
@@ -44,7 +42,6 @@ When implementing this base practice, the organization shall analyze and assess 
 
 - [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
 ### [SUP_10_BP_3](@.md#sup_10_bp_3) Approve change requests before implementation
 
@@ -56,9 +53,7 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall approve change requests before implementation. The practice shall produce or update:
 
-- [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
 ### [SUP_10_BP_4](@.md#sup_10_bp_4) Establish bidirectional traceability
 
@@ -70,8 +65,6 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
 ### [SUP_10_BP_5](@.md#sup_10_bp_5) Confirm the implementation of change requests
@@ -84,9 +77,7 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall confirm the implementation of change requests. The practice shall produce or update:
 
-- [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
 ### [SUP_10_BP_6](@.md#sup_10_bp_6) Track change requests to closure
 
@@ -98,8 +89,6 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall track change requests to closure. The practice shall produce or update:
 
-- [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
 

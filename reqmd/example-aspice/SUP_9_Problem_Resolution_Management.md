@@ -28,7 +28,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall identify and record the problem. The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
-- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_2](@.md#sup_9_bp_2) Determine the cause and the impact of the problem
 
@@ -54,7 +53,6 @@ BasePractice: BP3
 When implementing this base practice, the organization shall authorize urgent resolution action. The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
-- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_4](@.md#sup_9_bp_4) Raise alert notifications
 
@@ -67,7 +65,6 @@ BasePractice: BP4
 When implementing this base practice, the organization shall raise alert notifications. The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
-- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_5](@.md#sup_9_bp_5) Initiate problem resolution
 
@@ -80,7 +77,6 @@ BasePractice: BP5
 When implementing this base practice, the organization shall initiate problem resolution. The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
-- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_6](@.md#sup_9_bp_6) Track problems to closure
 
@@ -93,7 +89,7 @@ BasePractice: BP6
 When implementing this base practice, the organization shall track problems to closure. The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
-- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
+- [wp_15_12_problem_status](=.md#wp_15_12_problem_status)
 
 ### [SUP_9_BP_7](@.md#sup_9_bp_7) Report the status of problem resolution activities
 
@@ -105,7 +101,6 @@ BasePractice: BP7
 
 When implementing this base practice, the organization shall report the status of problem resolution activities. The practice shall produce or update:
 
-- [wp_13_07_problem](=.md#wp_13_07_problem)
-- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
+- [wp_15_12_problem_status](=.md#wp_15_12_problem_status)
 
 

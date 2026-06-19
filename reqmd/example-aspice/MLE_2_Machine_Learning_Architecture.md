@@ -30,8 +30,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall develop ML architecture. The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
@@ -46,10 +44,7 @@ BasePractice: BP2
 When implementing this base practice, the organization shall determine hyperparameter ranges and initial values. The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MLE_2_BP_3](@.md#mle_2_bp_3) Analyze ML architectural elements
 
@@ -62,9 +57,6 @@ BasePractice: BP3
 When implementing this base practice, the organization shall analyze ML architectural elements. The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MLE_2_BP_4](@.md#mle_2_bp_4) Define interfaces of the ML architectural elements
@@ -78,10 +70,6 @@ BasePractice: BP4
 When implementing this base practice, the organization shall define interfaces of the ML architectural elements. The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MLE_2_BP_5](@.md#mle_2_bp_5) Define resource consumption objectives for the ML architectural elements
 
@@ -94,10 +82,6 @@ BasePractice: BP5
 When implementing this base practice, the organization shall define resource consumption objectives for the ML architectural elements. The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MLE_2_BP_6](@.md#mle_2_bp_6) Ensure consistency and establish bidirectional traceability
 
@@ -109,11 +93,7 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [MLE_2_BP_7](@.md#mle_2_bp_7) Communicate agreed ML architecture
 
@@ -125,10 +105,6 @@ BasePractice: BP7
 
 When implementing this base practice, the organization shall communicate agreed ML architecture. The practice shall produce or update:
 
-- [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 

@@ -29,10 +29,7 @@ BasePractice: BP1
 
 When implementing this base practice, the organization shall specify hardware requirements. The practice shall produce or update:
 
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [HWE_1_BP_2](@.md#hwe_1_bp_2) Structure hardware requirements
 
@@ -44,10 +41,8 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall structure hardware requirements. The practice shall produce or update:
 
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 
 ### [HWE_1_BP_3](@.md#hwe_1_bp_3) Analyze hardware requirements
 
@@ -59,8 +54,6 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall analyze hardware requirements. The practice shall produce or update:
 
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
@@ -74,9 +67,6 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall analyze the impact on the operating environment. The practice shall produce or update:
 
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [HWE_1_BP_5](@.md#hwe_1_bp_5) Ensure consistency and establish bidirectional traceability
@@ -89,10 +79,7 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [HWE_1_BP_6](@.md#hwe_1_bp_6) Communicate agreed hardware requirements and impact on the operating environment
 
@@ -105,8 +92,5 @@ BasePractice: BP6
 When implementing this base practice, the organization shall communicate agreed hardware requirements and impact on the operating environment. The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_17_00_requirement](=.md#wp_17_00_requirement)
-- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 

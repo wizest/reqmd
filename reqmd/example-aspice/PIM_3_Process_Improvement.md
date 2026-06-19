@@ -29,15 +29,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall establish commitment. The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
-- [wp_06_04_training_material](=.md#wp_06_04_training_material)
-- [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
-- [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
-- [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
-- [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
-- [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
 ### [PIM_3_BP_2](@.md#pim_3_bp_2) Identify improvement measures
 
@@ -49,16 +40,10 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall identify improvement measures. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
-- [wp_06_04_training_material](=.md#wp_06_04_training_material)
-- [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
-- [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
 - [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
-- [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
 ### [PIM_3_BP_3](@.md#pim_3_bp_3) Establish process improvement goals
 
@@ -70,14 +55,9 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall establish process improvement goals. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
-- [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
-- [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
 - [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
@@ -91,14 +71,9 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall prioritize improvements. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
-- [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
-- [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
 - [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
@@ -112,14 +87,9 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall define process improvement measures. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
-- [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
-- [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
 - [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
@@ -133,14 +103,9 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall implement process improvement measures. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
-- [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
-- [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
 - [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
@@ -154,16 +119,9 @@ BasePractice: BP7
 
 When implementing this base practice, the organization shall confirm process improvement. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
-- [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
-- [wp_10_00_process_description](=.md#wp_10_00_process_description)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
-- [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
-- [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
 ### [PIM_3_BP_8](@.md#pim_3_bp_8) Communicate results of improvement
 
@@ -175,15 +133,8 @@ BasePractice: BP8
 
 When implementing this base practice, the organization shall communicate results of improvement. The practice shall produce or update:
 
-- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
-- [wp_10_00_process_description](=.md#wp_10_00_process_description)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-- [wp_13_16_change_request](=.md#wp_13_16_change_request)
-- [wp_15_51_analysis_result](=.md#wp_15_51_analysis_result)
-- [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report)
-- [wp_15_16_improvement_opportunity](=.md#wp_15_16_improvement_opportunity)
-- [wp_16_06_process_repository](=.md#wp_16_06_process_repository)
 
 

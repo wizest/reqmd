@@ -32,11 +32,6 @@ When implementing this base practice, the organization shall identify configurat
 
 - [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
 - [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
-- [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
-- [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
 
 ### [SUP_8_BP_2](@.md#sup_8_bp_2) Define configuration item properties
 
@@ -48,13 +43,7 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall define configuration item properties. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
 - [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
-- [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
-- [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
 
 ### [SUP_8_BP_3](@.md#sup_8_bp_3) Establish configuration management
 
@@ -66,13 +55,8 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall establish configuration management. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
-- [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
 - [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
-- [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
+- [wp_14_01_change_history](=.md#wp_14_01_change_history)
 
 ### [SUP_8_BP_4](@.md#sup_8_bp_4) Control modifications
 
@@ -84,13 +68,8 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall control modifications. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
-- [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
 - [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
-- [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
+- [wp_14_01_change_history](=.md#wp_14_01_change_history)
 
 ### [SUP_8_BP_5](@.md#sup_8_bp_5) Establish baselines
 
@@ -102,13 +81,8 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall establish baselines. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
-- [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
 - [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
 - [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
 
 ### [SUP_8_BP_6](@.md#sup_8_bp_6) Summarize and communicate configuration status
 
@@ -120,13 +94,8 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall summarize and communicate configuration status. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
-- [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
-- [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
-- [wp_13_08_baseline](=.md#wp_13_08_baseline)
+- [wp_14_01_change_history](=.md#wp_14_01_change_history)
 - [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
 
 ### [SUP_8_BP_7](@.md#sup_8_bp_7) Ensure completeness and consistency
 
@@ -138,13 +107,9 @@ BasePractice: BP7
 
 When implementing this base practice, the organization shall ensure completeness and consistency. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
 - [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
-- [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
 - [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
 
 ### [SUP_8_BP_8](@.md#sup_8_bp_8) Verify backup and recovery mechanisms availability
 
@@ -156,12 +121,6 @@ BasePractice: BP8
 
 When implementing this base practice, the organization shall verify backup and recovery mechanisms availability. The practice shall produce or update:
 
-- [wp_18_53_configuration_item_selection_criteria](=.md#wp_18_53_configuration_item_selection_criteria)
-- [wp_01_52_configuration_item_list](=.md#wp_01_52_configuration_item_list)
-- [wp_16_03_configuration_management_system](=.md#wp_16_03_configuration_management_system)
-- [wp_13_08_baseline](=.md#wp_13_08_baseline)
-- [wp_15_56_configuration_status](=.md#wp_15_56_configuration_status)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_06_52_backup_and_recovery_mechanism_information](=.md#wp_06_52_backup_and_recovery_mechanism_information)
 
 

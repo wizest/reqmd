@@ -29,11 +29,6 @@ BasePractice: BP1
 When implementing this base practice, the organization shall specify verification measures for the verification against hardware design. The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [HWE_3_BP_2](@.md#hwe_3_bp_2) Ensure use of compliant samples
 
@@ -45,12 +40,8 @@ BasePractice: BP2
 
 When implementing this base practice, the organization shall ensure use of compliant samples. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [HWE_3_BP_3](@.md#hwe_3_bp_3) Select verification measures
 
@@ -62,12 +53,7 @@ BasePractice: BP3
 
 When implementing this base practice, the organization shall select verification measures. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [HWE_3_BP_4](@.md#hwe_3_bp_4) Verify hardware design
 
@@ -79,12 +65,8 @@ BasePractice: BP4
 
 When implementing this base practice, the organization shall verify hardware design. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [HWE_3_BP_5](@.md#hwe_3_bp_5) Ensure consistency and establish bidirectional traceability
 
@@ -96,12 +78,7 @@ BasePractice: BP5
 
 When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
-- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [HWE_3_BP_6](@.md#hwe_3_bp_6) Summarize and communicate results
 
@@ -113,11 +90,6 @@ BasePractice: BP6
 
 When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
 
-- [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
-- [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
-- [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
-- [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
-- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 
