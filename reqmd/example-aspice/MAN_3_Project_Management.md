@@ -27,7 +27,18 @@ Process: MAN.3
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall define the scope of work. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define the scope of work. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_2](@.md#man_3_bp_2) Define project life cycle
 
@@ -37,7 +48,18 @@ Process: MAN.3
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall define project life cycle. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define project life cycle. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_3](@.md#man_3_bp_3) Evaluate feasibility of the project
 
@@ -47,7 +69,18 @@ Process: MAN.3
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall evaluate feasibility of the project. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall evaluate feasibility of the project. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_4](@.md#man_3_bp_4) Define and monitor work packages
 
@@ -57,7 +90,18 @@ Process: MAN.3
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall define and monitor work packages. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define and monitor work packages. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_5](@.md#man_3_bp_5) Define and monitor project estimates and resources
 
@@ -67,7 +111,18 @@ Process: MAN.3
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall define and monitor project estimates and resources. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define and monitor project estimates and resources. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_6](@.md#man_3_bp_6) Define and monitor required skills, knowledge, and experience
 
@@ -77,7 +132,18 @@ Process: MAN.3
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall define and monitor required skills, knowledge, and experience. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define and monitor required skills, knowledge, and experience. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_7](@.md#man_3_bp_7) Define and monitor project interfaces and agreed commitments
 
@@ -87,7 +153,18 @@ Process: MAN.3
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall define and monitor project interfaces and agreed commitments. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define and monitor project interfaces and agreed commitments. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_8](@.md#man_3_bp_8) Define and monitor project schedule
 
@@ -97,7 +174,18 @@ Process: MAN.3
 BasePractice: BP8
 ```
 
-When implementing this base practice, the organization shall define and monitor project schedule. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall define and monitor project schedule. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_9](@.md#man_3_bp_9) Ensure consistency
 
@@ -107,7 +195,18 @@ Process: MAN.3
 BasePractice: BP9
 ```
 
-When implementing this base practice, the organization shall ensure consistency. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall ensure consistency. The practice shall produce or update:
+
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 ### [MAN_3_BP_10](@.md#man_3_bp_10) Review and report progress of the project
 
@@ -117,7 +216,17 @@ Process: MAN.3
 BasePractice: BP10
 ```
 
-When implementing this base practice, the organization shall review and report progress of the project. The practice shall produce or update [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work), [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis), [wp_14_10_work_package](=.md#wp_14_10_work_package), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path), [wp_08_56_schedule](=.md#wp_08_56_schedule), [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list), [wp_15_06_project_status](=.md#wp_15_06_project_status).
+When implementing this base practice, the organization shall review and report progress of the project. The practice shall produce or update:
 
+- [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
+- [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
+- [wp_14_10_work_package](=.md#wp_14_10_work_package)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
+- [wp_08_56_schedule](=.md#wp_08_56_schedule)
+- [wp_14_50_stakeholder_groups_list](=.md#wp_14_50_stakeholder_groups_list)
+- [wp_15_06_project_status](=.md#wp_15_06_project_status)
 
 

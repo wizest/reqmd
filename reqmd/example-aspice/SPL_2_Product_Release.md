@@ -25,7 +25,13 @@ Process: SPL.2
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall define the functional content of releases. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall define the functional content of releases. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_2](@.md#spl_2_bp_2) Define release package
 
@@ -35,7 +41,13 @@ Process: SPL.2
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall define release package. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall define release package. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_3](@.md#spl_2_bp_3) Ensure unique identification of releases
 
@@ -45,7 +57,13 @@ Process: SPL.2
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall ensure unique identification of releases. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall ensure unique identification of releases. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_4](@.md#spl_2_bp_4) Build the release from items under configuration control
 
@@ -55,7 +73,13 @@ Process: SPL.2
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall build the release from items under configuration control. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall build the release from items under configuration control. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_5](@.md#spl_2_bp_5) Ensure release approval before delivery
 
@@ -65,7 +89,13 @@ Process: SPL.2
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall ensure release approval before delivery. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall ensure release approval before delivery. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_6](@.md#spl_2_bp_6) Provide a release note
 
@@ -75,7 +105,13 @@ Process: SPL.2
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall provide a release note. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall provide a release note. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_7](@.md#spl_2_bp_7) Communicate the type, service level and duration of support for a release
 
@@ -85,7 +121,13 @@ Process: SPL.2
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall communicate the type, service level and duration of support for a release. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall communicate the type, service level and duration of support for a release. The practice shall produce or update:
+
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### [SPL_2_BP_8](@.md#spl_2_bp_8) Deliver the release package to the intended customer
 
@@ -95,7 +137,12 @@ Process: SPL.2
 BasePractice: BP8
 ```
 
-When implementing this base practice, the organization shall deliver the release package to the intended customer. The practice shall produce or update [wp_11_03_release_note](=.md#wp_11_03_release_note), [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package), [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence), [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval), [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria).
+When implementing this base practice, the organization shall deliver the release package to the intended customer. The practice shall produce or update:
 
+- [wp_11_03_release_note](=.md#wp_11_03_release_note)
+- [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
+- [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
+- [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
+- [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 

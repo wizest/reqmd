@@ -25,7 +25,10 @@ Process: SUP.9
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify and record the problem. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall identify and record the problem. The practice shall produce or update:
+
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_2](@.md#sup_9_bp_2) Determine the cause and the impact of the problem
 
@@ -35,7 +38,10 @@ Process: SUP.9
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall determine the cause and the impact of the problem. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall determine the cause and the impact of the problem. The practice shall produce or update:
+
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_3](@.md#sup_9_bp_3) Authorize urgent resolution action
 
@@ -45,7 +51,10 @@ Process: SUP.9
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall authorize urgent resolution action. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall authorize urgent resolution action. The practice shall produce or update:
+
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_4](@.md#sup_9_bp_4) Raise alert notifications
 
@@ -55,7 +64,10 @@ Process: SUP.9
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall raise alert notifications. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall raise alert notifications. The practice shall produce or update:
+
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_5](@.md#sup_9_bp_5) Initiate problem resolution
 
@@ -65,7 +77,10 @@ Process: SUP.9
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall initiate problem resolution. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall initiate problem resolution. The practice shall produce or update:
+
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_6](@.md#sup_9_bp_6) Track problems to closure
 
@@ -75,7 +90,10 @@ Process: SUP.9
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall track problems to closure. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall track problems to closure. The practice shall produce or update:
+
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 ### [SUP_9_BP_7](@.md#sup_9_bp_7) Report the status of problem resolution activities
 
@@ -85,7 +103,9 @@ Process: SUP.9
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall report the status of problem resolution activities. The practice shall produce or update [wp_13_07_problem](=.md#wp_13_07_problem), [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence).
+When implementing this base practice, the organization shall report the status of problem resolution activities. The practice shall produce or update:
 
+- [wp_13_07_problem](=.md#wp_13_07_problem)
+- [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
 
 

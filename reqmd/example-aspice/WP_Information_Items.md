@@ -31,7 +31,9 @@ When [wp_01_50_integrated_software](=.md#wp_01_50_integrated_software) is produc
 
 ### Characteristics
 
-- Software executable (e.g, simulator with stubbing, debug-able, object code) including: - application parameter files (being a technical implementation solution for configurability-oriented requirements) - all configured software elements
+- Software executable (e.g, simulator with stubbing, debug-able, object code) including:
+  - application parameter files (being a technical implementation solution for configurability-oriented requirements)
+  - all configured software elements
 
 ## [WP_01_52](@.md#wp_01_52) Configuration item list
 
@@ -75,8 +77,14 @@ When [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter) is produced, the in
 
 ### Characteristics
 
-- Hyperparameters are used to control the ML model which has to be trained, e.g.: - Learn rate of training - Scaling of network (number of layers or neurons per layer) - Loss function
-- Minimum characteristics: - Description - Initial value - Final value upon communicating the results of the ML training
+- Hyperparameters are used to control the ML model which has to be trained, e.g.:
+  - Learn rate of training
+  - Scaling of network (number of layers or neurons per layer)
+  - Loss function
+- Minimum characteristics:
+  - Description
+  - Initial value
+  - Final value upon communicating the results of the ML training
 
 ## [WP_02_01](@.md#wp_02_01) Commitment / agreement
 
@@ -92,7 +100,12 @@ When [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement) is prod
 
 - Signed off by all parties involved in the commitment/agreement
 - Establishes what the commitment is for
-- Establishes the resources required to fulfill the commitment, such as: - time - people - budget - equipment - facilities
+- Establishes the resources required to fulfill the commitment, such as:
+  - time
+  - people
+  - budget
+  - equipment
+  - facilities
 
 ## [WP_03_06](@.md#wp_03_06) Process performance information
 
@@ -109,8 +122,24 @@ When [wp_03_06_process_performance_information](=.md#wp_03_06_process_performanc
 - Measurements about defined quantitative or qualitative measurable indicators, that match defined information needs.
 - Measurement metrics for the calculation of the quantitatively or qualitatively measurable indicators
 - Data comparing process performance against expected levels
-- Examples for project performance information: - resource utilization against established target - time schedule against established target - activity or task completion criteria met - defined input and output work products available - process quality against quality expectations and/or criteria - product quality against quality expectations and/or criteria - highlight product performance issues, trends
-- Examples for service level performance information: - references any goals established - real time metrics related to aspects such as: - capacity - throughput - operational performance - operational service - service outage time - up time - job run time
+- Examples for project performance information:
+  - resource utilization against established target
+  - time schedule against established target
+  - activity or task completion criteria met
+  - defined input and output work products available
+  - process quality against quality expectations and/or criteria
+  - product quality against quality expectations and/or criteria
+  - highlight product performance issues, trends
+- Examples for service level performance information:
+  - references any goals established
+  - real time metrics related to aspects such as:
+    - capacity
+    - throughput
+    - operational performance
+    - operational service
+    - service outage time
+    - up time
+    - job run time
 
 ## [WP_03_50](@.md#wp_03_50) Verification Measure data
 
@@ -124,7 +153,13 @@ When [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_dat
 
 ### Characteristics
 
-- Verification measure data are data recorded during the execution of a verification measure, e.g.: - for test cases: raw data, logs, traces, tool generated outputs - measurements: values - calculations: values - simulations: protocol - reviews such as optical inspections a findings record - analyses: values
+- Verification measure data are data recorded during the execution of a verification measure, e.g.:
+  - for test cases: raw data, logs, traces, tool generated outputs
+  - measurements: values
+  - calculations: values
+  - simulations: protocol
+  - reviews such as optical inspections a findings record
+  - analyses: values
 
 ## [WP_03_51](@.md#wp_03_51) ML data set
 
@@ -152,7 +187,12 @@ When [wp_03_53_ml_data](=.md#wp_03_53_ml_data) is produced, the information item
 
 ### Characteristics
 
-- Datum to be used for Machine Learning. The datum has to be attributed by metadata, e.g., unique ID and data characteristics. Examples: - Visual data like a photo or videos (but a video could also be considered as sequence of photos depending on the intended use) - Audio recording - Sensor data - Data created by an algorithm - Data might be processed to create additional data. E.g., processing could add noise, change colors or merge pictures.
+- Datum to be used for Machine Learning. The datum has to be attributed by metadata, e.g., unique ID and data characteristics. Examples:
+  - Visual data like a photo or videos (but a video could also be considered as sequence of photos depending on the intended use)
+  - Audio recording
+  - Sensor data
+  - Data created by an algorithm
+  - Data might be processed to create additional data. E.g., processing could add noise, change colors or merge pictures.
 
 ## [WP_03_54](@.md#wp_03_54) Hardware production data
 
@@ -168,7 +208,11 @@ When [wp_03_54_hardware_production_data](=.md#wp_03_54_hardware_production_data)
 
 - Consists of bill of materials
 - Consists of layout e.g, GERBER data
-- Specifies requirements for EOL test e.g.: - Test type (AOI, ICT, boundary scan) - Test coverage - Electrical loads - Acceptance criteria
+- Specifies requirements for EOL test e.g.:
+  - Test type (AOI, ICT, boundary scan)
+  - Test coverage
+  - Electrical loads
+  - Acceptance criteria
 - In case of semiconductor development: mask data (GDS2)
 
 ## [WP_04_04](@.md#wp_04_04) Software architecture
@@ -186,8 +230,19 @@ When [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture) is pr
 - A justifying rationale for the chosen architecture.
 - Individual functional and non-functional behavior of the software component
 - Settings for application parameters (being a technical implementation solution for configurability-oriented requirements)
-- Technical characteristics of interfaces for relationships between software components such as: - Synchronization of Processes and tasks - Programming language call - APIs - Specifications of SW libraries - Method definitions in an object- oriented class definitions or UML/SysML interface classes - Callback functions, "hooks"
-- Dynamics of software components and software states such as: - Logical software operating modes (e.g, start-up, shutdown, normal mode, calibration, diagnosis, etc.) - intercommunication (processes, tasks, threads) and priority - time slices and cycle time - interrupts with their priorities - interactions between software components
+- Technical characteristics of interfaces for relationships between software components such as:
+  - Synchronization of Processes and tasks
+  - Programming language call
+  - APIs
+  - Specifications of SW libraries
+  - Method definitions in an object- oriented class definitions or UML/SysML interface classes
+  - Callback functions, "hooks"
+- Dynamics of software components and software states such as:
+  - Logical software operating modes (e.g, start-up, shutdown, normal mode, calibration, diagnosis, etc.)
+  - intercommunication (processes, tasks, threads) and priority
+  - time slices and cycle time
+  - interrupts with their priorities
+  - interactions between software components
 - Explanatory annotations, e.g, with natural language, for single elements or entire diagrams/models.
 
 ## [WP_04_05](@.md#wp_04_05) Software detailed design
@@ -202,8 +257,17 @@ When [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
 
 ### Characteristics
 
-- Elements of a software detailed design: - Control flow definition - Format of input/output data - Algorithms - Defined data structures - Justified global variables - Explanatory annotations, e.g, with natural language, for single elements or entire diagrams/models
-- Examples for expression languages, depending on the complexity or criticality of a software unit: - natural language or informal languages - semi-formal languages (e.g, UML, SysML) - formal languages (e.g, model-based approach)
+- Elements of a software detailed design:
+  - Control flow definition
+  - Format of input/output data
+  - Algorithms
+  - Defined data structures
+  - Justified global variables
+  - Explanatory annotations, e.g, with natural language, for single elements or entire diagrams/models
+- Examples for expression languages, depending on the complexity or criticality of a software unit:
+  - natural language or informal languages
+  - semi-formal languages (e.g, UML, SysML)
+  - formal languages (e.g, model-based approach)
 
 ## [WP_04_06](@.md#wp_04_06) System architecture
 
@@ -220,13 +284,45 @@ When [wp_04_06_system_architecture](=.md#wp_04_06_system_architecture) is produc
 - A justifying rationale for the chosen architecture.
 - Individual behavior of system elements
 - Interrelationships between system elements Settings for system parameters (such as application parameters) Manual/human control actions, e.g., according to STPA
-- Interface Definitions: - Technical characteristics of interfaces for relationships between two system elements
-- Interfaces between system elements e.g.: - bus interfaces (CAN, MOST, LIN, Flexray etc.) - thermal influences - hardware-software-interfaces (HSI), see below - electromagnetic interfaces - optical interfaces - hardware-mechanical-interfaces (e.g., a cable satisfying both mechanical and electrical requirements, housing interface to a PCB) - hardware-mechanical interconnection technology such as connectors, pressfit - creepage and clearance distances
+- Interface Definitions:
+  - Technical characteristics of interfaces for relationships between two system elements
+- Interfaces between system elements e.g.:
+  - bus interfaces (CAN, MOST, LIN, Flexray etc.)
+  - thermal influences
+  - hardware-software-interfaces (HSI), see below
+  - electromagnetic interfaces
+  - optical interfaces
+  - hardware-mechanical-interfaces (e.g., a cable satisfying both mechanical and electrical requirements, housing interface to a PCB)
+  - hardware-mechanical interconnection technology such as connectors, pressfit
+  - creepage and clearance distances
 - Fixations such as adhesive joints, screw bolts/fitting, riveted bolts, welding
-- System interfaces related to EE Hardware e.g.: - analogue or digital interfaces (PWM, I/O) and their pin configurations - SPI bus, I2C bus, electrical interconnections - placement, e.g., thermal interfaces between hardware elements (heat dissipation) - soldering - creepage and clearance distances
-- Interfaces for mechanical engineering e.g.: - friction - thermal influences - tolerances - clutches - fixations such as adhesive joints, screw bolts/fitting, riveted bolts, welding - forces (as a result of e.g., vibrations or friction) - placement - shape - A hardware-software interface, e.g.: - connector pin configurations and floating IOs for uCs/MOSFETs - signal scaling & resolution to be reflected by the application software
-- Mechanical-hardware interfaces e.g. - such as mechanical dimensioning - positioning of connectors - positioning of e.g., hall sensors in relation to the bus-bar - tolerances
-- Dynamics of system elements and system states: - Description of the system states and operation modes (startup, shutdown, sleep mode, diagnosis/calibration mode, production mode, degradation, emergency such as "limp-home", etc.) - Description of the dependencies among the system components regarding the operation modes - Interactions between system elements such as inertia of mechanical components to be reflected by the ECU, signal propagation and processing time through the hardware and software and e.g., bus systems
+- System interfaces related to EE Hardware e.g.:
+  - analogue or digital interfaces (PWM, I/O) and their pin configurations
+  - SPI bus, I2C bus, electrical interconnections
+  - placement, e.g., thermal interfaces between hardware elements (heat dissipation)
+  - soldering
+  - creepage and clearance distances
+- Interfaces for mechanical engineering e.g.:
+  - friction
+  - thermal influences
+  - tolerances
+  - clutches
+  - fixations such as adhesive joints, screw bolts/fitting, riveted bolts, welding
+  - forces (as a result of e.g., vibrations or friction)
+  - placement
+  - shape
+  - A hardware-software interface, e.g.:
+    - connector pin configurations and floating IOs for uCs/MOSFETs
+    - signal scaling & resolution to be reflected by the application software
+- Mechanical-hardware interfaces e.g.
+  - such as mechanical dimensioning
+  - positioning of connectors
+  - positioning of e.g., hall sensors in relation to the bus-bar
+  - tolerances
+- Dynamics of system elements and system states:
+  - Description of the system states and operation modes (startup, shutdown, sleep mode, diagnosis/calibration mode, production mode, degradation, emergency such as "limp-home", etc.)
+  - Description of the dependencies among the system components regarding the operation modes
+  - Interactions between system elements such as inertia of mechanical components to be reflected by the ECU, signal propagation and processing time through the hardware and software and e.g., bus systems
 - Explanatory annotations, e.g., with natural language, for single elements or entire diagrams/models.
 
 ## [WP_04_51](@.md#wp_04_51) ML architecture
@@ -241,7 +337,14 @@ When [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture) is produced, the 
 
 ### Characteristics
 
-- An ML architecture is basically a special part of a software architecture (see 04-04). Additionally - ML architecture describes the overall structure of the ML-based software element - ML architecture specifies ML architectural elements including an ML model and other ML architectural elements, provided to train, deploy, and test the ML model. - describes interfaces within the ML-based software element and to other software elements - ML architecture describes details of the ML model like used layers, activation functions, loss function, and backpropagation - ML architecture contains defined hyperparameter ranges and initial values for training start - resource consumption objectives are defined - ML architecture contains allocated ML requirements
+- An ML architecture is basically a special part of a software architecture (see 04-04). Additionally
+  - ML architecture describes the overall structure of the ML-based software element
+  - ML architecture specifies ML architectural elements including an ML model and other ML architectural elements, provided to train, deploy, and test the ML model.
+  - describes interfaces within the ML-based software element and to other software elements
+  - ML architecture describes details of the ML model like used layers, activation functions, loss function, and backpropagation
+  - ML architecture contains defined hyperparameter ranges and initial values for training start
+  - resource consumption objectives are defined
+  - ML architecture contains allocated ML requirements
 
 ## [WP_04_52](@.md#wp_04_52) Hardware architecture
 
@@ -330,7 +433,10 @@ When [wp_04_56_hardware_element_interface](=.md#wp_04_56_hardware_element_interf
 ### Characteristics
 
 - is defined by output, input, type, and electrical characteristics including signal tolerances.
-- Examples of interfaces are - high level interfaces like SPI, I2C, CAN, LIN, Ethernet - electrical interconnections - thermal interfaces between hardware elements (heat dissipation)
+- Examples of interfaces are
+  - high level interfaces like SPI, I2C, CAN, LIN, Ethernet
+  - electrical interconnections
+  - thermal interfaces between hardware elements (heat dissipation)
 
 ## [WP_06_04](@.md#wp_06_04) Training material
 
@@ -408,7 +514,11 @@ When [wp_07_04_process_metric](=.md#wp_07_04_process_metric) is produced, the in
 
 ### Characteristics
 
-- Measurements about the process' performance: - ability to produce sufficient work products - adherence to the process - time it takes to perform process - defects related to the process
+- Measurements about the process' performance:
+  - ability to produce sufficient work products
+  - adherence to the process
+  - time it takes to perform process
+  - defects related to the process
 - Measures the impact of process change
 - Measures the efficiency of the process
 
@@ -424,8 +534,16 @@ When [wp_07_05_project_metric](=.md#wp_07_05_project_metric) is produced, the in
 
 ### Characteristics
 
-- Monitors key processes and critical tasks, provides status information to the project on: - project performance against established plan - resource utilization against established plan - time schedule against established plan - process quality against quality expectations and/or criteria - product quality against quality expectations and/or criteria - highlight product performance problems, trends
-- Measures the results of project activities: - tasks are performed on schedule - product's development is within the resource commitments allocated
+- Monitors key processes and critical tasks, provides status information to the project on:
+  - project performance against established plan
+  - resource utilization against established plan
+  - time schedule against established plan
+  - process quality against quality expectations and/or criteria
+  - product quality against quality expectations and/or criteria
+  - highlight product performance problems, trends
+- Measures the results of project activities:
+  - tasks are performed on schedule
+  - product's development is within the resource commitments allocated
 - References any goals established
 
 ## [WP_07_06](@.md#wp_07_06) Quality metric
@@ -440,7 +558,13 @@ When [wp_07_06_quality_metric](=.md#wp_07_06_quality_metric) is produced, the in
 
 ### Characteristics
 
-- Measures quality attributes of the work products defined: - functionality - reliability - usability - efficiency - maintainability - portability
+- Measures quality attributes of the work products defined:
+  - functionality
+  - reliability
+  - usability
+  - efficiency
+  - maintainability
+  - portability
 - Measures quality attributes of the "end customer" quality perception Note: Refer ISO/IEC 25010 for detailed information on measurement of product quality.
 
 ## [WP_07_08](@.md#wp_07_08) Service level metric
@@ -456,7 +580,14 @@ When [wp_07_08_service_level_metric](=.md#wp_07_08_service_level_metric) is prod
 ### Characteristics
 
 - Real time metrics taken while a system is operational, it measures the system's performance or expected service level
-- Identifies aspects such as: - capacity - throughput - operational performance - operational service - service outage time - up time - job run time
+- Identifies aspects such as:
+  - capacity
+  - throughput
+  - operational performance
+  - operational service
+  - service outage time
+  - up time
+  - job run time
 
 ## [WP_07_51](@.md#wp_07_51) Measurement result
 
@@ -470,15 +601,31 @@ When [wp_07_51_measurement_result](=.md#wp_07_51_measurement_result) is produced
 
 ### Characteristics
 
-- Measurements about the process' performance: - ability to produce sufficient work products - adherence to the process - time it takes to perform process - defects related to the process
+- Measurements about the process' performance:
+  - ability to produce sufficient work products
+  - adherence to the process
+  - time it takes to perform process
+  - defects related to the process
 - Measures the impact of process change
 - Measures the efficiency of the process Project metric
-- Monitors key processes and critical tasks, provides status information to the project on: - project performance against established plan - resource utilization against established plan - time schedule against established plan - process quality against quality expectations and/or criteria - product quality against quality expectations and/or criteria - highlight product performance problems, trends
+- Monitors key processes and critical tasks, provides status information to the project on:
+  - project performance against established plan
+  - resource utilization against established plan
+  - time schedule against established plan
+  - process quality against quality expectations and/or criteria
+  - product quality against quality expectations and/or criteria
+  - highlight product performance problems, trends
 - Measures the results of project activities:
 - tasks are performed on schedule
 - product's development is within the resource commitments allocated
 - References any goals established Quality metric
-- Measures quality attributes of the work products defined: - functionality - reliability - usability - efficiency - maintainability - portability
+- Measures quality attributes of the work products defined:
+  - functionality
+  - reliability
+  - usability
+  - efficiency
+  - maintainability
+  - portability
 - Measures quality attributes of the "end customer" quality perceptionService level metric
 - Benchmarking data
 - Customer satisfaction survey
@@ -587,7 +734,9 @@ When [wp_15_58_common_cause_of_variation_analysis_results](=.md#wp_15_58_common_
 
 ### Characteristics
 
-- Identification of common causes - deviations of the quantitative performance of all process instances from the established quantitative control limits - distributions of the quantitative performance of all process instances within established quantitative control limits
+- Identification of common causes
+  - deviations of the quantitative performance of all process instances from the established quantitative control limits
+  - distributions of the quantitative performance of all process instances within established quantitative control limits
 
 ## [WP_08_53](@.md#wp_08_53) Scope of work
 
@@ -637,8 +786,18 @@ When [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure) is produced, the inform
 
 ### Characteristics
 
-- Identifies - the risk to be mitigated, avoided, or shared (transferred) - the activities to mitigate, avoid, or share (transfer) the risk - the originator of the measure - criteria for successful implementation - criteria for cancellation of activities - frequency of monitoring
-- Risk treatment alternatives: - treatment option selected- avoid/reduce/transfer - alternative descriptions - recommended alternative(s) - justifications
+- Identifies
+  - the risk to be mitigated, avoided, or shared (transferred)
+  - the activities to mitigate, avoid, or share (transfer) the risk
+  - the originator of the measure
+  - criteria for successful implementation
+  - criteria for cancellation of activities
+  - frequency of monitoring
+- Risk treatment alternatives:
+  - treatment option selected- avoid/reduce/transfer
+  - alternative descriptions
+  - recommended alternative(s)
+  - justifications
 
 ## [WP_08_56](@.md#wp_08_56) Schedule
 
@@ -701,7 +860,9 @@ When [wp_08_59_validation_measure](=.md#wp_08_59_validation_measure) is produced
 ### Characteristics
 
 - A validation measure can be a test case, a measurement, a simulation, an emulation, or an end user survey
-- The specification of a validation measure includes - pass/fail criteria for validation measures (completion and end criteria) - a definition of entry and exit criteria for the validation measures, and abort and re-start criteria
+- The specification of a validation measure includes
+  - pass/fail criteria for validation measures (completion and end criteria)
+  - a definition of entry and exit criteria for the validation measures, and abort and re-start criteria
 - Techniques
 - Necessary validation environment & infrastructure
 - Necessary sequence or ordering
@@ -719,7 +880,9 @@ When [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure) is prod
 ### Characteristics
 
 - A verification measure can be a test case, a measurement, a calculation, a simulation, a review, an optical inspection, or an analysis
-- The specification of a verification measure includes - pass/fail criteria for verification measures (test completion and ending criteria) - a definition of entry and exit criteria for the verification measures, and abort and re-start criteria
+- The specification of a verification measure includes
+  - pass/fail criteria for verification measures (test completion and ending criteria)
+  - a definition of entry and exit criteria for the verification measures, and abort and re-start criteria
 - Techniques (e.g., black-box and/or white-box-testing, equivalence classes and boundary values, fault injection for Functional Safety, penetration testing for Cybersecurity, back-to- back testing for model- based development, ICT)
 - Necessary verification environment & infrastructure
 - Necessary sequence or ordering
@@ -785,7 +948,13 @@ When [wp_08_64_ml_test_approach](=.md#wp_08_64_ml_test_approach) is produced, th
 
 ### Characteristics
 
-- The ML test approach describes - ML test scenarios with distribution of data characteristics (e.g., gender, weather conditions, street conditions within the ODD) defined by ML requirements - quantity of each ML test scenario inside the test data set - expected test result per test datum - pass/fail criteria for the ML testing - entry and exit criteria for the ML testing - the required ML testing infrastructure and environment configuration
+- The ML test approach describes
+  - ML test scenarios with distribution of data characteristics (e.g., gender, weather conditions, street conditions within the ODD) defined by ML requirements
+  - quantity of each ML test scenario inside the test data set
+  - expected test result per test datum
+  - pass/fail criteria for the ML testing
+  - entry and exit criteria for the ML testing
+  - the required ML testing infrastructure and environment configuration
 
 ## [WP_08_65](@.md#wp_08_65) ML training and validation approach
 
@@ -799,7 +968,13 @@ When [wp_08_65_ml_training_and_validation_approach](=.md#wp_08_65_ml_training_an
 
 ### Characteristics
 
-- The ML Training and Validation approach describes at least: - entry and exit criteria of the ML training - approaches for hyperparameter tuning / optimization to be used in the training - approach for data set creation and modification - training environment, including required training hardware (e.g., GPU, or supercomputer to be used) - interface adapter for provision of input data and storage of output data - if required, actions to organize the data set and training environment
+- The ML Training and Validation approach describes at least:
+  - entry and exit criteria of the ML training
+  - approaches for hyperparameter tuning / optimization to be used in the training
+  - approach for data set creation and modification
+  - training environment, including required training hardware (e.g., GPU, or supercomputer to be used)
+  - interface adapter for provision of input data and storage of output data
+  - if required, actions to organize the data set and training environment
 - The ML training and validation approach may additionally include robustification methods like random dropout
 
 ## [WP_10_00](@.md#wp_10_00) Process description
@@ -814,7 +989,14 @@ When [wp_10_00_process_description](=.md#wp_10_00_process_description) is produc
 
 ### Characteristics
 
-- Process description of a standard or defined process (e.g., after tailoring), including: - scope and the intended use of the process - process activities including description and dependencies - entry and exit criteria such as input information needed and expected outputs for activities - Roles assigned to process activities (e.g., as RASIC ) or work products - guidelines - templates - specific methods/work instructions
+- Process description of a standard or defined process (e.g., after tailoring), including:
+  - scope and the intended use of the process
+  - process activities including description and dependencies
+  - entry and exit criteria such as input information needed and expected outputs for activities
+  - Roles assigned to process activities (e.g., as RASIC ) or work products
+  - guidelines
+  - templates
+  - specific methods/work instructions
 
 ## [WP_10_50](@.md#wp_10_50) Role description
 
@@ -884,8 +1066,14 @@ When [wp_11_03_release_note](=.md#wp_11_03_release_note) is produced, the inform
 - Description of what is new or changed (including features removed)
 - System information and requirements
 - Identification of conversion programs and instructions
-- Release numbering implementation may include: - the major release number - the feature release number - the defect repair number - the alpha or beta release; and the iteration within the alpha or beta release
-- Identification of the component list (version identification included): - hardware / software / product elements, libraries, etc. - associated documentation list
+- Release numbering implementation may include:
+  - the major release number
+  - the feature release number
+  - the defect repair number
+  - the alpha or beta release; and the iteration within the alpha or beta release
+- Identification of the component list (version identification included):
+  - hardware / software / product elements, libraries, etc.
+  - associated documentation list
 - New/changed parameter information (e.g., for application parameters or global variables) and/or commands. Note that application parameters are a technical implementation solution for configurability-oriented requirements)
 - Backup and recovery information
 - List of open known problems, faults, warning information, etc.
@@ -907,7 +1095,13 @@ When [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package) i
 ### Characteristics
 
 - Includes the hardware/software/product
-- Includes and associated release elements such as: - system hardware/software/product elements - associated customer documentation - application parameter definitions defined - command language defined - installation instructions - release letter
+- Includes and associated release elements such as:
+  - system hardware/software/product elements
+  - associated customer documentation
+  - application parameter definitions defined
+  - command language defined
+  - installation instructions
+  - release letter
 
 ## [WP_11_05](@.md#wp_11_05) Software Unit Can be
 
@@ -987,7 +1181,11 @@ When [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence) is produced, 
 ### Characteristics
 
 - Evidence of items shipped/delivered electronically to customer
-- Identification of: - to whom it was sent - address, where delivered - delivery date - receipt of delivered product
+- Identification of:
+  - to whom it was sent
+  - address, where delivered
+  - delivery date
+  - receipt of delivered product
 
 ## [WP_13_07](@.md#wp_13_07) Problem
 
@@ -1005,7 +1203,9 @@ When [wp_13_07_problem](=.md#wp_13_07_problem) is produced, the information item
 - Identifies the group/person(s) responsible for providing problem resolution
 - Includes a description of the problem
 - Identifies classification of the problem (criticality, urgency, relevance etc.)
-- Identifies the status of the problem - States such as "open", "in review", "in implementation", "closed", "rejected", "cancelled", ... - Transitions between states with conditions and authorities
+- Identifies the status of the problem
+  - States such as "open", "in review", "in implementation", "closed", "rejected", "cancelled", ...
+  - Transitions between states with conditions and authorities
 - Identifies the expected closure date
 
 ## [WP_13_08](@.md#wp_13_08) Baseline
@@ -1036,7 +1236,15 @@ When [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence)
 
 ### Characteristics
 
-- Agenda and minutes that are records that define: - purpose of meeting - attendees - date, place held - reference to previous minutes - what was accomplished - identifies issues raised - any open issues - next meeting if any
+- Agenda and minutes that are records that define:
+  - purpose of meeting
+  - attendees
+  - date, place held
+  - reference to previous minutes
+  - what was accomplished
+  - identifies issues raised
+  - any open issues
+  - next meeting if any
 
 ## [WP_13_13](@.md#wp_13_13) Product release approval
 
@@ -1051,7 +1259,11 @@ When [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
 ### Characteristics
 
 - Content information of what is to be shipped or delivered
-- Identification of: - for whom it is intended - the address where to deliver - the date released - Evidence of supplier approval
+- Identification of:
+  - for whom it is intended
+  - the address where to deliver
+  - the date released
+  - Evidence of supplier approval
 
 ## [WP_13_14](@.md#wp_13_14) Progress status
 
@@ -1065,7 +1277,13 @@ When [wp_13_14_progress_status](=.md#wp_13_14_progress_status) is produced, the 
 
 ### Characteristics
 
-- Status of a plan(s) (actual against planned) such as: - status of actual activities/work packages against planned activities/work package - status of actual results against established objectives/goals - status of actual resources allocation against planned resources - status of actual cost against budget estimates - status of actual time against planned schedule - status of actual quality against planned quality
+- Status of a plan(s) (actual against planned) such as:
+  - status of actual activities/work packages against planned activities/work package
+  - status of actual results against established objectives/goals
+  - status of actual resources allocation against planned resources
+  - status of actual cost against budget estimates
+  - status of actual time against planned schedule
+  - status of actual quality against planned quality
 - Record of any deviations from planned activities and reason why
 
 ## [WP_13_16](@.md#wp_13_16) Change request
@@ -1086,7 +1304,11 @@ When [wp_13_16_change_request](=.md#wp_13_16_change_request) is produced, the in
 - Impact to operations of existing system(s) defined
 - Impact to associated documentation defined
 - Criticality of the request, due date
-- Information supporting the tracking of change requests to closure - progress status attribute (e.g., open, allocated, implemented, closed) - time stamp of status change - person who changed a status - rationale for changing a status
+- Information supporting the tracking of change requests to closure
+  - progress status attribute (e.g., open, allocated, implemented, closed)
+  - time stamp of status change
+  - person who changed a status
+  - rationale for changing a status
 
 ## [WP_13_18](@.md#wp_13_18) Quality conformance evidence
 
@@ -1118,10 +1340,21 @@ When [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence) is produced, the 
 
 ### Characteristics
 
-- Provides the context information about the review: - what was reviewed - lists reviewers who attended and their area of responsibility - status of the review
-- Provides information about the scope of the review: - checklists - review criteria - requirements - compliance to standards
-- Effort information about: - preparation time spent for the review - time spent in the review
-- Review findings: - non-conformances - improvement suggestions
+- Provides the context information about the review:
+  - what was reviewed
+  - lists reviewers who attended and their area of responsibility
+  - status of the review
+- Provides information about the scope of the review:
+  - checklists
+  - review criteria
+  - requirements
+  - compliance to standards
+- Effort information about:
+  - preparation time spent for the review
+  - time spent in the review
+- Review findings:
+  - non-conformances
+  - improvement suggestions
 
 ## [WP_13_24](@.md#wp_13_24) Validation results
 
@@ -1192,8 +1425,16 @@ When [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence) is prod
 
 ### Characteristics
 
-- Demonstrates bidirectional traceability between artifacts or information in artifacts, throughout all phases of the life cycle, by e.g., - tool links - hyperlinks - editorial references - naming conventions
-- Evidence that the content of the referenced or mapped information coheres semantically along the traceability chain, e.g., by - performing pair working or group work - performing by peers, e.g., spot checks - maintaining revision histories in documents - providing change commenting (via e.g., meta-information) of database or repository entries Note: This evidence can be accompanied by e.g., Definition of Done (DoD) approaches.
+- Demonstrates bidirectional traceability between artifacts or information in artifacts, throughout all phases of the life cycle, by e.g.,
+  - tool links
+  - hyperlinks
+  - editorial references
+  - naming conventions
+- Evidence that the content of the referenced or mapped information coheres semantically along the traceability chain, e.g., by
+  - performing pair working or group work
+  - performing by peers, e.g., spot checks
+  - maintaining revision histories in documents
+  - providing change commenting (via e.g., meta-information) of database or repository entries Note: This evidence can be accompanied by e.g., Definition of Done (DoD) approaches.
 
 ## [WP_13_52](@.md#wp_13_52) Communication Evidence
 
@@ -1207,7 +1448,17 @@ When [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence) is 
 
 ### Characteristics
 
-- All forms of interpersonal communication such as - e-mails, also automatically generated ones - tool-supported workflows - meeting, verbally or via meeting minutes (e.g., daily standups) - podcast - blog - videos - forum - live chat - wikis - photo protocol
+- All forms of interpersonal communication such as
+  - e-mails, also automatically generated ones
+  - tool-supported workflows
+  - meeting, verbally or via meeting minutes (e.g., daily standups)
+  - podcast
+  - blog
+  - videos
+  - forum
+  - live chat
+  - wikis
+  - photo protocol
 
 ## [WP_13_55](@.md#wp_13_55) Process resource and infrastructure documentation
 
@@ -1221,7 +1472,12 @@ When [wp_13_55_process_resource_and_infrastructure_documentation](=.md#wp_13_55_
 
 ### Characteristics
 
-- Information on availability, allocation, and usage of - Facilities - Tools and corresponding licenses - Networks - Services - Samples
+- Information on availability, allocation, and usage of
+  - Facilities
+  - Tools and corresponding licenses
+  - Networks
+  - Services
+  - Samples
 - for non-standard and critical resources and infrastructure.
 
 ## [WP_14_01](@.md#wp_14_01) Change history
@@ -1236,7 +1492,12 @@ When [wp_14_01_change_history](=.md#wp_14_01_change_history) is produced, the in
 
 ### Characteristics
 
-- Historical records of all changes made to an object (document, file, software component, etc.): - description of change - version information about changed object - date of change - change requester information - change control record information
+- Historical records of all changes made to an object (document, file, software component, etc.):
+  - description of change
+  - version information about changed object
+  - date of change
+  - change requester information
+  - change control record information
 
 ## [WP_14_02](@.md#wp_14_02) Corrective action
 
@@ -1307,7 +1568,10 @@ When [wp_14_53_role_assignment](=.md#wp_14_53_role_assignment) is produced, the 
 
 ### Characteristics
 
-- Assignment of person(s) to roles - required competencies vs existing competencies - required skills vs existing skills - required experience and trainings based on identified competencies / skills gap
+- Assignment of person(s) to roles
+  - required competencies vs existing competencies
+  - required skills vs existing skills
+  - required experience and trainings based on identified competencies / skills gap
 
 ## [WP_14_54](@.md#wp_14_54) Hardware Bill of materials
 
@@ -1372,7 +1636,12 @@ When [wp_15_09_risk_status](=.md#wp_15_09_risk_status) is produced, the informat
 
 ### Characteristics
 
-- Identifies the status, or the change, of an identified risk: - risk statement - risk source - risk impact and risk probability - categories and risk thresholds, e.g., for prioritization or setting a status - risk treatment activities in progress
+- Identifies the status, or the change, of an identified risk:
+  - risk statement
+  - risk source
+  - risk impact and risk probability
+  - categories and risk thresholds, e.g., for prioritization or setting a status
+  - risk treatment activities in progress
 
 ## [WP_15_12](@.md#wp_15_12) Problem status
 
@@ -1387,7 +1656,9 @@ When [wp_15_12_problem_status](=.md#wp_15_12_problem_status) is produced, the in
 ### Characteristics
 
 - Indicates progress of problem resolution
-- Status of problem e.g., - by problem categories/classification - by problem resolution stage
+- Status of problem e.g.,
+  - by problem categories/classification
+  - by problem resolution stage
 
 ## [WP_15_13](@.md#wp_15_13) Assessment/audit report
 
@@ -1405,8 +1676,18 @@ When [wp_15_13_assessment_audit_report](=.md#wp_15_13_assessment_audit_report) i
 - Method used for assessment
 - Requirements used for the assessment
 - Assumptions and limitations
-- Identifies the context and scope information required: - date of assessment - organizational unit assessed - sponsor information - assessment team - attendees - scope/coverage - assesses and information - assessment tool used
-- Records the result: - Data - identifies the gaps, potentials, weaknesses or non-conformances that require corrective actions
+- Identifies the context and scope information required:
+  - date of assessment
+  - organizational unit assessed
+  - sponsor information
+  - assessment team
+  - attendees
+  - scope/coverage
+  - assesses and information
+  - assessment tool used
+- Records the result:
+  - Data
+  - identifies the gaps, potentials, weaknesses or non-conformances that require corrective actions
 
 ## [WP_15_16](@.md#wp_15_16) Improvement opportunity
 
@@ -1439,9 +1720,21 @@ When [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results) is produced, th
 ### Characteristics
 
 - Identification of the object under analysis.
-- The analysis criteria used, e.g.: - selection criteria or prioritization scheme used - decision criteria - quality criteria
-- The analysis results, e.g.: - what was decided/selected - reason for the selection - assumptions made - potential negative impact
-- Aspects of the analysis may include - correctness - understandability - verifiability - feasibility - validity
+- The analysis criteria used, e.g.:
+  - selection criteria or prioritization scheme used
+  - decision criteria
+  - quality criteria
+- The analysis results, e.g.:
+  - what was decided/selected
+  - reason for the selection
+  - assumptions made
+  - potential negative impact
+- Aspects of the analysis may include
+  - correctness
+  - understandability
+  - verifiability
+  - feasibility
+  - validity
 
 ## [WP_15_52](@.md#wp_15_52) Verification Results
 
@@ -1492,7 +1785,11 @@ When [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidenc
 - Author and involved parties
 - Date of the analysis
 - Context and root cause of the problem
-- Analysis result may include - Impact - Potential negative impact - Affected parties - Potential solution (if known)
+- Analysis result may include
+  - Impact
+  - Potential negative impact
+  - Affected parties
+  - Potential solution (if known)
 
 ## [WP_15_56](@.md#wp_15_56) Configuration status
 
@@ -1591,9 +1888,29 @@ When [wp_17_00_requirement](=.md#wp_17_00_requirement) is produced, the informat
 - from a black-box perspective
 - that is verifiable, does not imply a design or implementation decision, is unambiguous, and does not introduce contradictions to other requirements.
 - A requirements statement that implies, or represents, a design or implementation decision is called "Design Constraint".
-- Examples for requirements aspects at the system level are thermal characteristics such as - heat dissipation - dimensions - weight - materials
-- Examples of aspects related to requirements about system interfaces are - connectors - cables - housing
-- Examples for requirements at the hardware level are - lifetime and mission profile, lifetime robustness - maximum price - storage and transportation requirements - functional behavior of analog or digital circuits and logic - quiescent current, voltage impulse responsiveness to crank, start- stop, drop-out, load dump - temperature, maximum hardware heat dissipation - power consumption depending on the operating state such as sleep-mode, start-up, reset conditions - frequencies, modulation, signal delays, filters, control loops - power-up and power-down sequences, accuracy and precision of signal acquisition or signal processing time - computing resources such as memory space and CPU clock tolerances - maximum abrasive wear and shearing forces for e.g., pins or soldering joints - requirements resulting from lessons learned - safety related requirements derived from the technical safety concept
+- Examples for requirements aspects at the system level are thermal characteristics such as
+  - heat dissipation
+  - dimensions
+  - weight
+  - materials
+- Examples of aspects related to requirements about system interfaces are
+  - connectors
+  - cables
+  - housing
+- Examples for requirements at the hardware level are
+  - lifetime and mission profile, lifetime robustness
+  - maximum price
+  - storage and transportation requirements
+  - functional behavior of analog or digital circuits and logic
+  - quiescent current, voltage impulse responsiveness to crank, start- stop, drop-out, load dump
+  - temperature, maximum hardware heat dissipation
+  - power consumption depending on the operating state such as sleep-mode, start-up, reset conditions
+  - frequencies, modulation, signal delays, filters, control loops
+  - power-up and power-down sequences, accuracy and precision of signal acquisition or signal processing time
+  - computing resources such as memory space and CPU clock tolerances
+  - maximum abrasive wear and shearing forces for e.g., pins or soldering joints
+  - requirements resulting from lessons learned
+  - safety related requirements derived from the technical safety concept
 
 ## [WP_17_05](@.md#wp_17_05) Requirements for work products
 
@@ -1607,7 +1924,17 @@ When [wp_17_05_requirements_for_work_products](=.md#wp_17_05_requirements_for_wo
 
 ### Characteristics
 
-- Requirements for content and structure, storage and control - Identifies documentation specific meta data, such as id, date, author information, ownership, access rights, review and approval status with, where applicable, status model and workflow, or others - Identifies requirements on documentation structure, e.g., table of content or figures or other formal aspects - May be provided by documentation templates - May be based on tool specific templates - Defines the storage location such as data repository, tool, versioning system - Requirements for versioning - Requirements for baselining - Distribution of the documents - Maintenance and disposal of the documents - May be specific for certain types of documents
+- Requirements for content and structure, storage and control
+  - Identifies documentation specific meta data, such as id, date, author information, ownership, access rights, review and approval status with, where applicable, status model and workflow, or others
+  - Identifies requirements on documentation structure, e.g., table of content or figures or other formal aspects
+  - May be provided by documentation templates
+  - May be based on tool specific templates
+  - Defines the storage location such as data repository, tool, versioning system
+  - Requirements for versioning
+  - Requirements for baselining
+  - Distribution of the documents
+  - Maintenance and disposal of the documents
+  - May be specific for certain types of documents
 
 ## [WP_17_54](@.md#wp_17_54) Requirement Attribute
 
@@ -1686,7 +2013,13 @@ When [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
 
 ### Characteristics
 
-- Defines expectations for product release: - release type and status - required elements of the release - product completeness including documentation - adequacy and coverage of testing - limit for open defects - change control status
+- Defines expectations for product release:
+  - release type and status
+  - required elements of the release
+  - product completeness including documentation
+  - adequacy and coverage of testing
+  - limit for open defects
+  - change control status
 
 ## [WP_18_07](@.md#wp_18_07) Quality criteria
 
@@ -1749,7 +2082,11 @@ When [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 
 ### Characteristics
 
-- Defines analysis criteria, such as - resource requirements - scheduling issues - risks - benefits
+- Defines analysis criteria, such as
+  - resource requirements
+  - scheduling issues
+  - risks
+  - benefits
 
 ## [WP_18_58](@.md#wp_18_58) Process performance objectives
 
@@ -1766,7 +2103,10 @@ When [wp_18_58_process_performance_objectives](=.md#wp_18_58_process_performance
 - Objectives for the process of creating the process outcomes and capability level 2 achievements, and corresponding evaluation criteria
 - Assumptions and constraints, if applicable
 - Used as the basis for deriving a detailed planning
-- Examples: - Effort, costs, or budget targets (e.g., min/max limits) - Process-specific deadlines in line with milestones, or frequency of activities (o e.g., dates for deliveries to the customer, quality gates) - Metrics (e.g., max. number of open change requests per release, max. ratio of configuration items in status "in work" at certain milestones before next delivery / release date)
+- Examples:
+  - Effort, costs, or budget targets (e.g., min/max limits)
+  - Process-specific deadlines in line with milestones, or frequency of activities (o e.g., dates for deliveries to the customer, quality gates)
+  - Metrics (e.g., max. number of open change requests per release, max. ratio of configuration items in status "in work" at certain milestones before next delivery / release date)
 
 ## [WP_18_59](@.md#wp_18_59) Review and approval criteria for work products
 
@@ -1780,7 +2120,12 @@ When [wp_18_59_review_and_approval_criteria_for_work_products](=.md#wp_18_59_rev
 
 ### Characteristics
 
-- Specifies for each type of work products review and approval needs - If and when a review is required - Who shall review it - Who shall approve it - Review method(s) to be used - Criteria for approval
+- Specifies for each type of work products review and approval needs
+  - If and when a review is required
+  - Who shall review it
+  - Who shall approve it
+  - Review method(s) to be used
+  - Criteria for approval
 
 ## [WP_18_70](@.md#wp_18_70) Business goals
 
@@ -1814,7 +2159,9 @@ When [wp_18_80_improvement_opportunity](=.md#wp_18_80_improvement_opportunity) i
 
 ### Characteristics
 
-- Cause of the improvement need, e.g., - from qualitative or quantitative process performance analysis, evaluations, and monitoring - industry best practice review, state-of-the-art observations, market studies etc.
+- Cause of the improvement need, e.g.,
+  - from qualitative or quantitative process performance analysis, evaluations, and monitoring
+  - industry best practice review, state-of-the-art observations, market studies etc.
 - Improvement objectives derived from organizational business goals and improvement needs
 - Organizational scope
 - Process scope
@@ -1849,8 +2196,14 @@ When [wp_19_01_process_performance_strategy](=.md#wp_19_01_process_performance_s
 
 ### Characteristics
 
-- The operational approach to achieve the process outcomes, consistent with the Process Performance Objectives (18-58), e.g.: - proceedings, including the monitoring of the performance of the process - methodology
-- scope(s) of the strategy within the process, e.g.: - development sites - application domain-specific differences (e.g., software drivers versus. powertrain software) - disciplines (e.g., different configuration management approaches for software and hardware, or combined approaches) - options due to socio-cultural differences
+- The operational approach to achieve the process outcomes, consistent with the Process Performance Objectives (18-58), e.g.:
+  - proceedings, including the monitoring of the performance of the process
+  - methodology
+- scope(s) of the strategy within the process, e.g.:
+  - development sites
+  - application domain-specific differences (e.g., software drivers versus. powertrain software)
+  - disciplines (e.g., different configuration management approaches for software and hardware, or combined approaches)
+  - options due to socio-cultural differences
 
 ## [WP_19_50](@.md#wp_19_50) ML data quality approach
 
@@ -1868,5 +2221,4 @@ When [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
 - Defines Quality criteria (see 18-07) e.g., the relevant data sources, reliability and consistency of labelling, completeness against ML data requirementsv
 - Describes analysis activities of the data
 - Describes activities to ensure the quality of the data to avoid issues e.g., data bias, bad labeling
-
 

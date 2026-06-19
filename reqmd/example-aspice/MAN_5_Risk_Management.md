@@ -25,7 +25,11 @@ Process: MAN.5
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify sources of risks. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall identify sources of risks. The practice shall produce or update:
+
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_2](@.md#man_5_bp_2) Identify potential undesirable events
 
@@ -35,7 +39,11 @@ Process: MAN.5
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall identify potential undesirable events. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall identify potential undesirable events. The practice shall produce or update:
+
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_3](@.md#man_5_bp_3) Determine risks
 
@@ -45,7 +53,11 @@ Process: MAN.5
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall determine risks. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall determine risks. The practice shall produce or update:
+
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_4](@.md#man_5_bp_4) Define risk treatment options
 
@@ -55,7 +67,11 @@ Process: MAN.5
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall define risk treatment options. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall define risk treatment options. The practice shall produce or update:
+
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_5](@.md#man_5_bp_5) Define and perform risk treatment activities
 
@@ -65,7 +81,11 @@ Process: MAN.5
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall define and perform risk treatment activities. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall define and perform risk treatment activities. The practice shall produce or update:
+
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_6](@.md#man_5_bp_6) Monitor risks
 
@@ -75,7 +95,11 @@ Process: MAN.5
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall monitor risks. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall monitor risks. The practice shall produce or update:
+
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 ### [MAN_5_BP_7](@.md#man_5_bp_7) Take corrective action
 
@@ -85,7 +109,10 @@ Process: MAN.5
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall take corrective action. The practice shall produce or update [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results), [wp_15_09_risk_status](=.md#wp_15_09_risk_status), [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure).
+When implementing this base practice, the organization shall take corrective action. The practice shall produce or update:
 
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
+- [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
+- [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 
 

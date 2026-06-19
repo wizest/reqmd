@@ -24,7 +24,12 @@ Process: SWE.2
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify static aspects of the software architecture. The practice shall produce or update [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall specify static aspects of the software architecture. The practice shall produce or update:
+
+- [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [SWE_2_BP_2](@.md#swe_2_bp_2) Specify dynamic aspects of the software architecture
 
@@ -34,7 +39,12 @@ Process: SWE.2
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall specify dynamic aspects of the software architecture. The practice shall produce or update [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall specify dynamic aspects of the software architecture. The practice shall produce or update:
+
+- [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [SWE_2_BP_3](@.md#swe_2_bp_3) Analyze software architecture
 
@@ -44,7 +54,12 @@ Process: SWE.2
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall analyze software architecture. The practice shall produce or update [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall analyze software architecture. The practice shall produce or update:
+
+- [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [SWE_2_BP_4](@.md#swe_2_bp_4) Ensure consistency and establish bidirectional traceability
 
@@ -54,7 +69,12 @@ Process: SWE.2
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+
+- [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [SWE_2_BP_5](@.md#swe_2_bp_5) Communicate agreed software architecture
 
@@ -64,7 +84,11 @@ Process: SWE.2
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall communicate agreed software architecture. The practice shall produce or update [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture), [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall communicate agreed software architecture. The practice shall produce or update:
 
+- [wp_04_04_software_architecture](=.md#wp_04_04_software_architecture)
+- [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 

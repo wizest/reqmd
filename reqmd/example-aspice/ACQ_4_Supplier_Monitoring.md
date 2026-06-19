@@ -24,7 +24,16 @@ Process: ACQ.4
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall agree on and maintain joint activities, joint interfaces, and information to be exchanged. The practice shall produce or update [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence), [wp_13_14_progress_status](=.md#wp_13_14_progress_status), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall agree on and maintain joint activities, joint interfaces, and information to be exchanged. The practice shall produce or update:
+
+- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence)
+- [wp_13_14_progress_status](=.md#wp_13_14_progress_status)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [ACQ_4_BP_2](@.md#acq_4_bp_2) Exchange all agreed information
 
@@ -34,7 +43,16 @@ Process: ACQ.4
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall exchange all agreed information. The practice shall produce or update [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence), [wp_13_14_progress_status](=.md#wp_13_14_progress_status), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall exchange all agreed information. The practice shall produce or update:
+
+- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence)
+- [wp_13_14_progress_status](=.md#wp_13_14_progress_status)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [ACQ_4_BP_3](@.md#acq_4_bp_3) Review development work products with the supplier
 
@@ -44,7 +62,16 @@ Process: ACQ.4
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall review development work products with the supplier. The practice shall produce or update [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence), [wp_13_14_progress_status](=.md#wp_13_14_progress_status), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall review development work products with the supplier. The practice shall produce or update:
+
+- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence)
+- [wp_13_14_progress_status](=.md#wp_13_14_progress_status)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [ACQ_4_BP_4](@.md#acq_4_bp_4) Review progress of the supplier
 
@@ -54,7 +81,16 @@ Process: ACQ.4
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall review progress of the supplier. The practice shall produce or update [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence), [wp_13_14_progress_status](=.md#wp_13_14_progress_status), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall review progress of the supplier. The practice shall produce or update:
+
+- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence)
+- [wp_13_14_progress_status](=.md#wp_13_14_progress_status)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 ### [ACQ_4_BP_5](@.md#acq_4_bp_5) Act to correct deviations
 
@@ -64,7 +100,15 @@ Process: ACQ.4
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall act to correct deviations. The practice shall produce or update [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence), [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence), [wp_13_14_progress_status](=.md#wp_13_14_progress_status), [wp_13_16_change_request](=.md#wp_13_16_change_request), [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence), [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action), [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results).
+When implementing this base practice, the organization shall act to correct deviations. The practice shall produce or update:
 
+- [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
+- [wp_13_09_meeting_support_evidence](=.md#wp_13_09_meeting_support_evidence)
+- [wp_13_14_progress_status](=.md#wp_13_14_progress_status)
+- [wp_13_16_change_request](=.md#wp_13_16_change_request)
+- [wp_13_19_review_evidence](=.md#wp_13_19_review_evidence)
+- [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
+- [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
 

@@ -25,7 +25,12 @@ Process: SUP.11
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall establish an ML data management system. The practice shall produce or update [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system), [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach), [wp_03_53_ml_data](=.md#wp_03_53_ml_data), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
+When implementing this base practice, the organization shall establish an ML data management system. The practice shall produce or update:
+
+- [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
+- [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
+- [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SUP_11_BP_2](@.md#sup_11_bp_2) Develop an ML data quality approach
 
@@ -35,7 +40,12 @@ Process: SUP.11
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall develop an ML data quality approach. The practice shall produce or update [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system), [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach), [wp_03_53_ml_data](=.md#wp_03_53_ml_data), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
+When implementing this base practice, the organization shall develop an ML data quality approach. The practice shall produce or update:
+
+- [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
+- [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
+- [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SUP_11_BP_3](@.md#sup_11_bp_3) Collect ML data
 
@@ -45,7 +55,12 @@ Process: SUP.11
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall collect ML data. The practice shall produce or update [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system), [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach), [wp_03_53_ml_data](=.md#wp_03_53_ml_data), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
+When implementing this base practice, the organization shall collect ML data. The practice shall produce or update:
+
+- [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
+- [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
+- [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SUP_11_BP_4](@.md#sup_11_bp_4) Process ML data
 
@@ -55,7 +70,12 @@ Process: SUP.11
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall process ML data. The practice shall produce or update [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system), [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach), [wp_03_53_ml_data](=.md#wp_03_53_ml_data), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
+When implementing this base practice, the organization shall process ML data. The practice shall produce or update:
+
+- [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
+- [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
+- [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SUP_11_BP_5](@.md#sup_11_bp_5) Assure quality of ML data
 
@@ -65,7 +85,12 @@ Process: SUP.11
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall assure quality of ML data. The practice shall produce or update [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system), [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach), [wp_03_53_ml_data](=.md#wp_03_53_ml_data), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
+When implementing this base practice, the organization shall assure quality of ML data. The practice shall produce or update:
+
+- [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
+- [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
+- [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 ### [SUP_11_BP_6](@.md#sup_11_bp_6) Communicate agreed processed ML data
 
@@ -75,7 +100,11 @@ Process: SUP.11
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall communicate agreed processed ML data. The practice shall produce or update [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system), [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach), [wp_03_53_ml_data](=.md#wp_03_53_ml_data), [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence).
+When implementing this base practice, the organization shall communicate agreed processed ML data. The practice shall produce or update:
 
+- [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
+- [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
+- [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
+- [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 
 
