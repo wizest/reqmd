@@ -28,7 +28,11 @@ Process: SUP.8
 BasePractice: BP1
 ```
 
-Define selection criteria for identifying relevant work products to be subject to configuration management. Identify and document configuration items according to the defined selection criteria. NOTE 1: Configuration items are representing work products or group of work products which are subject to configuration management as a single entity. NOTE 2: Configuration items may vary in complexity, size, and type, ranging from an entire system including all system, hardware, and software documentation down to a single element or document. NOTE 3: The selection criteria may be applied to single work products or a group of work products.
+Define selection criteria for identifying relevant work products to be subject to configuration management. Identify and document configuration items according to the defined selection criteria.
+
+- Configuration items are representing work products or group of work products which are subject to configuration management as a single entity.
+- Configuration items may vary in complexity, size, and type, ranging from an entire system including all system, hardware, and software documentation down to a single element or document.
+- The selection criteria may be applied to single work products or a group of work products.
 
 The practice shall produce or update:
 
@@ -43,7 +47,11 @@ Process: SUP.8
 BasePractice: BP2
 ```
 
-Define the necessary properties needed for the modification and control of configuration items. NOTE 4: The configuration item properties may be defined for single configuration items or a group of items. NOTE 5: Configuration item properties may include a status model (e.g., Under Work, Tested, Released, etc.), storage location, access rights, etc. NOTE 6: The application of properties may be implemented by attributes of configuration items.
+Define the necessary properties needed for the modification and control of configuration items.
+
+- The configuration item properties may be defined for single configuration items or a group of items.
+- Configuration item properties may include a status model (e.g., Under Work, Tested, Released, etc.), storage location, access rights, etc.
+- The application of properties may be implemented by attributes of configuration items.
 
 The practice shall produce or update:
 
@@ -57,7 +65,9 @@ Process: SUP.8
 BasePractice: BP3
 ```
 
-Establish configuration management mechanisms for control of identified configuration items including the configuration item properties, including mechanisms for controlling parallel modifications of configuration items. NOTE 7: This may include specific mechanisms for different configuration item types, such as branch and merge management, or checkout control.
+Establish configuration management mechanisms for control of identified configuration items including the configuration item properties, including mechanisms for controlling parallel modifications of configuration items.
+
+- This may include specific mechanisms for different configuration item types, such as branch and merge management, or checkout control.
 
 The practice shall produce or update:
 
@@ -72,7 +82,9 @@ Process: SUP.8
 BasePractice: BP4
 ```
 
-Control modifications using the configuration management mechanisms. NOTE 8: This may include the application of a defined status model for configuration items.
+Control modifications using the configuration management mechanisms.
+
+- This may include the application of a defined status model for configuration items.
 
 The practice shall produce or update:
 
@@ -102,7 +114,9 @@ Process: SUP.8
 BasePractice: BP6
 ```
 
-Record, summarize, and communicate the status of configuration items and established baselines to affected parties in order to support the monitoring of progress and status. NOTE 9: Regular communication of the configuration status, e.g., based on a defined status model supports project management, quality activities, and dedicated project phases such as software integration.
+Record, summarize, and communicate the status of configuration items and established baselines to affected parties in order to support the monitoring of progress and status.
+
+- Regular communication of the configuration status, e.g., based on a defined status model supports project management, quality activities, and dedicated project phases such as software integration.
 
 The practice shall produce or update:
 
@@ -117,7 +131,9 @@ Process: SUP.8
 BasePractice: BP7
 ```
 
-Ensure that the information about configuration items is correct and complete including configuration item properties. Ensure the completeness and consistency of baselines. NOTE 10: Completeness and consistency of a baseline means that all required configuration items are included and consistent, and have the required status. This can be used to support e.g., project gate approval.
+Ensure that the information about configuration items is correct and complete including configuration item properties. Ensure the completeness and consistency of baselines.
+
+- Completeness and consistency of a baseline means that all required configuration items are included and consistent, and have the required status. This can be used to support e.g., project gate approval.
 
 The practice shall produce or update:
 
@@ -133,7 +149,9 @@ Process: SUP.8
 BasePractice: BP8
 ```
 
-Verify the availability of appropriate backup and recovery mechanisms for the configuration management including the controlled configuration items. Initiate measures in case of insufficient backup and recovery mechanisms. NOTE 11: Backup and recovery mechanisms may be defined and implemented by organizational units outside the project team. This may include references to corresponding procedures or regulations.
+Verify the availability of appropriate backup and recovery mechanisms for the configuration management including the controlled configuration items. Initiate measures in case of insufficient backup and recovery mechanisms.
+
+- Backup and recovery mechanisms may be defined and implemented by organizational units outside the project team. This may include references to corresponding procedures or regulations.
 
 The practice shall produce or update:
 

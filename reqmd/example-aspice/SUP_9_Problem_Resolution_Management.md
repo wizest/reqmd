@@ -25,7 +25,12 @@ Process: SUP.9
 BasePractice: BP1
 ```
 
-Each problem is uniquely identified, described and recorded. A status is assigned to each problem to facilitate tracking. Supporting information is provided to reproduce and diagnose the problem. NOTE 1: Problems may relate to e.g., product, resources, or methods. NOTE 2: Example values for the problem status are "new", "solved", "closed", etc. NOTE 3: Supporting information may include e.g, the origin of the problem, how it can be reproduced, environmental information, by whom it has been detected. NOTE 4: Unique identification supports traceability to changes made as needed by the change request management process ([SUP_10_PROCESS](@.md#sup_10_process)).
+Each problem is uniquely identified, described and recorded. A status is assigned to each problem to facilitate tracking. Supporting information is provided to reproduce and diagnose the problem.
+
+- Problems may relate to e.g., product, resources, or methods.
+- Example values for the problem status are "new", "solved", "closed", etc.
+- Supporting information may include e.g, the origin of the problem, how it can be reproduced, environmental information, by whom it has been detected.
+- Unique identification supports traceability to changes made as needed by the change request management process ([SUP_10_PROCESS](@.md#sup_10_process)).
 
 The practice shall produce or update:
 
@@ -39,7 +44,9 @@ Process: SUP.9
 BasePractice: BP2
 ```
 
-Analyze the problem, determine its cause, including common causes if existing, and impact. Involve relevant parties. Categorize the problem. NOTE 5: Problem categorization (e.g., light, medium, severe) may be based on severity, criticality, urgency, etc.
+Analyze the problem, determine its cause, including common causes if existing, and impact. Involve relevant parties. Categorize the problem.
+
+- Problem categorization (e.g., light, medium, severe) may be based on severity, criticality, urgency, etc.
 
 The practice shall produce or update:
 
@@ -111,7 +118,9 @@ Process: SUP.9
 BasePractice: BP7
 ```
 
-Collect and analyze problem resolution management data, identify trends, and initiate related actions. Regularly report the results of data analysis, the identified trends and the status of problem resolution activities to relevant stakeholders. NOTE 6: Collected data may contain information about where the problems occurred, how and when they were found, what their impacts were, etc.
+Collect and analyze problem resolution management data, identify trends, and initiate related actions. Regularly report the results of data analysis, the identified trends and the status of problem resolution activities to relevant stakeholders.
+
+- Collected data may contain information about where the problems occurred, how and when they were found, what their impacts were, etc.
 
 The practice shall produce or update:
 

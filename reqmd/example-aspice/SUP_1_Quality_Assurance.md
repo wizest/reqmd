@@ -78,7 +78,9 @@ Process: SUP.1
 BasePractice: BP4
 ```
 
-Identify processes subject to quality assurance according to the quality criteria. Perform appropriate activities to evaluate the processes against their defined quality criteria and associated target values and document the results. NOTE 4: Quality assurance activities may include process assessments, problem analysis, regular check of methods, tools, and the adherence to defined processes, and consideration of lessons learned.
+Identify processes subject to quality assurance according to the quality criteria. Perform appropriate activities to evaluate the processes against their defined quality criteria and associated target values and document the results.
+
+- Quality assurance activities may include process assessments, problem analysis, regular check of methods, tools, and the adherence to defined processes, and consideration of lessons learned.
 
 The practice shall produce or update:
 
@@ -116,7 +118,10 @@ Process: SUP.1
 BasePractice: BP6
 ```
 
-Analyze, track, correct, resolve, and further prevent non-conformances found in quality assurance activities. NOTE 5: Non-conformances detected in work products may be entered into the problem resolution management process ([SUP_9_PROCESS](@.md#sup_9_process)). NOTE 6: Non-conformances detected in the process definition or implementation may be entered into a process improvement process ([PIM_3_PROCESS](@.md#pim_3_process)).
+Analyze, track, correct, resolve, and further prevent non-conformances found in quality assurance activities.
+
+- Non-conformances detected in work products may be entered into the problem resolution management process ([SUP_9_PROCESS](@.md#sup_9_process)).
+- Non-conformances detected in the process definition or implementation may be entered into a process improvement process ([PIM_3_PROCESS](@.md#pim_3_process)).
 
 The practice shall produce or update:
 
@@ -135,7 +140,9 @@ Process: SUP.1
 BasePractice: BP7
 ```
 
-Escalate relevant non-conformances to appropriate levels of management and other relevant stakeholders to facilitate their resolution. NOTE 7: The decision whether to escalate non-conformances may be based on criteria such as delay of resolution, urgency, and risk.
+Escalate relevant non-conformances to appropriate levels of management and other relevant stakeholders to facilitate their resolution.
+
+- The decision whether to escalate non-conformances may be based on criteria such as delay of resolution, urgency, and risk.
 
 The practice shall produce or update:
 
