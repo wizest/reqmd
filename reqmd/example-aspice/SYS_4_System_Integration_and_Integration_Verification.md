@@ -27,7 +27,17 @@ Process: SYS.4
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify verification measures for system integration. The practice shall produce or update:
+Specify the verification measures, based on a defined sequence and preconditions for the integration of system elements against the system static and dynamic aspects of the system architecture, including
+- techniques for the verification measures,
+- pass/fail criteria for verification measures,
+- a definition of entry and exit criteria for the verification measures, and
+- the required verification infrastructure and environment setup.
+
+- Examples on what a verification measure may focus are the timing dependencies of the correct signal flow between interfacing system elements, or interactions between hardware and software, as specified in the system architecture. The system integration test cases may focus on
+
+- Examples on what a verification measure may focus are the timing dependencies of the correct signal flow between interfacing system elements, or interactions between hardware and software, as specified in the system architecture. The system integration test cases may focus on • the correct signal flow between system items, • the timeliness and timing dependencies of signal flow between system items, • the correct interpretation of signals by all system items using an interface, and/or • the dynamic interaction between system items.
+
+The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 
@@ -39,7 +49,11 @@ Process: SYS.4
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall select verification measures. The practice shall produce or update:
+Document the selection of verification measures for each integration step considering selection criteria including criteria for regression verification. The documented selection of verification measures shall have sufficient coverage according to the release scope.
+
+- Examples for selection criteria can be prioritization of requirements, the need for regression verification (due to e.g., changes to the system architectural design or to system components), or the intended use of the delivered product release (e.g., test bench, test track, public road etc.)
+
+The practice shall produce or update:
 
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 
@@ -51,7 +65,12 @@ Process: SYS.4
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall integrate system elements and perform integration verification. The practice shall produce or update:
+Integrate the system elements until the system is fully integrated according to the specified interfaces and interactions between the system elements, and according to the defined sequence and defined preconditions. Perform the selected system integration verification measures. Record the verification measure data including pass/fail status and corresponding verification measure data.
+
+- Examples for preconditions for starting system integration can be successful system element verification or qualification of pre-existing system elements.
+- See [SUP_9_PROCESS](@.md#sup_9_process) for handling verification results that deviate from expected results
+
+The practice shall produce or update:
 
 - [wp_06_50_integration_sequence_instruction](=.md#wp_06_50_integration_sequence_instruction)
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
@@ -66,7 +85,11 @@ Process: SYS.4
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between verification measures and the system architecture. Establish bidirectional traceability between verification results and verification measures.
+
+- Bidirectional traceability supports consistency, and facilitates impact analysis of change requests, and demonstration of verification coverage. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -78,8 +101,10 @@ Process: SYS.4
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
+Summarize the system integration and integration verification results and communicate them to all affected parties.
+
+- Providing all necessary information from the test case execution in a summary enables other parties to judge the consequences.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

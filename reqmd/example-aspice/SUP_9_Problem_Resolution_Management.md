@@ -25,7 +25,9 @@ Process: SUP.9
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify and record the problem. The practice shall produce or update:
+Each problem is uniquely identified, described and recorded. A status is assigned to each problem to facilitate tracking. Supporting information is provided to reproduce and diagnose the problem. NOTE 1: Problems may relate to e.g., product, resources, or methods. NOTE 2: Example values for the problem status are "new", "solved", "closed", etc. NOTE 3: Supporting information may include e.g, the origin of the problem, how it can be reproduced, environmental information, by whom it has been detected. NOTE 4: Unique identification supports traceability to changes made as needed by the change request management process ([SUP_10_PROCESS](@.md#sup_10_process)).
+
+The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
 
@@ -37,7 +39,9 @@ Process: SUP.9
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall determine the cause and the impact of the problem. The practice shall produce or update:
+Analyze the problem, determine its cause, including common causes if existing, and impact. Involve relevant parties. Categorize the problem. NOTE 5: Problem categorization (e.g., light, medium, severe) may be based on severity, criticality, urgency, etc.
+
+The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
 - [wp_15_55_problem_analysis_evidence](=.md#wp_15_55_problem_analysis_evidence)
@@ -50,7 +54,9 @@ Process: SUP.9
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall authorize urgent resolution action. The practice shall produce or update:
+Obtain authorization for immediate action if a problem requires an urgent resolution according to the categorization.
+
+The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
 
@@ -62,7 +68,9 @@ Process: SUP.9
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall raise alert notifications. The practice shall produce or update:
+If according to the categorization the problem has a high impact on other systems or other affected parties, an alert notification needs to be raised accordingly.
+
+The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
 
@@ -74,7 +82,9 @@ Process: SUP.9
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall initiate problem resolution. The practice shall produce or update:
+Initiate appropriate actions according to the categorization to resolve the problem long-term, including review of those actions or initiate a change request. This includes synchronization and consistency with short-term urgent resolution actions, if applicable.
+
+The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
 
@@ -86,7 +96,9 @@ Process: SUP.9
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall track problems to closure. The practice shall produce or update:
+Track the status of problems to closure including all related change requests. The closure of problems is accepted by relevant stakeholders.
+
+The practice shall produce or update:
 
 - [wp_13_07_problem](=.md#wp_13_07_problem)
 - [wp_15_12_problem_status](=.md#wp_15_12_problem_status)
@@ -99,8 +111,8 @@ Process: SUP.9
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall report the status of problem resolution activities. The practice shall produce or update:
+Collect and analyze problem resolution management data, identify trends, and initiate related actions. Regularly report the results of data analysis, the identified trends and the status of problem resolution activities to relevant stakeholders. NOTE 6: Collected data may contain information about where the problems occurred, how and when they were found, what their impacts were, etc.
+
+The practice shall produce or update:
 
 - [wp_15_12_problem_status](=.md#wp_15_12_problem_status)
-
-

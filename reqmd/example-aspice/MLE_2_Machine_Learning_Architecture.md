@@ -27,7 +27,12 @@ Process: MLE.2
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall develop ML architecture. The practice shall produce or update:
+Develop and document the ML architecture that specifies ML architectural elements including details of the ML model, pre- and postprocessing, and hyperparameters which are required to create, train, test, and deploy the ML model.
+
+- Necessary details of the ML model may include layers, activation functions, and backpropagation. The level of detail of the ML model may not need to cover aspects like single neurons.
+- The details of the ML model may differ between the ML model used during training and the deployed ML model.
+
+The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
 - [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
@@ -41,7 +46,9 @@ Process: MLE.2
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall determine hyperparameter ranges and initial values. The practice shall produce or update:
+Determine and document the hyperparameter ranges and the initial values as a basis for the training.
+
+The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
 - [wp_01_54_hyperparameter](=.md#wp_01_54_hyperparameter)
@@ -54,7 +61,11 @@ Process: MLE.2
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall analyze ML architectural elements. The practice shall produce or update:
+Define criteria for analysis of the ML architectural elements. Analyze ML architectural elements according to the defined criteria.
+
+- Trustworthiness and explainability might be criteria for the analysis of the ML architectural elements.
+
+The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
@@ -67,7 +78,9 @@ Process: MLE.2
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall define interfaces of the ML architectural elements. The practice shall produce or update:
+Determine and document the internal and external interfaces of each ML architectural element including its interfaces to related software components.
+
+The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
 
@@ -79,7 +92,9 @@ Process: MLE.2
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall define resource consumption objectives for the ML architectural elements. The practice shall produce or update:
+Determine and document the resource consumption objectives for all relevant ML architectural elements during training and deployment.
+
+The practice shall produce or update:
 
 - [wp_04_51_ml_architecture](=.md#wp_04_51_ml_architecture)
 
@@ -91,7 +106,12 @@ Process: MLE.2
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between the ML architectural elements and the ML requirements.
+
+- Bidirectional traceability supports consistency, and facilitates impact analyses of change requests, and verification coverage demonstration. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+- The bidirectional traceability should be established on a reasonable level of abstraction to the ML architectural elements.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -103,8 +123,8 @@ Process: MLE.2
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall communicate agreed ML architecture. The practice shall produce or update:
+Inform all affected parties about the agreed ML architecture including the details of the ML model and the initial hyperparameter values.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

@@ -26,7 +26,20 @@ Process: MLE.4
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify an ML test approach. The practice shall produce or update:
+Specify an ML test approach suitable to provide evidence for compliance of the trained ML model and the deployed ML model with the ML requirements. The ML test approach includes
+- ML test scenarios with distribution of data characteristics (e.g., gender, weather conditions, street conditions within the ODD) defined by ML requirements,
+- distribution and frequency of each ML test scenario inside the ML test data set,
+- expected test result per test datum,
+- entry and exit criteria of the testing,
+- approach for data set creation and modification, and
+- the required testing infrastructure and environment setup.
+
+- Expected test result per test datum might require labeling of test data to support comparison of output of the ML model with the expected output.
+- Test datum is the smallest amount of data which is processed by the ML model into only one output. E.g., one image in photo processing or an audio sequence in voice recognition.
+- Data characteristic is one property of the data that may have different expressions in the ODD. E.g., weather condition may contain expressions like sunny, foggy or rainy.
+- An ML test scenario is a combination of expressions of all defined data characteristics e.g., weather conditions = sunny, street conditions = gravel road.
+
+The practice shall produce or update:
 
 - [wp_08_64_ml_test_approach](=.md#wp_08_64_ml_test_approach)
 
@@ -38,7 +51,12 @@ Process: MLE.4
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall create ML test data set. The practice shall produce or update:
+Create the ML test data set needed for testing of the trained ML model and testing of the deployed ML model from the ML data collection provided by [SUP_11_PROCESS](@.md#sup_11_process) considering the ML test approach. The ML test data set shall not be used for training.
+
+- The ML test data set for the trained ML model might differ from the test data set of the deployed ML model.
+- Additional data sets might be used for special purposes like assurance of safety, fairness, robustness.
+
+The practice shall produce or update:
 
 - [wp_03_51_ml_data_set](=.md#wp_03_51_ml_data_set)
 
@@ -50,7 +68,11 @@ Process: MLE.4
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall test trained ML model. The practice shall produce or update:
+Test the trained ML model according to the ML test approach using the created ML test data set. Record and evaluate the ML test results.
+
+- Evaluation of test logs might include pattern analysis of failed test data to support e.g., trustworthiness.
+
+The practice shall produce or update:
 
 - [wp_13_50_ml_test_results](=.md#wp_13_50_ml_test_results)
 
@@ -62,7 +84,11 @@ Process: MLE.4
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall derive deployed ML model. The practice shall produce or update:
+Derive the deployed ML model from the trained ML model according to the ML architecture. The deployed ML model shall be used for testing and delivery to software integration.
+
+- The deployed ML model will be integrated into the target system and may differ from the trained ML model which often requires powerful hardware and uses interpretative languages.
+
+The practice shall produce or update:
 
 - [wp_13_50_ml_test_results](=.md#wp_13_50_ml_test_results)
 - [wp_11_50_deployed_ml_model](=.md#wp_11_50_deployed_ml_model)
@@ -75,7 +101,9 @@ Process: MLE.4
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall test deployed ML model. The practice shall produce or update:
+Test the deployed ML model according to the ML test approach using the created ML test data set. Record and evaluate the ML test results.
+
+The practice shall produce or update:
 
 - [wp_13_50_ml_test_results](=.md#wp_13_50_ml_test_results)
 - [wp_11_50_deployed_ml_model](=.md#wp_11_50_deployed_ml_model)
@@ -88,7 +116,11 @@ Process: MLE.4
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between the ML test approach and the ML requirements, and the ML test data set and the ML data requirements; and bidirectional traceability is established between the ML test approach and ML test results.
+
+- Bidirectional traceability supports consistency, and facilitates impact analyses of change requests, and verification coverage demonstration. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -100,8 +132,8 @@ Process: MLE.4
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
+Summarize the ML test results of the ML model. Inform all affected parties about the agreed results and the deployed ML model.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

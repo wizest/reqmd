@@ -25,7 +25,11 @@ Process: SPL.2
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall define the functional content of releases. The practice shall produce or update:
+Define the functionality to be included and the release criteria for each release.
+
+- This may include the hardware elements, software elements, and extra application parameter files (influencing the identified system functionality) that are needed for the release.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
@@ -38,7 +42,11 @@ Process: SPL.2
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall define release package. The practice shall produce or update:
+Define the release as well as supporting tools and information.
+
+- The release package may include also programming tools.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
@@ -51,7 +59,11 @@ Process: SPL.2
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall ensure unique identification of releases. The practice shall produce or update:
+Ensure a unique identification of the release based upon the intended purpose and expectations of the release.
+
+- Unique identification may be realized by a classification and numbering scheme for product releases.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
@@ -65,7 +77,11 @@ Process: SPL.2
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall build the release from items under configuration control. The practice shall produce or update:
+Build the release from items under configuration control to ensure integrity.
+
+- This practice may be supported by the [SUP_8_PROCESS](@.md#sup_8_process) Configuration Management Process.
+
+The practice shall produce or update:
 
 - [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
 - [wp_18_06_product_release_criteria](=.md#wp_18_06_product_release_criteria)
@@ -78,7 +94,9 @@ Process: SPL.2
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall ensure release approval before delivery. The practice shall produce or update:
+Criteria for the release are satisfied before delivery takes place.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
@@ -92,7 +110,11 @@ Process: SPL.2
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall provide a release note. The practice shall produce or update:
+A release is accompanied by information detailing key characteristics of the release.
+
+- The release note may include information about legal aspects like relevant target markets, legislation that is considered etc. See also [VAL_1_PROCESS](@.md#val_1_process) Validation.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
@@ -107,7 +129,9 @@ Process: SPL.2
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall communicate the type, service level and duration of support for a release. The practice shall produce or update:
+Identify and communicate the type, service level and duration of support for a release.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_11_04_product_release_package](=.md#wp_11_04_product_release_package)
@@ -122,10 +146,12 @@ Process: SPL.2
 BasePractice: BP8
 ```
 
-When implementing this base practice, the organization shall deliver the release package to the intended customer. The practice shall produce or update:
+Deliver the release package to the intended customer.
+
+- The intended customer may be an internal organizational unit or an external organization.
+
+The practice shall produce or update:
 
 - [wp_11_03_release_note](=.md#wp_11_03_release_note)
 - [wp_13_06_delivery_evidence](=.md#wp_13_06_delivery_evidence)
 - [wp_13_13_product_release_approval](=.md#wp_13_13_product_release_approval)
-
-

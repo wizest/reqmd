@@ -26,7 +26,12 @@ Process: HWE.2
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify the hardware architecture. The practice shall produce or update:
+Develop the hardware architecture that identifies the hardware components. Document the rationale for the defined hardware architecture.
+
+- Examples for aspects reflected in the hardware architecture are ground concept, supply concept, EMC concept.
+- Examples for a design rationale can be implied by the reuse of a standard hardware, platform, or product line, respectively, or by a make-or-buy decision, or found in an evolutionary way.
+
+The practice shall produce or update:
 
 - [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
 - [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
@@ -44,7 +49,12 @@ Process: HWE.2
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall specify the hardware detailed design. The practice shall produce or update:
+Based on components identified in the hardware architecture, specify the detailed design description and the schematics for the intended hardware variants, including the interfaces between the hardware elements. Derive the hardware layout, the hardware bill of materials, and the production data.
+
+- The identification of hardware parts and their suppliers in the hardware bill of materials may be subject to a pre-defined repository (see also IATF 16949:2016, clause 8.4.1.2.).
+- Hardware detailed design may be subject to constraints such as availability of hardware parts on the market, hardware design rules, layout rules, creepage and clearance distances, compliance of HW parts with industry standards such as AEC-Q, REACH.
+
+The practice shall produce or update:
 
 - [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
 - [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
@@ -62,7 +72,11 @@ Process: HWE.2
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall specify dynamic aspects. The practice shall produce or update:
+Evaluate and document the dynamic behavior of the relevant hardware elements and the interaction between them.
+
+- Not all hardware elements have dynamic behavior that needs to be described.
+
+The practice shall produce or update:
 
 - [wp_04_52_hardware_architecture](=.md#wp_04_52_hardware_architecture)
 - [wp_04_53_hardware_detailed_design](=.md#wp_04_53_hardware_detailed_design)
@@ -80,7 +94,12 @@ Process: HWE.2
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall analyze the hardware architecture and the hardware detailed design. The practice shall produce or update:
+Analyze the hardware architecture and hardware detailed design regarding relevant technical aspects, and support project management regarding project estimates. Identify special characteristics.
+
+- Examples for technical aspects are manufacturability for production, suitability of pre-existing hardware components to be reused, or availability of hardware elements.
+- Examples of methods suitable for analyzing technical aspects are simulations, calculations, quantitative or qualitative analyses such as FMEA.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics)
@@ -93,7 +112,12 @@ Process: HWE.2
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish traceability between hardware elements and hardware requirements. Ensure consistency and establish traceability between the hardware detailed design and components of the hardware architecture.
+
+- There may be non-functional hardware requirements that the hardware design does not trace to. Examples are development process requirements. Such requirements are still subject to verification.
+- Bidirectional traceability further supports consistency, and facilitates impact analysis of change requests, and demonstration of verification coverage. Traceability alone, e.g, the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -105,12 +129,12 @@ Process: HWE.2
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall communicate agreed hardware architecture and hardware detailed design. The practice shall produce or update:
+Communicate the agreed hardware architecture and the hardware detailed design, including the special characteristics and relevant production data, to all affected parties.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_04_54_hardware_schematics](=.md#wp_04_54_hardware_schematics)
 - [wp_14_54_hardware_bill_of_materials](=.md#wp_14_54_hardware_bill_of_materials)
 - [wp_04_55_hardware_layout](=.md#wp_04_55_hardware_layout)
 - [wp_03_54_hardware_production_data](=.md#wp_03_54_hardware_production_data)
-
-

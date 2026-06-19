@@ -26,7 +26,10 @@ Process: SUP.10
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify and record the change requests. The practice shall produce or update:
+The scope for application of change requests is identified. Each change request is uniquely identified, described, and recorded, including the initiator and reason of the change request. A status is assigned to each change request to facilitate tracking. NOTE 1: Change requests may be used for changes related to e.g., product, process, methods. NOTE 2: Example values for the change request status are "open", "under investigation", "implemented", etc. NOTE 3: The change request handling may differ across the product life cycle e.g., during prototype
+construction and series development
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 
@@ -38,7 +41,9 @@ Process: SUP.10
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall analyze and assess change requests. The practice shall produce or update:
+Change requests are analyzed by relevant parties according to analysis criteria. Work products affected by the change request and dependencies to other change requests are determined. The impact of the change requests is assessed. NOTE 4: Examples for analysis criteria are: resource requirements, scheduling issues, risks, benefits, etc.
+
+The practice shall produce or update:
 
 - [wp_18_57_change_analysis_criteria](=.md#wp_18_57_change_analysis_criteria)
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
@@ -51,7 +56,9 @@ Process: SUP.10
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall approve change requests before implementation. The practice shall produce or update:
+Change requests are prioritized and approved for implementation based on analysis results and availability of resources. NOTE 5: A Change Control Board (CCB) is an example mechanism used to approve change requests. NOTE 6: Prioritization of change requests may be done by allocation to releases.
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 
@@ -63,7 +70,9 @@ Process: SUP.10
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall establish bidirectional traceability. The practice shall produce or update:
+Establish bidirectional traceability between change requests and work products affected by the change requests. In case that the change request is initiated by a problem, establish bidirectional traceability between change requests and the corresponding problem reports.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -75,7 +84,9 @@ Process: SUP.10
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall confirm the implementation of change requests. The practice shall produce or update:
+The implementation of change requests is confirmed before closure by relevant stakeholders.
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 
@@ -87,8 +98,8 @@ Process: SUP.10
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall track change requests to closure. The practice shall produce or update:
+Change requests are tracked to closure. The status of change requests is communicated to all affected parties. NOTE 7: Examples for informing affected parties can be daily standup meetings or tool-supported workflows.
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
-
-

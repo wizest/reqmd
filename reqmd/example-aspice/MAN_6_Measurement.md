@@ -25,7 +25,11 @@ Process: MAN.6
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify information needs. The practice shall produce or update:
+Identify the measurement information needs that are necessary to evaluate the achievement of process objectives and work products.
+
+- Information needs may change over time. Therefore, the measurement process may be used in an iterative way.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
@@ -37,7 +41,11 @@ Process: MAN.6
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall specify metrics. The practice shall produce or update:
+Identify and develop an appropriate set of metrics based on measurement information needs.
+
+- Metrics may be related to processes or development results.
+
+The practice shall produce or update:
 
 - [wp_07_51_measurement_result](=.md#wp_07_51_measurement_result)
 
@@ -49,7 +57,11 @@ Process: MAN.6
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall collect and store metrics. The practice shall produce or update:
+Collect and store both base and derived metrics, including any context information necessary to verify and understand the metrics.
+
+- Base metrics in the context of this process are directly gathered metrics like "number of defects found" or "number of lines of code", where derived metrics are two or more metrics that are brought in relation to each other like "number of defects found per line of code".
+
+The practice shall produce or update:
 
 - [wp_03_03_benchmarking_data](=.md#wp_03_03_benchmarking_data)
 - [wp_03_04_customer_satisfaction_data](=.md#wp_03_04_customer_satisfaction_data)
@@ -65,7 +77,9 @@ Process: MAN.6
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall analyze collected metrics. The practice shall produce or update:
+Analyze, interpret and review measured values to support decision-making.
+
+The practice shall produce or update:
 
 - [wp_03_03_benchmarking_data](=.md#wp_03_03_benchmarking_data)
 - [wp_03_04_customer_satisfaction_data](=.md#wp_03_04_customer_satisfaction_data)
@@ -81,7 +95,9 @@ Process: MAN.6
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall communicate analysis results. The practice shall produce or update:
+Communicate analysis results to all affected parties.
+
+The practice shall produce or update:
 
 - [wp_03_03_benchmarking_data](=.md#wp_03_03_benchmarking_data)
 - [wp_03_04_customer_satisfaction_data](=.md#wp_03_04_customer_satisfaction_data)
@@ -97,12 +113,12 @@ Process: MAN.6
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall use metrics for decision-making. The practice shall produce or update:
+Make accessible and use information from collected metrics and analysis results for any decision-making process for which it is relevant.
+
+The practice shall produce or update:
 
 - [wp_03_03_benchmarking_data](=.md#wp_03_03_benchmarking_data)
 - [wp_03_04_customer_satisfaction_data](=.md#wp_03_04_customer_satisfaction_data)
 - [wp_03_06_process_performance_information](=.md#wp_03_06_process_performance_information)
 - [wp_07_51_measurement_result](=.md#wp_07_51_measurement_result)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-
-

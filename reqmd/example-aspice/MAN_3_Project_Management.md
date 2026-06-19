@@ -27,7 +27,9 @@ Process: MAN.3
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall define the scope of work. The practice shall produce or update:
+Identify the project's goals, motivation and boundaries.
+
+The practice shall produce or update:
 
 - [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
 
@@ -39,7 +41,11 @@ Process: MAN.3
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall define project life cycle. The practice shall produce or update:
+Define the life cycle for the project, which is appropriate to the scope, context, and complexity of the project. Define a release scope for relevant milestones.
+
+- This may include the alignment of the project life cycle with the customer's development process.
+
+The practice shall produce or update:
 
 - [wp_08_53_scope_of_work](=.md#wp_08_53_scope_of_work)
 - [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
@@ -54,7 +60,11 @@ Process: MAN.3
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall evaluate feasibility of the project. The practice shall produce or update:
+Evaluate the feasibility of achieving the goals of the project with respect to time, project estimates, and available resources.
+
+- The evaluation of feasibility may consider technical constraints of the project.
+
+The practice shall produce or update:
 
 - [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -68,7 +78,12 @@ Process: MAN.3
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall define and monitor work packages. The practice shall produce or update:
+Define and monitor work packages and their dependencies according to defined project life cycle and estimations.
+
+- The structure and the size of the work packages support an adequate progress monitoring.
+- Work packages may be organized in a work breakdown structure.
+
+The practice shall produce or update:
 
 - [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
 - [wp_14_10_work_package](=.md#wp_14_10_work_package)
@@ -89,7 +104,13 @@ Process: MAN.3
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall define and monitor project estimates and resources. The practice shall produce or update:
+Define and monitor project estimates of effort and resources based on project's goals, project risks, motivation and boundaries.
+
+- Examples of necessary resources are budget, people, product samples, or infrastructure
+- Project risks (using [MAN_5_PROCESS](@.md#man_5_process)) may be considered.
+- Estimations and resources may include engineering, management and supporting processes.
+
+The practice shall produce or update:
 
 - [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
 - [wp_14_10_work_package](=.md#wp_14_10_work_package)
@@ -108,7 +129,11 @@ Process: MAN.3
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall define and monitor required skills, knowledge, and experience. The practice shall produce or update:
+Identify and monitor the required skills, knowledge, and experience for the project in line with the estimates and work packages.
+
+- Training, mentoring or coaching of individuals may be applied to resolve deviations from required skills and knowledge.
+
+The practice shall produce or update:
 
 - [wp_14_10_work_package](=.md#wp_14_10_work_package)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -126,7 +151,11 @@ Process: MAN.3
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall define and monitor project interfaces and agreed commitments. The practice shall produce or update:
+Identify and agree interfaces of the project with affected stakeholders and monitor agreed commitments. Define an escalation mechanism for commitments that are not fulfilled.
+
+- Affected stakeholders may include other projects, organizational units, sub-contractors, and service providers.
+
+The practice shall produce or update:
 
 - [wp_14_10_work_package](=.md#wp_14_10_work_package)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -144,7 +173,9 @@ Process: MAN.3
 BasePractice: BP8
 ```
 
-When implementing this base practice, the organization shall define and monitor project schedule. The practice shall produce or update:
+Allocate resources to work packages and schedule each activity of the project. Monitor the performance of activities against schedule.
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
@@ -161,7 +192,11 @@ Process: MAN.3
 BasePractice: BP9
 ```
 
-When implementing this base practice, the organization shall ensure consistency. The practice shall produce or update:
+Regularly adjust estimates, resources, skills, work packages and their dependencies, schedules, plans, interfaces, and commitments for the project to ensure consistency with the scope of work.
+
+- This may include the consideration of critical dependencies, that are an input for risk management.
+
+The practice shall produce or update:
 
 - [wp_08_54_feasibility_analysis](=.md#wp_08_54_feasibility_analysis)
 - [wp_14_10_work_package](=.md#wp_14_10_work_package)
@@ -182,7 +217,12 @@ Process: MAN.3
 BasePractice: BP10
 ```
 
-When implementing this base practice, the organization shall review and report progress of the project. The practice shall produce or update:
+Regularly review and report the status of the project and the fulfillment of work packages against estimated effort and duration to all affected parties. Prevent recurrence of identified problems.
+
+- Project reviews may be executed at regular intervals by the management. Project reviews may contribute to identify best practices and lessons learned.
+- Refer to [SUP_9_PROCESS](@.md#sup_9_process) for resolution of problems
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
@@ -190,5 +230,3 @@ When implementing this base practice, the organization shall review and report p
 - [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
 - [wp_08_56_schedule](=.md#wp_08_56_schedule)
 - [wp_15_06_project_status](=.md#wp_15_06_project_status)
-
-

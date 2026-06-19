@@ -26,7 +26,16 @@ Process: SYS.5
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify verification measures for system verification. The practice shall produce or update:
+Specify the verification measures for system verification suitable to provide evidence for compliance with the functional and non-functional information in the system requirements, including
+- techniques for the verification measures,
+- pass/fail criteria for verification measures,
+- a definition of entry and exit criteria for the verification measures,
+- necessary sequence of verification measures, and
+- the required verification infrastructure and environment setup.
+
+- The system verification measures may cover aspects such as thermal, environmental, robustness/lifetime, and EMC.
+
+The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 
@@ -38,7 +47,11 @@ Process: SYS.5
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall select verification measures. The practice shall produce or update:
+Document the selection of verification measures considering selection criteria including criteria for regression verification. The selection of verification measures shall have sufficient coverage according to the release scope.
+
+- Examples for criteria for selection can be prioritization of requirements, the need for regression verification (due to e.g., changes to the system requirements), the intended use of the delivered product release (test bench, test track, public road etc.)
+
+The practice shall produce or update:
 
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 
@@ -50,7 +63,11 @@ Process: SYS.5
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall perform verification of the integrated system. The practice shall produce or update:
+Perform the verification of the integrated system using the selected verification measures. Record the verification results including pass/fail status and corresponding verification measure data.
+
+- See [SUP_9_PROCESS](@.md#sup_9_process) for handling verification results that deviate from expected results
+
+The practice shall produce or update:
 
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
@@ -63,7 +80,11 @@ Process: SYS.5
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between verification measures and system requirements. Establish bidirectional traceability between verification results and verification measures.
+
+- Bidirectional traceability supports consistency, and facilitates impact analysis of change requests, and demonstration of verification coverage. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -75,8 +96,10 @@ Process: SYS.5
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
+Summarize the system verification results and communicate them to all affected parties.
+
+- Providing all necessary information from the test case execution in a summary enables other parties to judge the consequences.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

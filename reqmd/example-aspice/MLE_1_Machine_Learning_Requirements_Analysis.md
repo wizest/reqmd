@@ -26,7 +26,13 @@ Process: MLE.1
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify ML requirements. The practice shall produce or update:
+Use the software requirements and the software architecture to identify and specify functional and non-functional ML requirements, as well as ML data requirements specifying data characteristics (e.g., gender, weather conditions, street conditions within the ODD) and their expected distributions.
+
+- Non-functional requirements may include relevant characteristics of the ODD and KPIs as robustness, performance, and level of trustworthiness.
+- The ML data requirements are input for [SUP_11_PROCESS](@.md#sup_11_process) Machine Learning Data Management but also for other MLE processes.
+- In case of ML development only, stakeholder requirements represent the software requirements.
+
+The practice shall produce or update:
 
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
 
@@ -38,7 +44,12 @@ Process: MLE.1
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall structure ML requirements. The practice shall produce or update:
+Structure and prioritize the ML requirements.
+
+- Examples for structuring criteria can be grouping (e.g., by functionality) or variants identification.
+- Prioritization can be done according to project or stakeholder needs via e.g., definition of release scopes. Refer to [SPL_2_BP_1](@.md#spl_2_bp_1).
+
+The practice shall produce or update:
 
 - [wp_17_00_requirement](=.md#wp_17_00_requirement)
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
@@ -51,7 +62,11 @@ Process: MLE.1
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall analyze ML requirements. The practice shall produce or update:
+Analyze the specified ML requirements including their interdependencies to ensure correctness, technical feasibility, and ability for machine learning model testing, and to support project management regarding project estimates.
+
+- See [MAN_3_BP_3](@.md#man_3_bp_3) for project feasibility and [MAN_3_BP_5](@.md#man_3_bp_5) for project estimates.
+
+The practice shall produce or update:
 
 - [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
@@ -64,7 +79,11 @@ Process: MLE.1
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall analyze the impact on the ML operating environment. The practice shall produce or update:
+Analyze the impact that the ML requirements will have on interfaces of software components and the ML operating environment.
+
+- The ML operating environment is defined as the infrastructure and information which both the trained ML model and the deployed ML model need for execution.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
@@ -76,7 +95,12 @@ Process: MLE.1
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between ML requirements and software requirements and between ML requirements and the software architecture.
+
+- Bidirectional traceability supports consistency, facilitates impact analyses of change requests, and verification coverage demonstration. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+- Redundant traceability is not intended, but at least one out of the given traceability paths.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -88,8 +112,8 @@ Process: MLE.1
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall communicate agreed ML requirements and impact on the operating environment. The practice shall produce or update:
+Communicate agreed ML requirements and impact on the operating environment. Communicate the agreed ML requirements, and the results of the impact analysis on the ML operating environment to all affected parties.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

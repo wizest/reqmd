@@ -25,7 +25,15 @@ Process: SUP.11
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall establish an ML data management system. The practice shall produce or update:
+Establish an ML data management system which supports
+- ML data management activities,
+- relevant sources of ML data,
+- ML data life cycle including a status model, and
+- interfaces to affected parties.
+
+- Supported ML data management activities may include data collection, labeling/annotation, and structuring.
+
+The practice shall produce or update:
 
 - [wp_16_52_ml_data_management_system](=.md#wp_16_52_ml_data_management_system)
 
@@ -37,7 +45,14 @@ Process: SUP.11
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall develop an ML data quality approach. The practice shall produce or update:
+Develop an approach to ensure that the quality of ML data is analyzed based on defined ML data quality criteria and activities are performed to support avoidance of biases of data.
+
+- Examples of ML data quality criteria are relevant data sources, reliability and consistency of labelling, completeness against ML data requirements.
+- The ML data management system should support the quality criteria and activities of the ML data quality approach.
+- Biases to avoid may include sampling bias (e.g., gender, age) and feedback loop bias.
+- For creation of ML data sets see [MLE_3_BP_2](@.md#mle_3_bp_2) and [MLE_4_BP_2](@.md#mle_4_bp_2).
+
+The practice shall produce or update:
 
 - [wp_19_50_ml_data_quality_approach](=.md#wp_19_50_ml_data_quality_approach)
 
@@ -49,7 +64,12 @@ Process: SUP.11
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall collect ML data. The practice shall produce or update:
+Relevant sources for raw data are identified and continuously monitored for changes. The raw data is collected according to the ML data requirements.
+
+- The identification and collection of ML data might be an organizational responsibility.
+- Continuous monitoring should include the ODD and may lead to changes of the ML requirements.
+
+The practice shall produce or update:
 
 - [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
 
@@ -61,7 +81,9 @@ Process: SUP.11
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall process ML data. The practice shall produce or update:
+The raw data are processed (annotated, analyzed, and structured) according to the ML data requirements.
+
+The practice shall produce or update:
 
 - [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
 
@@ -73,7 +95,11 @@ Process: SUP.11
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall assure quality of ML data. The practice shall produce or update:
+Perform the activities according to the ML data quality approach to ensure that the ML data meets the defined ML data quality criteria.
+
+- These activities may include sample-based reviews or statistical methods.
+
+The practice shall produce or update:
 
 - [wp_03_53_ml_data](=.md#wp_03_53_ml_data)
 
@@ -85,8 +111,8 @@ Process: SUP.11
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall communicate agreed processed ML data. The practice shall produce or update:
+Inform all affected parties about the agreed processed ML data and provide them to the affected parties.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

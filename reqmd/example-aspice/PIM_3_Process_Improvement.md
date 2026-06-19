@@ -26,7 +26,13 @@ Process: PIM.3
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall establish commitment. The practice shall produce or update:
+Establish commitment to support the process improvement staff, to provide resources and further enablers to sustain improvement actions.
+
+- The process improvement process is a generic process, which can be used at all levels (e.g, organizational level, process level, project level, etc.) and which can be used to improve all processes.
+- Commitment at all levels of management may support process improvement.
+- Enablers for improvement measures may include trainings, methods, infrastructure, etc.
+
+The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 
@@ -38,7 +44,13 @@ Process: PIM.3
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall identify improvement measures. The practice shall produce or update:
+Identify issues from the analysis of process performance and derive improvement opportunities with justified reasons for change.
+
+- Analysis may include problem report trend analysis (see [SUP_9_PROCESS](@.md#sup_9_process)), analysis from Quality Assurance and Verification results and records (see [SUP_1_PROCESS](@.md#sup_1_process)), validation results and records, and product quality metrics like defect rate.
+- Issues and improvement suggestions may be addressed by the customer.
+- Sources for identification of issues may include: process assessment results, audits, customer's satisfaction reports, measurements of organizational effectiveness/efficiency, costs of quality.
+
+The practice shall produce or update:
 
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
@@ -53,7 +65,11 @@ Process: PIM.3
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall establish process improvement goals. The practice shall produce or update:
+Analyze the current status of the existing processes and establish improvement goals.
+
+- The current status of processes may be determined by process assessment.
+
+The practice shall produce or update:
 
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
@@ -69,7 +85,9 @@ Process: PIM.3
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall prioritize improvements. The practice shall produce or update:
+Prioritize the improvement goals and improvement measures.
+
+The practice shall produce or update:
 
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
@@ -85,7 +103,11 @@ Process: PIM.3
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall define process improvement measures. The practice shall produce or update:
+Process improvement measures are defined.
+
+- Improvements may be documented in incremental steps.
+
+The practice shall produce or update:
 
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
@@ -101,7 +123,12 @@ Process: PIM.3
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall implement process improvement measures. The practice shall produce or update:
+Implement and apply the improvements to the processes. Update the Process documentation and train people as needed.
+
+- Process application can be supported by establishing policies, adequate process infrastructure, process training, process coaching and tailoring processes to local needs.
+- Improvements may be piloted before roll out within the organization.
+
+The practice shall produce or update:
 
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_10_00_process_description](=.md#wp_10_00_process_description)
@@ -117,7 +144,9 @@ Process: PIM.3
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall confirm process improvement. The practice shall produce or update:
+The effects of process implementation are monitored and measured, and the achievement of defined improvement goals is confirmed.
+
+The practice shall produce or update:
 
 - [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
@@ -131,10 +160,10 @@ Process: PIM.3
 BasePractice: BP8
 ```
 
-When implementing this base practice, the organization shall communicate results of improvement. The practice shall produce or update:
+Knowledge gained from the improvements and progress of the improvement implementation is communicated to affected parties.
+
+The practice shall produce or update:
 
 - [wp_06_04_training_material](=.md#wp_06_04_training_material)
 - [wp_07_04_process_metric](=.md#wp_07_04_process_metric)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

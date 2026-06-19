@@ -25,7 +25,15 @@ Process: SWE.4
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify software unit verification measures. The practice shall produce or update:
+Specify verification measures for each software unit defined in the software detailed design, including
+- pass/fail criteria for verification measures,
+- entry and exit criteria for verification measures, and
+- the required verification infrastructure.
+
+- Examples for unit verification measures are static analysis, code reviews, and unit testing.
+- Static analysis can be done based on MISRA rulesets and other coding standards.
+
+The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 
@@ -37,7 +45,9 @@ Process: SWE.4
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall select software unit verification measures. The practice shall produce or update:
+Document the selection of verification measures considering selection criteria including criteria for regression verification. The documented selection of verification measures shall have sufficient coverage according to the release scope.
+
+The practice shall produce or update:
 
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 
@@ -49,7 +59,11 @@ Process: SWE.4
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall verify software units. The practice shall produce or update:
+Perform software unit verification using the selected verification measures. Record the verification results including pass/fail status and corresponding verification measure data.
+
+- See [SUP_9_PROCESS](@.md#sup_9_process) for handling of verification results that deviate from expected results.
+
+The practice shall produce or update:
 
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
@@ -62,7 +76,11 @@ Process: SWE.4
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between verification measures and the software units defined in the detailed design. Establish bidirectional traceability between the verification results and the verification measures.
+
+- Bidirectional traceability supports consistency, and facilitates impact analysis of change requests, and demonstration of verification coverage. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -74,8 +92,10 @@ Process: SWE.4
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
+Summarize the results of software unit verification and communicate them to all affected parties.
+
+- Providing all necessary information from the test case execution in a summary enables other parties to judge the consequences.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

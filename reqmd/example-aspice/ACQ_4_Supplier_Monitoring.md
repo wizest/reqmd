@@ -24,7 +24,9 @@ Process: ACQ.4
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall agree on and maintain joint activities, joint interfaces, and information to be exchanged. The practice shall produce or update:
+Agree on and maintain joint activities, joint interfaces, and information to be exchanged. Establish and maintain an agreement on information to be exchanged, on joint activities, joint interfaces, responsibilities, type and frequency of joint activities, communications, meetings, status reports, and reviews.
+
+The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -42,7 +44,9 @@ Process: ACQ.4
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall exchange all agreed information. The practice shall produce or update:
+Use the defined joint interfaces between customer and supplier for the exchange of all agreed information.
+
+The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -59,7 +63,11 @@ Process: ACQ.4
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall review development work products with the supplier. The practice shall produce or update:
+Review development work products with the supplier on the agreed regular basis, covering technical aspects, problems and risks. Track open measures.
+
+- see [SUP_9_PROCESS](@.md#sup_9_process) for management of problems
+
+The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -77,7 +85,11 @@ Process: ACQ.4
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall review progress of the supplier. The practice shall produce or update:
+Review progress of the supplier regarding schedule, quality, and cost on the agreed regular basis. Track open measures to closure and perform risk mitigation activities.
+
+- see [MAN_5_PROCESS](@.md#man_5_process) for management of risks
+
+The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -95,7 +107,9 @@ Process: ACQ.4
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall act to correct deviations. The practice shall produce or update:
+Take action when agreed objectives are not achieved. Negotiate changes to objectives and document them in the agreements.
+
+The practice shall produce or update:
 
 - [wp_02_01_commitment_agreement](=.md#wp_02_01_commitment_agreement)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -103,5 +117,3 @@ When implementing this base practice, the organization shall act to correct devi
 - [wp_13_16_change_request](=.md#wp_13_16_change_request)
 - [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
-
-

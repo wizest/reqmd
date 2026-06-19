@@ -26,7 +26,11 @@ Process: SUP.1
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall ensure independence of quality assurance. The practice shall produce or update:
+Ensure that quality assurance is performed independently and objectively without conflicts of interest.
+
+- Possible inputs for evaluating the independence may be assignment to financial and/or organizational structure as well as responsibility for processes that are subject to quality assurance (no self-monitoring).
+
+The practice shall produce or update:
 
 - [wp_16_50_organizational_structure](=.md#wp_16_50_organizational_structure)
 
@@ -38,7 +42,11 @@ Process: SUP.1
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall define criteria for quality assurance. The practice shall produce or update:
+Define quality criteria for work products as well as for process tasks and their performance.
+
+- Quality criteria may consider internal and external inputs such as customer requirements, standards, milestones, etc.
+
+The practice shall produce or update:
 
 - [wp_18_07_quality_criteria](=.md#wp_18_07_quality_criteria)
 
@@ -50,7 +58,11 @@ Process: SUP.1
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall assure quality of work products. The practice shall produce or update:
+Identify work products subject to quality assurance according to the quality criteria. Perform appropriate activities to evaluate the work products against the defined quality criteria and document the results.
+
+- Quality assurance activities may include reviews, problem analysis and lessons learned that improve the work products for further use.
+
+The practice shall produce or update:
 
 - [wp_18_07_quality_criteria](=.md#wp_18_07_quality_criteria)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -66,7 +78,9 @@ Process: SUP.1
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall assure quality of process activities. The practice shall produce or update:
+Identify processes subject to quality assurance according to the quality criteria. Perform appropriate activities to evaluate the processes against their defined quality criteria and associated target values and document the results. NOTE 4: Quality assurance activities may include process assessments, problem analysis, regular check of methods, tools, and the adherence to defined processes, and consideration of lessons learned.
+
+The practice shall produce or update:
 
 - [wp_18_07_quality_criteria](=.md#wp_18_07_quality_criteria)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
@@ -82,7 +96,9 @@ Process: SUP.1
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall summarize and communicate quality assurance activities and results. The practice shall produce or update:
+Regularly report performance, non-conformances, and trends of quality assurance activities to all affected parties.
+
+The practice shall produce or update:
 
 - [wp_16_50_organizational_structure](=.md#wp_16_50_organizational_structure)
 - [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
@@ -100,7 +116,9 @@ Process: SUP.1
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall ensure resolution of non-conformances. The practice shall produce or update:
+Analyze, track, correct, resolve, and further prevent non-conformances found in quality assurance activities. NOTE 5: Non-conformances detected in work products may be entered into the problem resolution management process ([SUP_9_PROCESS](@.md#sup_9_process)). NOTE 6: Non-conformances detected in the process definition or implementation may be entered into a process improvement process ([PIM_3_PROCESS](@.md#pim_3_process)).
+
+The practice shall produce or update:
 
 - [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
 - [wp_18_07_quality_criteria](=.md#wp_18_07_quality_criteria)
@@ -117,11 +135,11 @@ Process: SUP.1
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall escalate non-conformances. The practice shall produce or update:
+Escalate relevant non-conformances to appropriate levels of management and other relevant stakeholders to facilitate their resolution. NOTE 7: The decision whether to escalate non-conformances may be based on criteria such as delay of resolution, urgency, and risk.
+
+The practice shall produce or update:
 
 - [wp_16_50_organizational_structure](=.md#wp_16_50_organizational_structure)
 - [wp_18_52_escalation_path](=.md#wp_18_52_escalation_path)
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
 - [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
-
-

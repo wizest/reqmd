@@ -26,7 +26,16 @@ Process: HWE.4
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify verification measures for the verification against hardware requirements. The practice shall produce or update:
+Specify verification measures for the verification against hardware requirements. Specify the verification measure to provide evidence for compliance with the hardware requirements. This includes
+- techniques for the verification measures,
+- pass/fail criteria for the verification measures,
+- a definition of entry and exit criteria for the verification measures,
+- necessary sequence of verification the measures, and
+- the required verification infrastructure and environment setup
+
+- The verification measures may cover aspects such as thermal, environmental, robustness/lifetime, and EMC.
+
+The practice shall produce or update:
 
 - [wp_08_60_verification_measure](=.md#wp_08_60_verification_measure)
 
@@ -38,7 +47,11 @@ Process: HWE.4
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall ensure use of compliant samples. The practice shall produce or update:
+Ensure that the samples used for the verification against hardware requirements are compliant with the corresponding production data, including special characteristics, provided by hardware design.
+
+- Examples of compliance are sample reports, record of visual inspection, ICT report.
+
+The practice shall produce or update:
 
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
@@ -51,7 +64,11 @@ Process: HWE.4
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall select verification measures. The practice shall produce or update:
+Document the selection of verification measures considering selection criteria including regression criteria. The documented selection of verification measures shall have sufficient coverage according to the release scope.
+
+- Examples for selection criteria can be prioritization of requirements, the need for regression due to changes to the hardware requirements, or the intended use of the delivered hardware release (e.g, test bench, test track, public road etc.).
+
+The practice shall produce or update:
 
 - [wp_08_58_verification_measure_selection_set](=.md#wp_08_58_verification_measure_selection_set)
 
@@ -63,7 +80,11 @@ Process: HWE.4
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall verify the compliant hardware samples. The practice shall produce or update:
+Verify the compliant hardware samples using the selected verification measures. Record the verification results including pass/fail status and corresponding verification measure output data.
+
+- See [SUP_9_PROCESS](@.md#sup_9_process) for handling of non-conformances.
+
+The practice shall produce or update:
 
 - [wp_03_50_verification_measure_data](=.md#wp_03_50_verification_measure_data)
 - [wp_15_52_verification_results](=.md#wp_15_52_verification_results)
@@ -76,7 +97,11 @@ Process: HWE.4
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency between hardware requirements and verification measures. Establish bidirectional traceability between hardware requirements and verification measures. Establish bidirectional traceability between verification measures and verification results.
+
+- Bidirectional traceability supports consistency, and facilitates impact analysis of change requests, and demonstration of verification coverage. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -88,8 +113,10 @@ Process: HWE.4
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall summarize and communicate results. The practice shall produce or update:
+Summarize the verification results and communicate them to all affected parties.
+
+- Providing all necessary information from the test case execution in a summary enables other parties to judge the consequences.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

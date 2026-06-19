@@ -24,7 +24,17 @@ Process: SWE.3
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall specify the static aspects of the detailed design. The practice shall produce or update:
+For each software component specify the behavior of its software units, their static structure and relationships, their interfaces including
+- valid data value ranges for inputs and outputs (from the application domain perspective), and
+- physical or measurement units applicable to inputs and outputs (from the application domain perspective).
+
+- The boundary of a software unit is independent from the software unit's representation in the source code, code file structure, or model-based implementation, respectively. It is rather driven by the semantics of the application domain perspective. Therefore, a software unit may be, at the code level, represented by a single subroutine or a set of subroutines.
+- Examples of valid data value ranges with applicable physical units from the application domain perspective are '0..200 [m/s]', '0..3.8 [A]' or '1..100 [N]'. For mapping such application domain value ranges to programming language-level data types (such as unsigned Integer with a value range of 0..65535) refer to BP2.
+- Examples of a measurement unit are '%' or '‰'.
+- A counter is an example of a parameter, or a return value, to which neither a physical nor a measurement unit is applicable.
+- The hardware-software-interface (HSI) definition puts in context the hardware design and therefore is an aspect of system design ([SYS_3_PROCESS](@.md#sys_3_process)).
+
+The practice shall produce or update:
 
 - [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
 - [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
@@ -37,7 +47,11 @@ Process: SWE.3
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall specify dynamic aspects of the detailed design. The practice shall produce or update:
+Specify and document the dynamic aspects of the detailed design with respect to the software architecture, including the interactions between relevant software units to fulfill the component's dynamic behavior.
+
+- Examples for behavioral descriptions are natural language or semi-formal notation (e.g, SysML, UML).
+
+The practice shall produce or update:
 
 - [wp_04_05_software_detailed_design](=.md#wp_04_05_software_detailed_design)
 - [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
@@ -50,7 +64,11 @@ Process: SWE.3
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall develop software units. The practice shall produce or update:
+Develop and document the software units consistent with the detailed design, and according to coding principles.
+
+- Examples for coding principles at capability level 1 are not to use implicit type conversions, only one entry and one exit point in subroutines, and range checks (design-by-contract, defensive programming). Further examples see e.g, ISO 26262-6 clause 8.4.5 together with table 6.
+
+The practice shall produce or update:
 
 - [wp_11_05_software_unit](=.md#wp_11_05_software_unit)
 
@@ -62,7 +80,13 @@ Process: SWE.3
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall ensure consistency and establish bidirectional traceability. The practice shall produce or update:
+Ensure consistency and establish bidirectional traceability between the software detailed design and the software architecture. Ensure consistency and establish bidirectional traceability between the developed software units and the software detailed design. Ensure consistency and establish traceability between the software detailed design and the software requirements.
+
+- Redundancy should be avoided by establishing a combination of these approaches.
+- Examples for tracing a software unit in the detailed design to a software requirement directly are communication matrices or basis software aspects such as a list of diagnosis identifiers inherent in an Autosar configuration.
+- Bidirectional traceability supports consistency, and facilitates impact analysis of change requests, and demonstration of verification coverage. Traceability alone, e.g., the existence of links, does not necessarily mean that the information is consistent with each other.
+
+The practice shall produce or update:
 
 - [wp_13_51_consistency_evidence](=.md#wp_13_51_consistency_evidence)
 
@@ -74,8 +98,8 @@ Process: SWE.3
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall communicate agreed software detailed design and developed software units. The practice shall produce or update:
+Communicate agreed software detailed design and developed software units. Communicate the agreed software detailed design and developed software units to all affected parties.
+
+The practice shall produce or update:
 
 - [wp_13_52_communication_evidence](=.md#wp_13_52_communication_evidence)
-
-

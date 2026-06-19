@@ -25,7 +25,13 @@ Process: MAN.5
 BasePractice: BP1
 ```
 
-When implementing this base practice, the organization shall identify sources of risks. The practice shall produce or update:
+Identify and regularly update the sources of risks with affected parties.
+
+- Risks may include technical, economical, and schedule risks.
+- Risks may include the suppliers' deliverables and services.
+- The risk sources may vary across the entire project life cycle.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
@@ -38,7 +44,9 @@ Process: MAN.5
 BasePractice: BP2
 ```
 
-When implementing this base practice, the organization shall identify potential undesirable events. The practice shall produce or update:
+Identify potential undesirable events within the scope of the risk management for the project.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 
@@ -50,7 +58,11 @@ Process: MAN.5
 BasePractice: BP3
 ```
 
-When implementing this base practice, the organization shall determine risks. The practice shall produce or update:
+Determine the probability and severity of the undesirable events to support priorities for the mitigation of the risks.
+
+- Different methods may be used to analyze technical risks of a system, for example, functional analysis, simulation, FMEA, FTA etc.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
@@ -63,7 +75,9 @@ Process: MAN.5
 BasePractice: BP4
 ```
 
-When implementing this base practice, the organization shall define risk treatment options. The practice shall produce or update:
+For each risk select a treatment option to accept, mitigate, avoid, or share (transfer) the risk.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
@@ -78,7 +92,9 @@ Process: MAN.5
 BasePractice: BP5
 ```
 
-When implementing this base practice, the organization shall define and perform risk treatment activities. The practice shall produce or update:
+Define and perform risk activities for risk treatment options.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
@@ -93,7 +109,11 @@ Process: MAN.5
 BasePractice: BP6
 ```
 
-When implementing this base practice, the organization shall monitor risks. The practice shall produce or update:
+Regularly re-evaluate the risk related to the identified potential undesirable events to determine changes in the status of a risk and to evaluate the progress of the risk treatment activities.
+
+- Risks of high priority may need to be communicated to and monitored by higher levels of management.
+
+The practice shall produce or update:
 
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
 - [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
@@ -107,11 +127,13 @@ Process: MAN.5
 BasePractice: BP7
 ```
 
-When implementing this base practice, the organization shall take corrective action. The practice shall produce or update:
+When risk treatment activities are not effective, take appropriate corrective action.
+
+- Corrective actions may involve reevaluation of risks, developing and implementing new mitigation concepts or adjusting the existing concepts.
+
+The practice shall produce or update:
 
 - [wp_15_51_analysis_results](=.md#wp_15_51_analysis_results)
 - [wp_15_09_risk_status](=.md#wp_15_09_risk_status)
 - [wp_08_55_risk_measure](=.md#wp_08_55_risk_measure)
 - [wp_14_02_corrective_action](=.md#wp_14_02_corrective_action)
-
-
