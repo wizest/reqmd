@@ -1,0 +1,97 @@
+---
+reqmd_prodoc:
+  requirement_refs:
+    - ../example-aspice:
+      - SWE_4_BP_1
+      - SWE_4_BP_3
+      - SWE_4_BP_4
+      - SWE_5_BP_1
+      - SWE_5_BP_4
+      - SWE_5_BP_6
+      - SWE_6_BP_1
+      - SWE_6_BP_3
+      - SWE_6_BP_4
+      - SYS_4_BP_1
+      - SYS_4_BP_3
+      - SYS_4_BP_4
+      - SYS_5_BP_1
+      - SYS_5_BP_3
+      - SYS_5_BP_4
+      - WP_13_25
+      - WP_08_60
+  propagation_docs:
+    upstream:
+      - System_Requirements.md
+      - System_Architecture.md
+      - Software_Requirements.md
+      - Software_Architecture.md
+      - Software_Detailed_Design.md
+    downstream:
+      - Validation_Plan_and_Results.md
+    lateral:
+      - Support_Management.md
+---
+
+# Verification Plan and Results
+
+## [VER_UNIT_FILTER_TEST](@) Unit verification for filter algorithm
+
+```yaml
+Type: VerificationRequirement
+Status: Draft
+Level: SoftwareUnit
+Technique: UnitTest
+```
+
+- When [SW_DD_FILTER_ALGORITHM](@) is verified, the unit test shall demonstrate that filtered pedal acceleration is computed from valid samples and rejects invalid samples.
+- When the filter unit verification measure is specified, the plan shall define pass/fail criteria for valid-sample averaging, invalid-sample rejection, entry criteria for detailed design availability, exit criteria for recorded results, and required unit-test harness infrastructure.
+- When the filter unit verification is performed, the result record shall include pass/fail status and measured evidence for each criterion.
+
+## [VER_UNIT_DECISION_TEST](@) Unit verification for decision state machine
+
+```yaml
+Type: VerificationRequirement
+Status: Draft
+Level: SoftwareUnit
+Technique: UnitTest
+```
+
+- When [SW_DD_DECISION_STATE_MACHINE](@) is verified, the unit test shall demonstrate active request, inactive request, and fault-inhibited transitions.
+- When the decision unit verification measure is specified, the plan shall define pass/fail criteria for each state transition, entry and exit criteria, test data, and unit-test harness infrastructure.
+- If a decision unit verification result deviates from expected behavior, then the project shall route the deviation to problem resolution.
+
+## [VER_SOFTWARE_INTEGRATION_TEST](@) Software integration verification
+
+```yaml
+Type: VerificationRequirement
+Status: Draft
+Level: SoftwareIntegration
+Technique: IntegrationTest
+```
+
+- When [SW_ARCH_INPUT_FILTER](@), [SW_ARCH_DECISION_LOGIC](@), and [SW_ARCH_DIAGNOSTIC_COMMUNICATION](@) are integrated, the integration test shall demonstrate signal flow from validated inputs to pressure request, indication output, and diagnostic status.
+- When software integration verification is specified, the plan shall define integration sequence, preconditions, interface checks, pass/fail criteria, entry and exit criteria, and required integration environment.
+- When software integration verification is performed, the result record shall include integrated software configuration, verification measure data, and pass/fail status.
+
+## [VER_SYSTEM_VERIFICATION_TEST](@) System verification
+
+```yaml
+Type: VerificationRequirement
+Status: Draft
+Level: System
+Technique: SystemTest
+```
+
+- When [SYS_REQ_BRAKE_ASSIST_ACTIVATION](@), [SYS_REQ_NORMAL_BRAKING_PRESERVATION](@), [SYS_REQ_DRIVER_INDICATION](@), and [SYS_REQ_DIAGNOSTIC_STATUS](@) are verified, the system test shall demonstrate expected behavior on the integrated system.
+- When system verification is specified, the plan shall define system integration preconditions, pass/fail criteria, entry and exit criteria, required test environment, and evidence to show compliance with system requirements.
+- When system verification is performed, the result record shall include integrated system configuration, verification measure data, and pass/fail status.
+
+## [VER_TRACEABILITY](@) Verification traceability
+
+```yaml
+Type: TraceabilityRequirement
+Status: Draft
+```
+
+- When verification measures or results are changed, the project shall maintain bidirectional traceability to requirements, architecture, detailed design, validation, and verification result work products through the ReqMd skill workflow for the `@.md` identifier index.
+- When verification results are recorded, the project shall maintain consistency between verification measures, verification results, software units, architecture elements, requirements, and problem-resolution records.
