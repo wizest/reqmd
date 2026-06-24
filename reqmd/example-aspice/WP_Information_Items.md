@@ -815,7 +815,9 @@ When [wp_08_56_schedule](=.md#wp_08_56_schedule) is produced, the information it
 - Identifies the expected, and actual, start and completion date for required activities against progress/completion of activities
 - Identifies dependencies between activities and critical path
 - Has a mapping to scheduled resources and input data
-- Identifies resource allocation, resource workload, and critical resources NOTE: A schedule is consistent with the defined work packages, see 14- 10
+- Identifies resource allocation, resource workload, and critical resources
+
+> NOTE: A schedule is consistent with the defined work packages; see 14-10.
 
 ## [WP_08_57](@.md#wp_08_57) Validation Measure Selection Set
 
@@ -900,7 +902,13 @@ When [wp_08_61_resource_allocation](=.md#wp_08_61_resource_allocation) is produc
 ### Characteristics
 
 - Detailed / named resources are allocated to process tasks
-- Overall resource workload is considered (e.g., allocation of resources to multiple projects) NOTE: Work breakdown structure may be used to refine the detailed resource allocation NOTE: A resource allocation may be integrated in a/ be a part of the schedule, see 08-56 NOTE: Resources to be allocated are e.g., personnel/human resources for project roles and physical and material resources such as (special/limited) equipment, tool, licenses, test hardware, test vehicle, climate chambers etc.
+- Overall resource workload is considered (e.g., allocation of resources to multiple projects)
+
+> NOTE: The work breakdown structure may be used to refine the detailed resource allocation.
+
+> NOTE: A resource allocation may be integrated into, or be part of, the schedule; see 08-56.
+
+> NOTE: Resources to be allocated include, for example, personnel/human resources for project roles and physical and material resources such as special/limited equipment, tools, licenses, test hardware, test vehicles, climate chambers, etc.
 
 ## [WP_08_62](@.md#wp_08_62) Communication matrix
 
@@ -1222,7 +1230,9 @@ When [wp_13_08_baseline](=.md#wp_13_08_baseline) is produced, the information it
 
 - Identifies a state of one or a set of work products and artifacts which are consistent and complete
 - Basis for next process steps and/or delivery
-- Is unique and may not be changed NOTE: This should be established before a release to identify consistent and complete delivery
+- Is unique and may not be changed
+
+> NOTE: This should be established before a release to identify consistent and complete delivery.
 
 ## [WP_13_09](@.md#wp_13_09) Meeting support evidence
 
@@ -1536,7 +1546,9 @@ When [wp_14_10_work_package](=.md#wp_14_10_work_package) is produced, the inform
 - Documents input and output work products
 - Documents the critical dependencies between defined work products
 - Information needed to perform these activities
-- Estimates of effort, duration NOTE: The work package descriptions may be integrated into the/be a part of a schedule, see 08-56
+- Estimates of effort, duration
+
+> NOTE: The work package descriptions may be integrated into, or be part of, a schedule; see 08-56.
 
 ## [WP_14_50](@.md#wp_14_50) Stakeholder groups list
 
@@ -1949,7 +1961,9 @@ When [wp_17_54_requirement_attribute](=.md#wp_17_54_requirement_attribute) is pr
 ### Characteristics
 
 - Meta-attributes that support structuring and definition of release scopes of requirements.
-- Can be realized by means of tools. NOTE: usage of requirements attributes may further support analysis of requirements.
+- Can be realized by means of tools.
+
+> NOTE: Usage of requirements attributes may further support analysis of requirements.
 
 ## [WP_17_55](@.md#wp_17_55) Resource needs
 
@@ -1966,7 +1980,9 @@ When [wp_17_55_resource_needs](=.md#wp_17_55_resource_needs) is produced, the in
 - Identification of required resources for process performance
 - Staff including competencies, skills and authorities needs
 - Material, equipment, and infrastructure
-- Time and budget NOTE: Needs are derived from Work Breakdown structure and schedule
+- Time and budget
+
+> NOTE: Needs are derived from the work breakdown structure and schedule.
 
 ## [WP_17_57](@.md#wp_17_57) Special Characteristics
 
@@ -1982,7 +1998,9 @@ When [wp_17_57_special_characteristics](=.md#wp_17_57_special_characteristics) i
 
 - Special Characteristics in terms of relevant standards such as IATF 16949, VDA 6.x Guidelines, ISO 26262.
 - Special Characteristics according to IATF 16949:2016-10 [15], Chapters 8.3.3.3, are product characteristics or production process parameters that may have an impact on safety or compliance with official regulations, the fit, the function, the performance or further processing of the product.
-- Special characteristics shall be verifiable according to VDA vol. 1 NOTE: A typical method for identifying and rate special characteristics is an FMEA.
+- Special characteristics shall be verifiable according to VDA vol. 1
+
+> NOTE: A typical method for identifying and rating special characteristics is an FMEA.
 
 ## [WP_18_00](@.md#wp_18_00) Standard
 
