@@ -1,75 +1,57 @@
-# Markdown for requirements (ReqMd)
+# Requirements as Markdown
 
-이 저장소는 요구사항을 Markdown으로 작성하기 위한 문서 형식인 `ReqMd`를 정의하고 설명합니다.
+이 저장소는 Markdown으로 요구사항과 문서 추적성을 관리하기 위한 두 가지 형식을 정의합니다.
 
-ReqMd는 일반 Markdown의 heading, link, YAML code block을 사용해 요구사항 섹션, 속성, 색인, 추적 관계를 표현합니다. 별도의 Markdown 확장 문법을 만들지 않고, Markdown 문서 안에서 요구사항을 일관되게 작성하고 추적할 수 있도록 하는 것이 목적입니다.
+## Markdown for Requirements (ReqMd)
 
-자세한 문법과 작성 규칙은 [`reqmd/markdown_for_requirements.md`](reqmd/markdown_for_requirements.md)를 참고하세요.
+ReqMd는 일반 Markdown의 heading, link, YAML code block을 사용합니다. 별도의 Markdown 확장 문법을 만들지 않고, 요구사항 본문과 `@.md`/`=.md` 색인을 일관되게 작성하고 검증하는 것이 목적입니다.
+
+## Programmable Documentation (ProDoc)
+
+ProDoc은 문서의 YAML frontmatter에 `reqmd_prodoc`을 선언해 에이전트가 어떤 요구사항을 만족해야 하는지, 어떤 지식 파일을 참고해야 하는지, 어떤 문서로 변경을 전파해야 하는지 알 수 있게 합니다. ProDoc 문서 자체도 일반 Markdown이며, 필요할 때 ReqMd 요구사항과 색인을 참조합니다.
+
+## 문서
+
+- [`reqmd/markdown_for_requirements.md`](reqmd/markdown_for_requirements.md): ReqMd 핵심 문법과 작성 규칙
+- [`reqmd/quick_start.md`](reqmd/quick_start.md): ReqMd 빠른 시작
+- [`reqmd/programmable_documentation.md`](reqmd/programmable_documentation.md): ProDoc 개념, frontmatter, propagation 규칙
+- [`reqmd/example/`](reqmd/example/): Brake Lamp Controller ReqMd 예제
+- [`reqmd/example-aspice/`](reqmd/example-aspice/): ASPICE 기반 ReqMd 요구사항 예제
+- [`reqmd/example-project/`](reqmd/example-project/): ProDoc 기반 프로젝트 문서 예제
 
 ## 구성
 
 ```plaintext
 .
-├── reqmd/                    # ReqMd 설명 문서와 예제 요구사항 세트
+├── reqmd/                    # ReqMd/ProDoc 설명 문서와 예제
+├── reqmd/example/            # Brake Lamp Controller ReqMd 예제
+├── reqmd/example-aspice/     # ASPICE 기반 ReqMd 요구사항 예제
+├── reqmd/example-project/    # ProDoc 기반 프로젝트 문서 예제
 ├── .codex/skills/reqmd/      # Codex용 ReqMd agent skill
 ├── .codex/skills/prodoc/     # Codex용 ProDoc agent skill
 ├── claude/reqmd/             # Claude용 ReqMd agent skill
 └── claude/prodoc/            # Claude용 ProDoc agent skill
 ```
 
-- `reqmd/markdown_for_requirements.md`: ReqMd의 핵심 문법과 작성 규칙
-- `reqmd/quick_start.md`: 빠른 시작 문서
-- `reqmd/example/`: `Brake Lamp Controller` 예제 요구사항 세트
-- `.codex/skills/reqmd/`: Codex가 ReqMd 문서를 작성, 수정, 검증, 분석하기 위한 skill 구현
-- `.codex/skills/prodoc/`: Codex가 ProDoc 문서를 작성, 수정, 검증, 전파하기 위한 skill 구현
-- `claude/reqmd/`: Claude 환경용 ReqMd skill 구현
-- `claude/prodoc/`: Claude 환경용 ProDoc skill 구현
-
 ## Agent Skill
 
-이 저장소는 ReqMd 형식을 정의하는 것에 더해, agent coding 환경에서 ReqMd 문서를 다룰 수 있도록 Codex/Claude용 skill도 함께 제공합니다.
+이 저장소는 ReqMd와 ProDoc을 agent coding 환경에서 다룰 수 있도록 Codex/Claude용 skill을 함께 제공합니다.
 
-skill은 요구사항 섹션 작성, `@.md`/`=.md` 색인 갱신, fragment 링크 검증, 영향 분석, ProDoc 전파 같은 반복 작업을 돕습니다. skill의 세부 동작 기준은 `.codex/skills/reqmd/`, `.codex/skills/prodoc/`, `claude/reqmd/`, `claude/prodoc/` 아래 문서를 참고하세요.
+ReqMd skill은 다음 작업을 돕습니다.
+
+- 요구사항 섹션 작성 및 수정
+- `@.md` identifier index와 `=.md` helper index 갱신
+- Markdown fragment link 검증
+- 요구사항 traceability와 영향 분석
+
+ProDoc skill은 다음 작업을 돕습니다.
+
+- `reqmd_prodoc` frontmatter 작성 및 검증
+- `requirement_refs`에 따른 문서 내용 준수 확인
+- `knowledge_files`를 참고한 문서 작성
+- `propagation_docs`에 따른 lateral/upstream/downstream 영향 분석과 전파
+- 전파 과정에서 필요한 ReqMd 색인 갱신
 
 ## 라이선스
 
-이 저장소는 MIT License로 배포됩니다. 자세한 내용은 [`LICENSE`](LICENSE)를 참고하세요.
-
----
-
-# Markdown for requirements (ReqMd)
-
-This repository defines and explains `ReqMd`, a document format for writing requirements in Markdown.
-
-ReqMd uses ordinary Markdown headings, links, and YAML code blocks to represent requirement sections, attributes, indexes, and traceability relationships. It does not introduce a separate Markdown extension. Its purpose is to make requirements authoring and traceability consistent inside Markdown documents.
-
-For the detailed syntax and authoring rules, see [`reqmd/markdown_for_requirements.md`](reqmd/markdown_for_requirements.md).
-
-## Structure
-
-```plaintext
-.
-├── reqmd/                    # ReqMd documentation and example requirement set
-├── .codex/skills/reqmd/      # ReqMd agent skill for Codex
-├── .codex/skills/prodoc/     # ProDoc agent skill for Codex
-├── claude/reqmd/             # ReqMd agent skill for Claude
-└── claude/prodoc/            # ProDoc agent skill for Claude
-```
-
-- `reqmd/markdown_for_requirements.md`: Core ReqMd syntax and authoring rules
-- `reqmd/quick_start.md`: Quick-start guide
-- `reqmd/example/`: Example requirement set for a `Brake Lamp Controller`
-- `.codex/skills/reqmd/`: Skill implementation for authoring, editing, validating, and analyzing ReqMd documents with Codex
-- `.codex/skills/prodoc/`: Skill implementation for authoring, editing, validating, and propagating ProDoc documents with Codex
-- `claude/reqmd/`: ReqMd skill implementation for Claude environments
-- `claude/prodoc/`: ProDoc skill implementation for Claude environments
-
-## Agent Skill
-
-In addition to defining the ReqMd format, this repository provides Codex/Claude skills for working with ReqMd documents in agent coding environments.
-
-The skills help with repeated work such as authoring requirement sections, updating `@.md`/`=.md` indexes, validating fragment links, analyzing impact, and propagating ProDoc changes. See the documents under `.codex/skills/reqmd/`, `.codex/skills/prodoc/`, `claude/reqmd/`, and `claude/prodoc/` for skill-specific details.
-
-## License
-
-This repository is distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
+이 저장소는 MIT License로 배포됩니다. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
