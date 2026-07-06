@@ -263,30 +263,22 @@ target 문서가 ProDoc이고 실제 변경이 발생했으며 자체 `propagati
 
 ```mermaid
 flowchart TD
-    A["Start with requested ProDoc document"] --> B["Parse reqmd_prodoc frontmatter"]
-    B --> C["Run Update(document, change, self)"]
-    C --> D["Validate against requirement_refs"]
-    D --> E{"Actual changes?"}
-    E -->|No| Z["Report results"]
-    E -->|Yes| F["Create changed_content"]
-    F --> G{"Has propagation_docs?"}
-    G -->|No| Z
-    G -->|Yes| H["Enqueue source-target events"]
-    H --> I{"Queue empty or blocked?"}
-    I -->|Yes| Z
-    I -->|No| J["Dequeue event"]
-    J --> K{"Processed event or cycle?"}
-    K -->|Yes| I
-    K -->|No| L{"Target is ProDoc?"}
-    L -->|Yes| M["Parse target frontmatter and run Update"]
-    L -->|No| R["Review ReqMd target impact"]
-    M --> N["Update ReqMd index if relationship changed"]
-    R --> N
-    N --> O{"Target changed and has propagation_docs?"}
-    O -->|No| I
-    O -->|Yes| P["Create target changed_content"]
-    P --> Q["Enqueue target propagation events"]
-    Q --> I
+    A["Start"] --> B["Enqueue initial event"]
+    B --> C{"Queue has event?"}
+    C -->|No| Z["Report results"]
+    C -->|Yes| D["Dequeue event"]
+    D --> E{"Processed or cyclic?"}
+    E -->|Yes| C
+    E -->|No| F["Parse frontmatter if ProDoc"]
+    F --> G["Run Update or impact review"]
+    G --> H{"Actual change?"}
+    H -->|No| C
+    H -->|Yes| I["Summarize changed_content"]
+    I --> J["Update ReqMd index if needed"]
+    J --> K{"Has propagation targets?"}
+    K -->|No| C
+    K -->|Yes| L["Enqueue propagation events"]
+    L --> C
 ```
 
 ## Skill 전환시 고려 항목
