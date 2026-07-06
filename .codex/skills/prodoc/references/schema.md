@@ -9,14 +9,14 @@ If the key is missing, do not apply the ProDoc workflow unless the user explicit
 
 ## Fields
 
-`requirement_refs` is required for ProDoc authoring and validation.
+`requirement_specs` is required for ProDoc authoring and validation.
 It declares ReqMd requirements the document artifact must satisfy.
-These requirements are about the document type, structure, content, quality, and traceability; they are not necessarily the product requirements described inside the document.
+These requirements are about document type, structure, required content, quality, and traceability. They are not the product, system, design, implementation, verification, or operation requirements described inside the ProDoc body.
 
 Shape:
 
 ```yaml
-requirement_refs:
+requirement_specs:
   - path/to/reqmd-root-or-index:
     - REQ_ID_1
     - REQ_ID_2
@@ -59,5 +59,5 @@ When available, run:
 python .codex/skills/prodoc/scripts/validate_prodoc.py <file-or-root>
 ```
 
-The script validates the supported ProDoc frontmatter subset, checks that `requirement_refs` IDs exist in the referenced ReqMd `@.md` index, and checks that `knowledge_files` and `propagation_docs` targets exist.
+The script validates the supported ProDoc frontmatter subset, checks that `requirement_specs` IDs exist in the referenced ReqMd `@.md` index, and checks that `knowledge_files` and `propagation_docs` targets exist.
 It intentionally uses no external YAML dependency.

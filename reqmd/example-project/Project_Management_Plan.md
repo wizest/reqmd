@@ -1,6 +1,6 @@
----
+﻿---
 reqmd_prodoc:
-  requirement_refs:
+  requirement_specs:
     - ../example-aspice:
       - MAN_3_BP_1
       - MAN_3_BP_4

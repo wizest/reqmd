@@ -1,4 +1,4 @@
 ﻿interface:
   display_name: "ProDoc"
-  short_description: "Create and propagate ProDoc documents"
-  default_prompt: "Use $prodoc to create or validate a ProDoc document and update propagation links."
+  short_description: "Author, validate, and propagate ProDoc documents"
+  default_prompt: "Use $prodoc to author, validate, or propagate a ProDoc document with requirement_specs, knowledge_files, and propagation_docs."

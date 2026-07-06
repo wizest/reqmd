@@ -1,6 +1,6 @@
----
+﻿---
 reqmd_prodoc:
-  requirement_refs:
+  requirement_specs:
     - ../example-aspice:
       - SWE_1_BP_1
       - SWE_1_BP_2

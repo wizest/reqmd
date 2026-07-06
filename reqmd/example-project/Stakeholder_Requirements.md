@@ -1,6 +1,6 @@
----
+﻿---
 reqmd_prodoc:
-  requirement_refs:
+  requirement_specs:
     - ../example-aspice:
       - SYS_1_BP_1
       - SYS_1_BP_2

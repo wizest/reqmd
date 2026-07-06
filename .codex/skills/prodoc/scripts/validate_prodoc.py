@@ -4,7 +4,7 @@
 This validator intentionally supports the ProDoc subset used by this skill:
 
 reqmd_prodoc:
-  requirement_refs:
+  requirement_specs:
     - path/to/reqmd-root-or-index:
       - REQ_ID
   knowledge_files:
@@ -48,7 +48,7 @@ def parse_prodoc(lines: list[str]) -> dict:
     if not any(line.strip() == "reqmd_prodoc:" for line in lines):
         raise ProDocError("missing reqmd_prodoc key")
 
-    data = {"requirement_refs": [], "knowledge_files": [], "propagation_docs": {}}
+    data = {"requirement_specs": [], "knowledge_files": [], "propagation_docs": {}}
     section: str | None = None
     direction: str | None = None
     current_req_path: str | None = None
@@ -66,27 +66,27 @@ def parse_prodoc(lines: list[str]) -> dict:
             continue
         if indent == 2 and text.endswith(":"):
             key = text[:-1]
-            if key not in {"requirement_refs", "knowledge_files", "propagation_docs"}:
+            if key not in {"requirement_specs", "knowledge_files", "propagation_docs"}:
                 raise ProDocError(f"unsupported reqmd_prodoc key: {key}")
             section = key
             direction = None
             current_req_path = None
             continue
 
-        if section == "requirement_refs":
+        if section == "requirement_specs":
             if indent == 4 and text.startswith("- ") and text.endswith(":"):
                 current_req_path = text[2:-1].strip()
                 if not current_req_path:
-                    raise ProDocError("empty requirement_refs path")
-                data["requirement_refs"].append({current_req_path: []})
+                    raise ProDocError("empty requirement_specs path")
+                data["requirement_specs"].append({current_req_path: []})
                 continue
             if indent == 6 and text.startswith("- "):
-                if not current_req_path or not data["requirement_refs"]:
-                    raise ProDocError("requirement ID without requirement_refs path")
+                if not current_req_path or not data["requirement_specs"]:
+                    raise ProDocError("requirement ID without requirement_specs path")
                 ident = text[2:].strip()
                 if not ID_RE.match(ident):
                     raise ProDocError(f"invalid requirement ID: {ident}")
-                data["requirement_refs"][-1][current_req_path].append(ident)
+                data["requirement_specs"][-1][current_req_path].append(ident)
                 continue
 
         if section == "knowledge_files" and indent == 4 and text.startswith("- "):
@@ -108,8 +108,8 @@ def parse_prodoc(lines: list[str]) -> dict:
 
         raise ProDocError(f"unsupported frontmatter line: {raw}")
 
-    if not data["requirement_refs"]:
-        raise ProDocError("requirement_refs is required")
+    if not data["requirement_specs"]:
+        raise ProDocError("requirement_specs is required")
     return data
 
 
@@ -132,7 +132,7 @@ def validate_doc(path: Path) -> list[str]:
     except (OSError, UnicodeError, ProDocError) as exc:
         return [f"{path}: {exc}"]
 
-    for item in data["requirement_refs"]:
+    for item in data["requirement_specs"]:
         for ref_path, ids in item.items():
             index = resolve_req_index(base, ref_path)
             if not index.exists():
