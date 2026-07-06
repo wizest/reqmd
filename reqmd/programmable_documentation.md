@@ -112,10 +112,17 @@ propagation_docs:
 전파 대상은 영향의 방향에 따라 `lateral`, `upstream`, `downstream`으로 구분합니다.
 이 구분은 에이전트가 변경 사항의 의미를 해석하고, 필요한 검토 범위를 정하는 기준이 됩니다.
 
-전파 대상 문서가 ProDoc frontmatter를 가지고 있고 그 안에 `propagation_docs`가 선언되어 있으면, 에이전트는 먼저 해당 대상 문서를 현재 변경 내용에 맞게 업데이트합니다.
-그 다음 업데이트된 대상 문서를 새로운 current ProDoc document로 간주하고, 그 문서에서 발생한 changed content를 기준으로 해당 문서의 전파 설정을 이어서 해석합니다.
+전파는 source-target change event를 담은 Queue로 처리합니다.
+각 Queue 항목은 최소한 `source_doc`, `target_doc`, `direction`, `changed_content`, `reason/trace`를 포함합니다.
+`changed_content`는 사용자의 최초 요청 문장이 아니라, 해당 단계에서 source 문서에 실제로 반영된 변경 내용을 요약한 것입니다.
+에이전트는 Queue에서 항목을 하나씩 꺼내 target 문서를 검토하거나 업데이트하고, target 문서에서 실제 변경이 발생한 경우 그 변경을 다시 요약합니다.
+
+전파 대상 문서가 ProDoc frontmatter를 가지고 있고 그 안에 `propagation_docs`가 선언되어 있으면, 에이전트는 먼저 해당 대상 문서를 incoming `changed_content`에 맞게 업데이트합니다.
+그 다음 업데이트된 대상 문서를 새로운 current ProDoc document로 간주하고, 그 문서에서 실제로 발생한 changed content를 기준으로 해당 문서의 전파 설정을 Queue에 추가합니다.
 이 경우 전파는 단일 단계의 문서 갱신으로 끝나지 않고, 여러 ProDoc 문서가 연결된 사슬 형태로 확장됩니다.
-에이전트는 이미 방문한 문서를 추적하여 순환 전파를 방지하고, 각 단계에서 실제 변경 영향이 있는 문서만 다음 단계로 전파합니다.
+에이전트는 normalized path 기반 `visited_docs`로 순환 전파를 방지하고, `processed_events` 또는 동등한 source-target-change fingerprint로 동일한 전파 이벤트의 반복 처리를 방지합니다.
+문서 방문 여부와 전파 이벤트 처리 여부는 구분합니다.
+이미 방문한 문서라도 다른 source에서 온 변경은 검토 또는 보고 대상이 될 수 있으며, 최종 보고에는 처리된 source-target 관계와 중단 사유를 포함합니다.
 
 lateral:
 
@@ -162,6 +169,37 @@ downstream:
 - 추상적인 변경을 하위 문서에서 실행 가능한 상세 항목, 검증 가능한 조건, 또는 구현 가능한 지침으로 변환합니다.
 - 현재 요구사항에서 파생되는 하위 요구사항이나 산출물 관계가 바뀌면, downstream 관계를 ReqMd 식별자 색인에 반영합니다.
 
+## Workflow
+
+에이전트는 ProDoc 문서를 작성하거나 수정할 때 frontmatter를 실행 계획처럼 사용합니다.
+문서 본문만 보고 작성하지 않고, frontmatter에 선언된 요구사항, 지식 파일, 전파 대상 문서를 함께 해석하여 작업 범위와 검증 기준을 정합니다.
+
+### Update
+
+Update 절차의 목적은 ProDoc 문서의 본문을 frontmatter에 선언된 기준과 문맥에 맞게 작성하거나 수정하는 것입니다.
+이 절차는 전파보다 먼저 수행되며, 전파에 사용할 `changed_content`는 Update 절차에서 실제로 문서에 반영된 변경 내용을 요약한 결과입니다.
+
+에이전트는 `requirement_refs`를 문서가 반드시 만족해야 하는 기준으로 사용합니다.
+`requirement_refs`에 선언된 ReqMd 요구사항 원문을 조회하여 문서의 목적, 필수 구조, 포함해야 할 내용, 품질 기준, 추적성 조건을 확인합니다.
+문서를 업데이트할 때는 기존 본문이 이 기준을 충족하는지 먼저 비교하고, 누락된 구조나 내용, 모순되는 설명, 불명확한 추적성을 수정 대상으로 식별합니다.
+Update 결과는 다시 `requirement_refs` 기준으로 검증되어야 하며, 요구사항을 만족하지 못하거나 판단이 어려운 항목은 검토 필요 항목으로 보고합니다.
+
+에이전트는 `knowledge_files`를 요구사항을 실제 문서 내용으로 구체화하기 위한 도메인 문맥으로 사용합니다.
+지식 파일에서는 제품, 시스템, 조직, 프로세스, 설계 배경, 용어, 기존 의사결정, 작성 규칙을 추출합니다.
+이 정보는 요구사항이 요구하는 문서 구조와 품질 기준을 채우기 위한 근거로 사용되지만, `requirement_refs`를 대체하거나 완화하지 않습니다.
+지식 파일 간 내용이 충돌하거나 지식 파일의 내용이 요구사항과 충돌하면 임의로 병합하지 않습니다.
+요구사항과 지식 파일이 충돌할 때는 요구사항을 우선하고, 충돌한 지식은 검토 필요 항목으로 남깁니다.
+
+Update 절차는 다음 순서로 수행합니다.
+
+1. `requirement_refs`의 ReqMd 식별자 색인과 요구사항 원문을 조회합니다.
+2. 문서가 만족해야 할 구조, 필수 내용, 품질 기준, 추적성 조건을 정리합니다.
+3. 필요한 `knowledge_files`를 읽고 요구사항을 구체화하는 데 필요한 도메인 문맥을 추출합니다.
+4. 현재 본문을 요구사항 기준과 지식 문맥에 비교하여 유지할 내용, 수정할 내용, 추가할 내용을 식별합니다.
+5. 요구사항을 만족하도록 본문을 업데이트하되, 지식 파일은 보조 근거와 구체화 자료로만 사용합니다.
+6. 업데이트된 본문을 `requirement_refs` 기준으로 검증하고, 누락, 충돌, 불명확한 판단을 기록합니다.
+7. 실제로 반영된 변경만 `changed_content`로 요약하여 이후 전파 절차의 입력으로 사용합니다.
+
 ### 식별자 색인과 전파 관계
 
 Propagation은 문서 본문만 갱신하는 작업이 아닙니다.
@@ -180,74 +218,65 @@ ProDoc은 ReqMd 식별자 색인 규칙을 새로 정의하거나, 기존 ReqMd 
 
 ### 전파 절차
 
-전파는 현재 문서를 기준으로 영향 방향을 해석하는 절차입니다.
-에이전트는 먼저 대상 Markdown 문서가 ProDoc인지 판별하고 `reqmd_prodoc` frontmatter를 파싱한 뒤, `requirement_refs`의 ReqMd 식별자 색인에서 참조 요구사항 원문을 조회합니다.
-그 다음 `knowledge_files`가 있으면 도메인 지식과 작성 문맥을 수집하고, 요구사항과 지식 파일을 근거로 ProDoc 본문을 작성하거나 수정합니다.
-작성 결과가 참조 요구사항을 충족하는지 검증한 뒤 현재 문서의 변경 내용을 요약하고, `propagation_docs`에 선언된 문서들을 방향별로 읽어 각 문서에 필요한 조치를 결정합니다.
-조치는 즉시 수정, 검토 필요 항목 기록, 영향 없음 판정 중 하나가 될 수 있습니다.
-문서 갱신으로 요구사항 간 관계가 바뀌면, 에이전트는 ReqMd 식별자 색인을 함께 갱신하고 검증하여 propagation 결과가 추적성 구조에 남도록 합니다.
-전파 대상 문서가 ProDoc으로 설정되어 있고 자체 전파 대상이 있다면, 에이전트는 먼저 그 대상 문서를 업데이트합니다.
-이후 업데이트된 대상 문서를 다음 current ProDoc document로 취급하고, 그 문서의 변경 내용을 새로운 changed content로 삼아 동일한 절차를 반복합니다.
-이 반복은 더 이상 영향 받는 문서가 없거나, 순환 방지를 위해 이미 처리한 문서에 도달했을 때 종료됩니다.
+전파는 현재 문서에 대해 Update 절차를 먼저 수행한 뒤, 그 결과로 실제 발생한 변경을 Queue에 넣어 처리하는 절차입니다.
+에이전트는 대상 Markdown 문서가 ProDoc인지 판별하고 `reqmd_prodoc` frontmatter를 파싱한 뒤, `requirement_refs`와 `knowledge_files`를 사용하여 현재 ProDoc 문서의 Update 절차를 수행합니다.
+Update 절차에서 작성 또는 수정된 본문이 참조 요구사항을 충족하는지 검증한 뒤, 현재 문서에 실제로 반영된 변경 내용을 `changed_content`로 요약합니다.
+그 후 현재 문서의 `propagation_docs`에 선언된 대상마다 source-target change event를 만들고 Queue에 추가합니다.
+
+에이전트는 Queue에서 event를 하나씩 꺼내 `direction`에 따라 target 문서를 검토합니다.
+target 문서에 필요한 조치는 즉시 수정, 검토 필요 항목 기록, 영향 없음 판정 중 하나가 될 수 있습니다.
+target 문서 갱신으로 요구사항 간 관계가 바뀌면, 에이전트는 ReqMd 식별자 색인을 함께 갱신하고 검증하여 propagation 결과가 추적성 구조에 남도록 합니다.
+target이 ProDoc이고 실제 변경이 발생했으며 자체 `propagation_docs`가 있다면, 에이전트는 target을 다음 current ProDoc document로 취급합니다.
+이후 target 문서에서 실제로 발생한 변경 내용을 새로운 `changed_content`로 요약하고, target의 전파 대상들을 source-target change event로 Queue에 추가합니다.
+이 반복은 Queue가 비거나, 순환 또는 차단 조건으로 더 이상 안전하게 진행할 수 없을 때 종료됩니다.
 전파는 다음 조건에서도 중단합니다.
 
 - 현재 단계에서 문서 내용이나 식별자 색인에 실제 변경이 발생하지 않은 경우
 - 전파 대상 파일, ReqMd 식별자 색인, 요구사항 ID가 존재하지 않는 경우
 - 상위 문서 수정처럼 자동 변경이 위험하여 사용자 판단이 필요한 경우
+- normalized path 기준으로 이미 방문한 ProDoc 문서가 다시 current가 되어 순환 전파가 발생하는 경우
+- 동일한 source-target-change fingerprint가 이미 `processed_events`에 기록되어 반복 처리가 되는 경우
 
 중단 사유는 최종 보고에 포함해야 합니다.
 
 ```mermaid
 flowchart TD
-    subgraph CurrentContext[Current ProDoc document context]
-        direction TB
-        A[Current ProDoc document]
-        H[Update target ProDoc document]
-        J[Set target as current ProDoc document]
-        K[Use target document changes as changed content]
-    end
-
-    A --> B{Changed content}
-    B --> C[Lateral documents]
-    B --> D[Upstream documents]
-    B --> E[Downstream documents]
-
-    C --> C1[Check consistency]
-    D --> D1[Check alignment with higher-level intent]
-    E --> E1[Update derived details and traceability]
-
-    C1 --> F[Apply updates or report review items]
-    D1 --> F
-    E1 --> F
-
-    F --> X[Update ReqMd identifier index]
-
-    X --> G{Target document is ProDoc<br/>and has propagation_docs?}
-    G -->|Yes| H[Update target ProDoc document]
-    H --> J[Set target as current ProDoc document]
-    J --> K[Use target document changes as changed content]
-    K --> B
-    G -->|No| I[Stop propagation]
+    A[Run Update procedure for current ProDoc document] --> B[Summarize actual changed content]
+    B --> C[Enqueue source-target propagation events]
+    C --> D{Queue empty or blocked?}
+    D -->|Yes| Z[Stop and report results]
+    D -->|No| E[Dequeue event]
+    E --> F[Check processed_events and visited_docs]
+    F --> G{Repeat or cycle?}
+    G -->|Yes| D
+    G -->|No| H[Update or review target document]
+    H --> I[Update ReqMd identifier index if relationships changed]
+    I --> J{Actual target changes?}
+    J -->|No| D
+    J -->|Yes| K[Record target changed content]
+    K --> L{Target is ProDoc with propagation_docs?}
+    L -->|No| D
+    L -->|Yes| M[Set target as current ProDoc document]
+    M --> N[Enqueue target propagation_docs as new events]
+    N --> D
 ```
 
-## Workflow
-
-에이전트는 ProDoc 문서를 작성하거나 수정할 때 frontmatter를 실행 계획처럼 사용합니다.
-문서 본문만 보고 작성하지 않고, frontmatter에 선언된 요구사항, 지식 파일, 전파 대상 문서를 함께 해석하여 작업 범위와 검증 기준을 정합니다.
+### 기본 Workflow
 
 기본 workflow는 다음과 같습니다.
 
 1. 대상 Markdown 문서가 ProDoc인지 판별하고 `reqmd_prodoc` frontmatter를 파싱합니다.
-2. `requirement_refs`에 선언된 ReqMd 요구사항 원문을 조회하여 문서가 만족해야 할 기준을 정리합니다.
-3. `knowledge_files`를 읽어 문서 작성에 필요한 도메인 지식, 용어, 제약 조건을 수집합니다.
-4. 요구사항과 지식 파일을 근거로 현재 문서를 작성하거나 수정합니다.
-5. 작성된 문서가 참조 요구사항을 충족하는지 검증하고, 누락 또는 충돌 항목을 식별합니다.
-6. 현재 문서의 변경 사항을 요약한 뒤 `propagation_docs`의 `lateral`, `upstream`, `downstream` 문서에 미치는 영향을 분석합니다.
-7. 전파 대상 문서에 필요한 변경을 반영하거나, 자동 수정하기 어려운 항목은 검토 필요 사항으로 남깁니다.
-8. 전파 과정에서 lateral, upstream, downstream 요구사항 관계가 새로 식별되거나 변경되면 ReqMd 식별자 색인을 갱신하고 검증합니다.
-9. 전파 대상 문서가 ProDoc이고 자체 `propagation_docs`를 가지고 있으면, 업데이트된 대상 문서를 새로운 current ProDoc document로 설정합니다.
-10. 새 current ProDoc document에서 실제로 발생한 변경 내용을 changed content로 요약하고, 해당 문서의 frontmatter를 읽어 다음 단계 전파를 반복합니다.
-11. 이미 처리한 문서에 다시 도달하거나 더 이상 영향 받는 문서가 없으면 전파를 종료하고 전체 변경, 식별자 색인 갱신 내역, 검토 항목을 요약합니다.
+2. `requirement_refs`에 선언된 ReqMd 요구사항 원문을 조회하여 문서가 만족해야 할 구조, 내용, 품질, 추적성 기준을 정리합니다.
+3. `knowledge_files`를 읽어 요구사항을 구체화하는 데 필요한 도메인 지식, 용어, 제약 조건을 수집합니다.
+4. Update 절차를 수행하여 요구사항 기준과 지식 문맥에 맞게 현재 문서를 작성하거나 수정합니다.
+5. 업데이트된 문서가 참조 요구사항을 충족하는지 검증하고, 누락 또는 충돌 항목을 식별합니다.
+6. Update 절차에서 현재 문서에 실제로 반영된 변경 사항을 `changed_content`로 요약합니다.
+7. `propagation_docs`의 `lateral`, `upstream`, `downstream` 대상마다 `source_doc`, `target_doc`, `direction`, `changed_content`, `reason/trace`를 가진 Queue event를 생성합니다.
+8. Queue에서 event를 하나씩 꺼내 target 문서에 필요한 변경을 반영하거나, 자동 수정하기 어려운 항목은 검토 필요 사항으로 남깁니다.
+9. 전파 과정에서 lateral, upstream, downstream 요구사항 관계가 새로 식별되거나 변경되면 ReqMd 식별자 색인을 갱신하고 검증합니다.
+10. target 문서가 ProDoc이고 실제 변경이 발생했으며 자체 `propagation_docs`를 가지고 있으면, target 문서를 새로운 current ProDoc document로 설정하고 target의 실제 변경 내용을 다음 `changed_content`로 요약합니다.
+11. target 문서의 전파 대상들을 새 Queue event로 추가하고, Queue가 비거나 순환, 반복 event, 깨진 참조, 사용자 판단 필요 조건에 도달할 때까지 반복합니다.
+12. 전파를 종료하면 전체 변경, 처리된 source-target 관계, 식별자 색인 갱신 내역, 중단 사유, 검토 항목을 요약합니다.
 
 이 workflow의 핵심은 문서의 메타데이터가 에이전트의 행동을 제한하고 안내한다는 점입니다.
 따라서 ProDoc 문서의 frontmatter는 단순한 설명 정보가 아니라, 문서 작성과 검증, 변경 전파를 제어하는 선언적 프로그램으로 취급됩니다.
