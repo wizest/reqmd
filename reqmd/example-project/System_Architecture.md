@@ -8,6 +8,8 @@ reqmd_prodoc:
       - SYS_3_BP_4
       - SYS_3_BP_5
       - WP_04_06
+  knowledge_files:
+    - Project_Knowledge.md
   propagation_docs:
     upstream:
       - System_Requirements.md
@@ -33,6 +35,7 @@ Rationale: Reuses existing pedal and brake pressure sensing interfaces.
 
 - When [SYS_REQ_BRAKE_ASSIST_ACTIVATION](@) is implemented, the system architecture shall allocate pedal position and brake pressure sensing to the sensor interface element.
 - When the sensor interface is specified, the architecture shall define static interfaces for pedal position, brake pressure, signal validity, and sample timestamp data.
+- When the sensor interface dynamic aspect is specified, the architecture shall define sampling, signal validation, invalid-signal handling, and interaction timing with the brake assist controller element.
 - When the sensor interface is analyzed, the project shall record that sensing availability and signal validity are special characteristics for brake assist behavior.
 
 ## [SYS_ARCH_BRAKE_ASSIST_CONTROLLER](@) Brake assist controller allocation
@@ -72,3 +75,4 @@ Status: Draft
 
 - When system architecture elements are changed, the project shall maintain bidirectional traceability to system requirements, software requirements, software architecture, and verification work products through the ReqMd skill workflow for the `@.md` identifier index.
 - When system architecture is agreed, the project shall communicate static interfaces, dynamic modes, special characteristics, rationale, and changed traceability to affected parties.
+- When system architecture is analyzed, the project shall record correctness, feasibility, verifiability, interface consistency, allocation rationale, and potential impact on software requirements and verification measures.

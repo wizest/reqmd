@@ -9,13 +9,15 @@ reqmd_prodoc:
       - VAL_1_BP_5
       - WP_13_24
       - WP_08_59
+  knowledge_files:
+    - Project_Knowledge.md
   propagation_docs:
     upstream:
       - Stakeholder_Requirements.md
       - System_Requirements.md
-      - Verification_Plan_and_Results.md
     lateral:
       - Project_Management_Plan.md
+      - Verification_Plan_and_Results.md
       - Support_Management.md
 ---
 
@@ -34,6 +36,7 @@ ExecutionStatus: Planned
 - When [STK_REQ_BRAKE_ASSIST](@) is validated, the validation measure shall evaluate rapid brake pedal application in representative vehicle operating conditions.
 - When the brake assist validation measure is specified, the plan shall define pass/fail criteria, entry criteria, exit criteria, abort and restart criteria, vehicle or simulation environment, selected operating conditions, validation sequence, and stakeholder expectation coverage.
 - When the brake assist validation measure is selected, the project shall record that the scenario covers intended-use braking support in the operational target environment and release scope.
+- When brake assist validation is summarized, the project shall communicate selected validation measure rationale, validation result status, deviations, and intended-use impact to stakeholder and project-management parties.
 - When the brake assist validation is performed, the result record shall include execution date, participants, validation measure data, logs or feedback, pass/fail status, and deviations routed to problem resolution.
 - If the brake assist validation is not executed, then the result record shall include the not-executed status and rationale.
 
@@ -50,6 +53,7 @@ ExecutionStatus: Planned
 - When [STK_REQ_DRIVER_FEEDBACK](@) is validated, the validation measure shall evaluate that driver indications are understandable during active support and confirmed diagnostic faults.
 - When the driver feedback validation measure is specified, the plan shall define pass/fail criteria for active and warning indications, entry and exit criteria, abort and restart criteria, evaluator role, validation sequence, and required instrument-cluster environment.
 - When the driver feedback validation measure is selected, the project shall record that user evaluation is required because indication clarity affects stakeholder satisfaction and operational use.
+- When driver feedback validation is summarized, the project shall communicate selected validation measure rationale, validation result status, deviations, and user-impact rationale to stakeholder and project-management parties.
 - When driver feedback validation is performed, the result record shall include execution date, participants, pass/fail status, user feedback, and stakeholder-oriented evidence.
 - If driver feedback validation is not executed, then the result record shall include the not-executed status and rationale.
 
@@ -66,8 +70,23 @@ ExecutionStatus: Planned
 - When [STK_REQ_SERVICE_DIAGNOSTICS](@) is validated, the validation measure shall evaluate service tool access to brake assist status and stored fault information.
 - When the service diagnostics validation measure is specified, the plan shall define pass/fail criteria for current status and stored fault access, entry and exit criteria, abort and restart criteria, service tool environment, validation sequence, and expected data fields.
 - When the service diagnostics validation measure is selected, the project shall record that service diagnostic coverage is required for intended use by service stakeholders and release readiness.
+- When service diagnostics validation is summarized, the project shall communicate selected validation measure rationale, validation result status, deviations, and service-readiness impact to stakeholder and project-management parties.
 - When service diagnostics validation is performed, the result record shall include execution date, participants, validation measure data, service tool logs, and pass/fail status.
 - If service diagnostics validation is not executed, then the result record shall include the not-executed status and rationale.
+
+## [VAL_PROJECT_COMMUNICATION_REVIEW](@) Project communication validation review
+
+```yaml
+Type: ValidationRequirement
+Status: Draft
+Technique: Review
+SelectionCriteria: Stakeholder communication, release-scope agreement, change disposition
+ExecutionStatus: Planned
+```
+
+- When [STK_REQ_PROJECT_COMMUNICATION](@) and [STK_REQ_AGREEMENT_STATUS](@) are validated, the validation review shall confirm that release scope, affected stakeholder groups, representative roles, information needs, explicit agreement evidence, agreed commitment status, and changed project status dispositions were communicated to affected parties.
+- When project communication validation is specified, the plan shall define review criteria for stakeholder coverage, milestone status, scope-change disposition, schedule-impact communication, progress-status communication, and unresolved stakeholder concern handling.
+- When project communication validation is performed, the result record shall include reviewed communication evidence, participants, pass/fail status, unresolved concerns, and release-readiness impact.
 
 ## [VAL_TRACEABILITY](@) Validation traceability
 
@@ -78,6 +97,6 @@ Summary: Validation result summary and affected-party communication evidence
 ```
 
 - When validation measures or results are changed, the project shall maintain bidirectional traceability to stakeholder requirements, system requirements, and verification results through the ReqMd skill workflow for the `@.md` identifier index.
-- When validation measures and results are reviewed, the project shall maintain consistency between validation scenarios, stakeholder expectations, system requirements, verification evidence, and problem-resolution records.
+- When validation measures and results are reviewed, the project shall maintain consistency between validation scenarios, stakeholder expectations, stakeholder agreement status, system requirements, verification evidence, and problem-resolution records.
 - When validation results are summarized, the project shall summarize passed, not passed, not executed, and deviating validation results with rationale and impact on intended-use expectations.
 - When validation results are communicated, the project shall communicate the validation result summary, stakeholder impact, unresolved deviations, and release-readiness impact to affected parties.

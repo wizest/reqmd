@@ -10,13 +10,14 @@ reqmd_prodoc:
       - SWE_1_BP_6
       - WP_17_00
       - WP_17_54
+  knowledge_files:
+    - Project_Knowledge.md
   propagation_docs:
     upstream:
       - System_Requirements.md
       - System_Architecture.md
     downstream:
       - Software_Architecture.md
-      - Software_Detailed_Design.md
       - Verification_Plan_and_Results.md
     lateral:
       - Support_Management.md
@@ -33,6 +34,8 @@ Priority: High
 Verification: SoftwareTest
 Release: Demonstrator
 Rationale: Refines system activation behavior into software decision behavior.
+Source: SYS_REQ_BRAKE_ASSIST_ACTIVATION
+AgreementStatus: Proposed
 ```
 
 - When [SYS_REQ_BRAKE_ASSIST_ACTIVATION](@) applies and filtered pedal acceleration exceeds the configured threshold, the software shall set the brake assist request state to active within one control cycle.
@@ -48,6 +51,8 @@ Priority: High
 Verification: SoftwareTest
 Release: Demonstrator
 Rationale: Refines system normal braking preservation into software output behavior.
+Source: SYS_REQ_NORMAL_BRAKING_PRESERVATION
+AgreementStatus: Proposed
 ```
 
 - If sensor validity is false or a controller diagnostic fault is confirmed, then the software shall set the brake assist pressure request to inactive.
@@ -62,6 +67,8 @@ Priority: Medium
 Verification: SoftwareTest
 Release: Demonstrator
 Rationale: Refines system driver indication behavior.
+Source: SYS_REQ_DRIVER_INDICATION
+AgreementStatus: Proposed
 ```
 
 - When the brake assist request state is active, the software shall transmit an active indication signal to the vehicle communication interface.
@@ -77,6 +84,8 @@ Priority: Medium
 Verification: SoftwareTest
 Release: Demonstrator
 Rationale: Refines system diagnostic status behavior.
+Source: SYS_REQ_DIAGNOSTIC_STATUS
+AgreementStatus: Proposed
 ```
 
 - When a diagnostic service requests brake assist status, the software shall report availability, active state, and confirmed diagnostic fault status.
@@ -91,3 +100,4 @@ Status: Draft
 
 - When software requirements are changed, the project shall maintain bidirectional traceability to system requirements, system architecture, software architecture, detailed design, and verification work products through the ReqMd skill workflow for the `@.md` identifier index.
 - When a software requirement is changed, the project shall record consistency evidence for system requirement coverage, operating-environment impact, architecture impact, and verification impact.
+- When software requirements are agreed, the project shall communicate agreed software requirements, requirement attributes, operating-environment impact, analysis rationale, and unresolved risks to software architecture, detailed design, verification, and project-management parties.

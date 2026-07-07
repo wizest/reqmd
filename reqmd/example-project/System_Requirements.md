@@ -10,6 +10,8 @@ reqmd_prodoc:
       - SYS_2_BP_6
       - WP_17_00
       - WP_17_54
+  knowledge_files:
+    - Project_Knowledge.md
   propagation_docs:
     upstream:
       - Stakeholder_Requirements.md
@@ -33,6 +35,8 @@ Priority: High
 Verification: SystemTest
 Release: Demonstrator
 Rationale: Derived from stakeholder brake assist expectation.
+Source: STK_REQ_BRAKE_ASSIST
+AgreementStatus: Proposed
 ```
 
 - When [STK_REQ_BRAKE_ASSIST](@) applies and brake pedal deceleration exceeds the activation threshold, the system shall request brake assist pressure support within 50 ms.
@@ -48,6 +52,8 @@ Priority: High
 Verification: SystemTest
 Release: Demonstrator
 Rationale: Preserves baseline braking behavior when support is unavailable.
+Source: STK_REQ_BRAKE_ASSIST
+AgreementStatus: Proposed
 ```
 
 - If brake assist support is unavailable, then the system shall allow normal hydraulic braking without additional brake assist pressure request.
@@ -62,6 +68,8 @@ Priority: Medium
 Verification: SystemTest
 Release: Demonstrator
 Rationale: Derived from stakeholder driver feedback expectation.
+Source: STK_REQ_DRIVER_FEEDBACK
+AgreementStatus: Proposed
 ```
 
 - When [STK_REQ_DRIVER_FEEDBACK](@) applies and brake assist support is active, the system shall send a brake assist active indication to the instrument cluster.
@@ -77,6 +85,8 @@ Priority: Medium
 Verification: SystemTest
 Release: Demonstrator
 Rationale: Derived from stakeholder service diagnostics expectation.
+Source: STK_REQ_SERVICE_DIAGNOSTICS
+AgreementStatus: Proposed
 ```
 
 - When [STK_REQ_SERVICE_DIAGNOSTICS](@) applies and a service tool requests diagnostic status, the system shall provide current brake assist availability and stored diagnostic fault status.
@@ -92,3 +102,5 @@ Priority: High
 
 - When system requirements are changed, the project shall maintain bidirectional traceability to stakeholder requirements, system architecture, software requirements, verification, and validation work products through the ReqMd skill workflow for the `@.md` identifier index.
 - When a system requirement is changed, the project shall record consistency evidence for stakeholder coverage, system-context impact, and downstream work product impact.
+- When stakeholder requirement agreement status or disposition changes, the project shall review affected system requirements for consistency before accepting downstream updates.
+- When system requirements are agreed, the project shall communicate agreed system requirements, requirement attributes, analysis rationale, system-context impact, and unresolved risks to affected architecture, software, verification, validation, and project-management parties.

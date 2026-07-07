@@ -8,6 +8,8 @@ reqmd_prodoc:
       - SWE_2_BP_4
       - SWE_2_BP_5
       - WP_04_04
+  knowledge_files:
+    - Project_Knowledge.md
   propagation_docs:
     upstream:
       - Software_Requirements.md
@@ -41,6 +43,7 @@ Rationale: Separates signal conditioning from decision logic.
 - When application parameters are specified, the software architecture shall define pedal acceleration threshold, filter window length, and invalid sample limit as calibratable parameters used by the input filter.
 - When the input filter dynamic aspect is specified, the software architecture shall define sample acquisition, validation, filtering, invalid-sample rejection, and degraded-input behavior for normal, degraded input, and diagnostic modes.
 - When the input filter is analyzed, the project shall record rationale that bounded filtering reduces false activation while preserving one-control-cycle activation feasibility.
+- When the input filter architecture is agreed, the project shall communicate its interfaces, parameters, modes, timing assumptions, and traceability to detailed design and verification stakeholders.
 
 ## [SW_ARCH_DECISION_LOGIC](@) Decision logic component
 
@@ -84,6 +87,7 @@ Rationale: Groups status publication with diagnostic service response.
 - When application parameters are specified, the software architecture shall define status publication period and diagnostic response timeout as configurable communication parameters.
 - When communication dynamic aspects are specified, the software architecture shall define update timing and state-dependent output behavior for normal operation, active support, confirmed fault, and service request handling.
 - When communication behavior is analyzed, the project shall record rationale that indication publication and diagnostic response are grouped to keep externally visible status consistent.
+- When diagnostic and communication architecture is agreed, the project shall communicate status value semantics, publication timing, diagnostic response timing, and interface ownership to detailed design, integration verification, and validation stakeholders.
 
 ## [SW_ARCH_TRACEABILITY](@) Software architecture traceability
 
@@ -96,5 +100,6 @@ AnalysisCriteria: Timing, interface consistency, state coverage, parameter confi
 - When software architecture components are changed, the project shall maintain bidirectional traceability to software requirements, system architecture, software detailed design, and verification work products through the ReqMd skill workflow for the `@.md` identifier index.
 - When software architecture consistency is checked, the project shall confirm that each software requirement affecting activation, fail-silent output, indication, or diagnostic reporting traces to at least one software architecture component and related verification work product.
 - When software architecture analysis is performed, the project shall evaluate timing, interface consistency, state coverage, and parameter configurability, and shall record assumptions that affect project estimates for detailed design, integration, and verification.
+- When software architecture analysis is performed, the project shall also record correctness, feasibility, verifiability, and potential impact on detailed design and verification measures.
 - When software architecture information is reviewed, the project shall provide explanatory annotations for each component covering rationale, interfaces, application parameters, dynamic behavior, operating modes, and affected downstream work products.
 - When software architecture is agreed, the project shall communicate static aspects, dynamic aspects, analysis rationale, and affected detailed design and verification impacts to affected parties.
