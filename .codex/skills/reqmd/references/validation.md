@@ -2,6 +2,8 @@
 
 Run `scripts/validate_reqmd.py` when possible. Use this checklist for manual review or when script output needs interpretation.
 
+Treat validation output as the primary repair guide. Run `scripts/reqmd_fix.py <root>` before hand-editing indexes. If validation still reports `REPAIRABLE`, run the named script once. Treat `REVIEW` as semantic or unresolved traceability work.
+
 ## Syntax
 
 - Requirement headings start with `[IDENTIFIER](@)` or `[IDENTIFIER](path/@)`.
@@ -20,6 +22,8 @@ Run `scripts/validate_reqmd.py` when possible. Use this checklist for manual rev
 - `@.md` source document links use the actual identifier text in the section heading.
 - `@.md` sections include helper links used by that requirement when helpers appear in the RequirementSection body.
 - `=.md` sections include identifier links for RequirementSections that use that helper.
+- Every RequirementSection heading should have a matching section in the local `@.md`.
+- Every helper used in a RequirementSection body should have a matching section in the local `=.md`.
 - Duplicate index sections are not allowed.
 - Link fragments resolve to real index sections when the target index file exists.
 - Bare index links such as `@`, `=`, `path/@`, and `path/=` are not allowed inside index files.

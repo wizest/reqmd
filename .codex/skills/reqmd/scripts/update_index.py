@@ -8,9 +8,8 @@ import re
 from pathlib import Path
 
 
-ID_HEADING_RE = re.compile(r"^(#{1,6})\s+\[([A-Z][A-Z0-9_]*)\]\((?:@|[^)]*/@)(?:#[^)]+)?\)")
+ID_HEADING_RE = re.compile(r"^(#{1,6})\s+\[([A-Z][A-Z0-9_]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 HEADING_RE = re.compile(r"^#{1,6}\s+")
-HELPER_LINK_RE = re.compile(r"\[([^\]]+)\]\((?:=|[^)]*/=)(?:#[^)]+)?\)")
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 FENCE_RE = re.compile(r"^\s*```")
 
@@ -35,29 +34,69 @@ def anchor(text: str) -> str:
     return re.sub(r"-+", "-", text)
 
 
+def unique_anchor(text: str, seen: dict[str, int]) -> str:
+    base = anchor(text)
+    count = seen.get(base, 0)
+    seen[base] = count + 1
+    if count == 0:
+        return base
+    return f"{base}-{count}"
+
+
+def target_base(target: str) -> str:
+    return target.split("#", 1)[0].split(None, 1)[0]
+
+
+def is_identifier_target(target: str) -> bool:
+    base = target_base(target)
+    if base == "@" or base.endswith("/@"):
+        return True
+    if base == "@.md" or base.endswith("/@.md"):
+        return "#" in target
+    return False
+
+
+def is_helper_target(target: str) -> bool:
+    base = target_base(target)
+    if base == "=" or base.endswith("/="):
+        return True
+    if base == "=.md" or base.endswith("/=.md"):
+        return "#" in target
+    return False
+
+
+def iter_links(line: str):
+    for match in LINK_RE.finditer(line):
+        yield match.group(1), match.group(2)
+
+
 def collect_requirements(doc: Path) -> list[tuple[str, str, list[str]]]:
     found: list[tuple[str, str, list[str]]] = []
     current: tuple[str, str, list[str]] | None = None
     in_fence = False
+    seen_anchors: dict[str, int] = {}
     for line in read_text(doc).splitlines():
         if FENCE_RE.match(line):
             in_fence = not in_fence
             continue
         if in_fence:
             continue
+        if HEADING_RE.match(line):
+            current_anchor = unique_anchor(heading_text(line), seen_anchors)
+        else:
+            current_anchor = ""
         m = ID_HEADING_RE.match(line)
-        if m:
+        if m and is_identifier_target(m.group(3)):
             req_id = m.group(2)
-            current = (req_id, f"{doc.name}#{anchor(heading_text(line))}", [])
+            current = (req_id, f"{doc.name}#{current_anchor}", [])
             found.append(current)
             continue
         if HEADING_RE.match(line):
             current = None
             continue
         if current:
-            for link in HELPER_LINK_RE.finditer(line):
-                helper = link.group(1)
-                if helper not in current[2]:
+            for helper, target in iter_links(line):
+                if is_helper_target(target) and helper not in current[2]:
                     current[2].append(helper)
     return found
 
@@ -74,7 +113,7 @@ def collect_helpers(doc: Path) -> list[str]:
         if in_fence:
             continue
         m = ID_HEADING_RE.match(line)
-        if m:
+        if m and is_identifier_target(m.group(3)):
             current_req = m.group(2)
             current_anchor = anchor(heading_text(line))
             continue
@@ -84,8 +123,9 @@ def collect_helpers(doc: Path) -> list[str]:
             continue
         if not current_req or not current_anchor:
             continue
-        for link in HELPER_LINK_RE.finditer(line):
-            helpers.setdefault(link.group(1), None)
+        for helper, target in iter_links(line):
+            if is_helper_target(target):
+                helpers.setdefault(helper, None)
     return list(helpers)
 
 
@@ -141,6 +181,8 @@ def ensure_section_link(index: Path, section_name: str, label: str, target: str)
     section_end = match.end() + next_heading.start() if next_heading else len(text)
     section = text[match.end() : section_end]
     if re.search(rf"^-\s+\[{re.escape(label)}\]\({re.escape(target)}\)\s*$", section, re.MULTILINE):
+        return False
+    if re.search(rf"^-\s+\[{re.escape(label)}\]\([^)]+\)\s*$", section, re.MULTILINE):
         return False
 
     insert_at = section_end
