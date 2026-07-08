@@ -1,8 +1,8 @@
 # ReqMd Validation
 
-Run `scripts/validate_reqmd.py` when possible. Use this checklist for manual review or when script output needs interpretation.
+Run `python claude\reqmd\scripts\validate_reqmd.py <root>` when possible. Use this checklist for manual review or when script output needs interpretation.
 
-Treat validation output as the primary repair guide. Run `scripts/reqmd_fix.py <root>` before hand-editing indexes. If validation still reports `REPAIRABLE`, run the named script once. Treat `REVIEW` as semantic or unresolved traceability work.
+Treat validation output as the primary repair guide. Run `python claude\reqmd\scripts\reqmd_fix.py <root>` before hand-editing indexes. If validation still reports `REPAIRABLE`, run the named script once. Treat `REVIEW` as semantic or unresolved traceability work.
 
 ## Syntax
 

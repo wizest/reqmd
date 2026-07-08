@@ -22,7 +22,7 @@ Use this workflow for all ReqMd edits.
 4. Write one verifiable EARS-style behavior or constraint in the RequirementBody.
 5. Add helper links for concepts, signals, states, variables, tests, or model items.
 6. Add YAML attributes as RequirementAttributes inside the RequirementSection.
-7. Run `scripts/reqmd_fix.py <root>`.
+7. Run `python claude\reqmd\scripts\reqmd_fix.py <root>`.
 8. Fix only reported structural errors.
 9. Report uncertain design/test traceability instead of inventing links.
 
@@ -33,7 +33,7 @@ Use this workflow for all ReqMd edits.
 3. Update body text and YAML attributes.
 4. Re-scan helper links in the RequirementSection only.
 5. Do not collect helper links from GeneralSection content.
-6. Run `scripts/reqmd_fix.py <root>`.
+6. Run `python claude\reqmd\scripts\reqmd_fix.py <root>`.
 7. Review related identifier index links for design/test impact.
 8. Report uncertain links instead of deleting them silently.
 
@@ -46,7 +46,7 @@ Use this workflow for all ReqMd edits.
 5. Add missing `@.md` sections with source requirement links.
 6. Add missing `=.md` sections with plain helper headings.
 7. Add helper usage links to `@.md` and identifier usage links to `=.md`.
-8. Run `scripts/reqmd_fix.py <root>`.
+8. Run `python claude\reqmd\scripts\reqmd_fix.py <root>`.
 9. Preserve existing semantic links unless clearly obsolete.
 10. Keep indexes free of YAML blocks.
 

@@ -19,6 +19,12 @@ ReqMd is normal Markdown with project conventions:
 
 ## Workflow
 
+Minimal context path:
+
+1. For ordinary edits, read this file and `references/workflows.md` only.
+2. Run `python .codex\skills\reqmd\scripts\reqmd_fix.py <requirement-root>` after edits.
+3. Read `references/syntax.md`, `references/validation.md`, `references/decision-rules.md`, or `references/examples.md` only when the task or script output requires it.
+
 1. Classify the task as authoring, editing, index update, validation, or impact analysis.
 2. Work on one requirement path at a time. Do not edit unrelated directories in the same pass.
 3. Inspect the target requirement file plus nearby `@.md` and `=.md` files.
@@ -29,7 +35,7 @@ ReqMd is normal Markdown with project conventions:
    - Validation checklist: `references/validation.md`
    - Before/after examples: `references/examples.md`
 5. Apply changes to RequirementSection content first. Do not hand-rewrite whole index files.
-6. Run `scripts/reqmd_fix.py <requirement-root>` after content edits.
+6. Run `python .codex\skills\reqmd\scripts\reqmd_fix.py <requirement-root>` after content edits.
 7. If validation still reports `REPAIRABLE`, run the named script once before editing by hand.
 8. Treat `REVIEW` output as unresolved review items unless the source text makes the fix explicit.
 9. Report changed requirement sections, changed index files, validation results, and unresolved review items.
@@ -59,25 +65,19 @@ When uncertain:
 
 Index files use different fragment targets. Keep them separate.
 
-- `@.md` index section headings link to source requirement sections.
-  - Example: `## [SW_BLC_CONTROL](SwReq.md#sw_blc_control-brake-lamp-control-software)`
-  - The fragment is based on the source requirement/design/test Markdown heading.
-- `=.md` index section headings are plain helper names and do not link to source sections.
-  - Example: `## brake_lamp_request`
-  - The fragment for links to this section is based on the helper heading text.
-- Index section body list items link to other index sections.
-  - Example: `- [SYS_BLC_CONTROL](../sys/@#sys_blc_control)`
-  - Example: `- [=BrakeLampReq](../swdd/=#brakelampreq)`
-  - The fragment is based on the target index section heading's visible text, not the source document heading.
+- `@.md` headings link to source requirement sections.
+- `=.md` headings are plain helper names.
+- Index body links point to other index sections and must include fragments.
 - Never use bare index links such as `@`, `=`, `path/@`, or `path/=` inside index files.
-- Use VS Code-compatible Markdown heading anchors.
+- Use `python .codex\skills\reqmd\scripts\reqmd_fix.py <root>` to generate and repair fragments.
+- Read `references/syntax.md` only when fragment details are needed.
 
 ## Scripts
 
-- `scripts/validate_reqmd.py <root>` checks naming, index YAML bans, index fragments, duplicate index sections, reachable index-section fragments, missing source index sections, and missing helper usage links.
-- `scripts/reqmd_fix.py <root>` runs the standard repair pipeline: `update_index.py`, `repair_index_links.py`, then `validate_reqmd.py`.
-- `scripts/update_index.py <root>` adds missing index sections and usage links inferred from requirement sections. It skips GeneralSection content.
-- `scripts/repair_index_links.py <root>` repairs bare index links such as `@`, `=`, `path/@`, and `path/=` when the target index section already exists.
-- `scripts/analyze_impact.py <root> <identifier-or-helper> [...]` reports existing indexed impact links as `confirmed`, reverse indexed matches as `inferred`, and leaves semantic gaps as `review needed`.
+- `python .codex\skills\reqmd\scripts\validate_reqmd.py <root>` checks naming, index YAML bans, index fragments, duplicate index sections, reachable index-section fragments, missing source index sections, and missing helper usage links.
+- `python .codex\skills\reqmd\scripts\reqmd_fix.py <root>` runs the standard repair pipeline: `update_index.py`, `repair_index_links.py`, then `validate_reqmd.py`.
+- `python .codex\skills\reqmd\scripts\update_index.py <root>` adds missing index sections and usage links inferred from requirement sections. It skips GeneralSection content.
+- `python .codex\skills\reqmd\scripts\repair_index_links.py <root>` repairs bare index links such as `@`, `=`, `path/@`, and `path/=` when the target index section already exists.
+- `python .codex\skills\reqmd\scripts\analyze_impact.py <root> <identifier-or-helper> [...]` reports existing indexed impact links as `confirmed`, reverse indexed matches as `inferred`, and leaves semantic gaps as `review needed`.
 
 Review script output before relying on it for traceability semantics.
