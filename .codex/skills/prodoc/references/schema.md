@@ -56,7 +56,7 @@ propagation_docs:
 When available, run:
 
 ```bash
-python .codex/skills/prodoc/scripts/validate_prodoc.py <file-or-root>
+python .codex\skills\prodoc\scripts\validate_prodoc.py <file-or-root>
 ```
 
 The script validates the supported ProDoc frontmatter subset, checks that `requirement_specs` IDs exist in the referenced ReqMd `@.md` index, and checks that `knowledge_files` and `propagation_docs` targets exist.

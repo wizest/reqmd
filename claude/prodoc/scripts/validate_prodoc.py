@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Validate ProDoc frontmatter without external YAML dependencies.
 
 This validator intentionally supports the ProDoc subset used by this skill:
